@@ -10,3 +10,56 @@
 *Nuestra propuesta tiene como objetivo, determinar de qué manera ha funcionado el sistema proporcional en las elecciones parlamentarias de Chile, a la hora de generar mayor representatividad en el Congreso. Esto, en contraste con el sistema binominal implementado anteriormente.*
 
 *Con estos antecedentes, queremos analizar si realmente el sistema proporcional en votaciones parlamentarias chilenas ha servido para tener una mayor diversidad política o las coaliciones políticas se han mantenido desde el retorno a la democracia en dos bloques: izquierda o derecha con pequeñas ramificaciones.*
+## Pregunta de investigación (~ hipótesis): 
+
+
+*¿El sistema proporcional ha servido para eliminar la hegemonía de las grandes coaliciones políticas de Izquierda y Derecha?*
+
+*¿Qué se quiere demostrar o revelar? una o dos frases*.
+*Ver si el escenario político se ha diversificado con el sistema proporcional*
+
+
+## Antecedentes del tema:
+
+**¿Qué se ha publicado antes sobre el tema?**
+*Sobre el sistema proporcional, se han publicado varios análisis y columnas de opinión de cómo ha funcionado el formato a la hora de preservar el funcionamiento de la democracia.* *Bio Bio publicó “Congreso en modo lento: el sistema proporcional duplicó los tiempos y ahogó la eficiencia legislativa”, y El Mercurio “SISTEMA ELECTORAL PROPORCIONAL: LA GRAVE ENFERMEDAD DE NUESTRO SISTEMA POLÍTICO”.*
+
+**¿Con qué enfoque se han contado?**
+*Se han contado, principalmente, con un enfoque negativo. Resaltando cómo ha perjudicado al sistema político. No en temas de representatividad, en la cual dictaminan un aumento, sino en cómo disminuye la productividad, genera mayor dificultad y demora a la hora de tomar decisiones en el parlamento.* 
+
+**¿Cuáles son los hechos claves que se han presentado del problema?**
+
+*Entre los hechos claves que se presentan sobre el problema, está la caída de la tasa de aprobación de leyes de un 82 a un 53%, tras el cambio de sistema. El aumento en los tiempos de tramitación de 265 a 401 días promedio, al ser más partidos representados, mayor es la dificultad de coordinarse en el parlamento.*
+
+## Datos:
+**¿Qué datos necesita para probar su hipótesis?**
+*La distribución de los escaños en las elecciones parlamentarias desde 1989 hasta 2025 para poder ver los cambios que se han ido dando; antecedentes históricos de los procesos electorales para entender las elecciones.* 
+**¿Qué datos tiene y qué datos necesita conseguir aún?**
+*Tenemos los datos sobre como se repartieron los escaños durantes las elecciones parlamentarias; nos falta revisar los contextos históricos detrás de cada elección.* 
+
+**¿Qué datos no existen y cómo los obtendrá?**
+*Existen registros como tal sobre los contextos históricos detrás de cada elección. Lo que no existe es una recopilación lineal de estos datos, agrupados con el fin de entender los cambios en la representatividad. Estos datos los obtendremos a partir de noticias de archivo, las cuales se deben encontrar en la web como hechos que enmarcaron cada elección*
+
+**¿Qué datos son públicos y cuáles no?**
+*Son públicos los datos sobre los escaños. Se pueden encontrar en Servel y Wikipedia recopilados en su totalidad.*
+**¿Qué datos son confiables y cuáles no?**
+*Son confiables los datos del Servel, al ser el servicio electoral oficial de Chile y contar con el registro de estos datos desde su emisión. Los datos sobre esta temática que pueden ser evitados son aquellos informes emitidos por partidos o sitios con un sesgo claro por una ideología en específico.*
+
+## Preguntas a responder:
+**¿Cuáles son las preguntas que se pueden responder con los datos?**
+*Ver si realmente el cambio en el sistema electoral ha sido beneficioso para darle una mayor pluralidad política al congreso o se han conservado los mismos partidos políticos. Adicionalmente, ver si las coaliciones se han diversificado con el auge de partidos políticos o se han mantenido en solo dos grandes bloques como con la Concertación y la Coalición por el Cambio.*
+
+## Historia visual:
+**¿Cuál es la historia de su proyecto de investigación? ¿Qué es lo nuevo?**
+
+*Ordenar cronológicamente cada periodo de elección parlamentaria desde la vuelta a la democracia, comparando los ejes de representación obtenidos de cada una de ellas, anclarlos al contexto histórico y mostrar cómo esto influyó en las decisiones del electorado. Lo nuevo vendría a ser la comparativa entre ambos sistemas (proporcional y binomial), tomando en cuenta factores que sucedieron a sus respectivas elecciones.*
+
+**¿Qué tipo de elementos digitales les gustaría tener? ¿Cómo esos elementos ayudarán a contar su historia? Adjunten ejemplos y referencias.**
+
+*Mapas que funcionen interactivamente y que incluyan los datos electorales, considerando elementos específicos como región y rango etario por elección. Estos elementos ayudarán a hacer el sitio más dinámico. Como ejemplo, tenemos la web story de la página The Pudding “What if you could search every visible word on New York City 's streets?”, la cuál emplea mapas de la ciudad en 360°.*
+## Resultados:
+**¿Qué es lo mínimo que se puede contar como historia con los datos que tienen? ¿Qué es lo máximo?**
+
+*Lo mínimo sería mostrar nuestra hipótesis con el análisis de escaños y ver si realmente el sistema proporcional aumentó la participación plural en el parlamento. Con esto se verá si se aprueba la hipótesis o se descarta.*
+
+*Máximo: Lo máximo sería fusionar los datos electorales más el contexto histórico que proporcionó el escenario para el resultado de las elecciones,  para explicar cómo se han dado los escenarios políticos sociales en el país.*
