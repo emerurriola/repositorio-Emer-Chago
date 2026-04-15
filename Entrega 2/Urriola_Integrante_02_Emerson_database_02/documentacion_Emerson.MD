@@ -1,25 +1,40 @@
-# Hipótesis actual
+# Documentación
 
-*La implementación del sistema proporcional en elecciones, desde 2017, puede haber aumentado la fragmentación política y la diversidad de partidos en Chile.*
+*Explicación de cómo se realizó el proceso de limpieza de datos. Debe incluir una explicación de cada paso, las decisiones que tomaron en el camino y explicitar las herramientas que usaron.*
 
-### ¿Qué preguntas están guiando su trabajo con los datos?
+1. Tras terminar nuestra extracción de datos, mediante la vista de agrupación, agrupamos los datos por coalición, distrito, parlamentario, partido político y votos obtenidos.
+2. Después de ordenarlos, agregamos los partidos por su sigla, para ordenarlos en su totalidad y que puedan ser reconocidos por la hoja de cálculo, independiente del año. Adicionalmente, hicimos lo mismo con las coaliciones
+3. Editamos manualmente aquellos datos que no hayan sido agrupados adecuadamente por la máquina, editando ya sea el año o el nombre, en caso de estar mal escrito.
+4. Eliminamos los datos sobrantes o repetidos.
 
-*¿El sistema proporcional aumentó la diversidad de partidos políticos presentes en la cámara de diputados? o de lo contrario, ¿Favoreció la construcción de 2 grandes bloques?*
+## Lista de las fuentes de datos utilizadas y una explicación de por qué las eligieron.
 
-### Avance de su proyecto en relación con la hipótesis y preguntas de investigación.
+Elegimos estos datos desde Wikipedia, aún siendo propiedad del Servel, debido al órden en el que se encuentran desde el sitio, teniendo un formato e interfaz sencillo a la hora de copiar la información a la hoja de cálculo. Pese a que no todos los links mantienen la misma forma de entregar los datos, nos resultó más cómodo y adecuado para el trabajo.
 
-*Nuestras bases de datos, que recopilan resultados de las elecciones parlamentarias, desde la vuelta a la democracia en 1989 hasta la última realizada en 2025, nos ayudaron a tener una noción más completa de los partidos políticos, coaliciones y candidatos que lideraron las elecciones durante más tiempo. A la par, el entender los años donde más gente participó de las votaciones, y cómo el cambio de sistema junto a la distribución de los distritos generaron cambios en las preferencias escogidas.*
+Fuente 1: https://es.wikipedia.org/wiki/Anexo:Resultados_de_las_elecciones_parlamentarias_de_Chile_de_1989
 
-### Cómo modificaron o reforzaron estos elementos lo que tenían planteado como historia.
+Fuente 2: https://es.wikipedia.org/wiki/Anexo:Resultados_de_las_elecciones_parlamentarias_de_Chile_de_1993
 
-*Los elementos en su conjunto reforzaron la idea de que ha habido un cambio general en la cámara de diputados por la implementación del sistema proporcional en Chile. Pero, por otro lado, los elementos nos ayudaron a modificar en nuestra historia lo que creíamos iba a ser una mayor representatividad con el nuevo formato, por un aumento en la polarización como foco de la narración.*
+Fuente 3: https://es.wikipedia.org/wiki/Anexo:Resultados_de_las_elecciones_parlamentarias_de_Chile_de_1997
 
-## Resumen de la historia actual.
+Fuente 4: https://es.wikipedia.org/wiki/Anexo:Resultados_de_las_elecciones_parlamentarias_de_Chile_de_2001
 
-*Desde 1989 hasta 2017, en Chile, el sistema de representación implementado en las elecciones parlamentarias fue el sistema binominal, el cual fomentaba la consolidación de 2 grandes bloques políticos, donde las coaliciones políticas salían favorecidas por un bipartidismo. En este caso coaliciones lideradas por la izquierda (DC-PPD-PS) y la derecha (RN-UDI).* 
+Fuente 5: https://es.wikipedia.org/wiki/Anexo:Resultados_de_las_elecciones_parlamentarias_de_Chile_de_2005
 
-*En 2015 el sistema electoral cambió a uno proporcional en las elecciones municipales de ese año y, en 2017 finalmente se dio el cambio para las elecciones parlamentarias en donde uno de los objetivos de este nuevo sistema era no generar dos coaliciones políticas grandes que generarán una sobrerrepresentación política, todo con el fin de darle cabida a partidos políticos no tradicionales como el Frente Amplio y Evópoli.*
+Fuente 6: https://es.wikipedia.org/wiki/Anexo:Resultados_de_las_elecciones_parlamentarias_de_Chile_de_2009
 
-*Nuestra propuesta tiene como objetivo, determinar de qué manera ha funcionado el sistema proporcional en las elecciones parlamentarias de Chile, a la hora de generar mayor representatividad en el Congreso. Esto, en contraste con el sistema binominal implementado anteriormente.* 
+Fuente 7: https://es.wikipedia.org/wiki/Anexo:Resultados_de_las_elecciones_parlamentarias_de_Chile_de_2013
 
-*Con estos antecedentes, queremos analizar de qué manera el sistema proporcional en votaciones parlamentarias chilenas ha generado, lo que creemos que es, un aumento en la fragmentación política del país, quedando en segundo plano la nueva representatividad como una oportunidad de diversificar el medio. En el caso contrario, ver si de alguna forma se han mantenido los dos bloques grandes de izquierda o derecha.*
+Fuente 8: https://es.wikipedia.org/wiki/Anexo:Resultados_de_las_elecciones_parlamentarias_de_Chile_de_2017
+Fuente 9: https://es.wikipedia.org/wiki/Anexo:Resultados_de_las_elecciones_parlamentarias_de_Chile_de_2021
+
+Fuente 10: https://es.wikipedia.org/wiki/Anexo:Resultados_de_las_elecciones_parlamentarias_de_Chile_de_2025#Elecci%C3%B3n_de_diputados
+
+
+## Ejemplos sobre preguntas que se pueden responder con su base de datos limpia, mínimo tres (3). 
+
+¿A qué partidos políticos pertenecen los candidatos que más veces han sido electos?
+
+¿Cuántos partidos políticos se han incorporado al sistema electoral desde la implementación del sistema proporcional (2017)?
+
+¿Qué partidos políticos nuevos se pueden considerar dominantes en las últimas elecciones (2017-2021-2025)?
