@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/vega@6.2.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@6.4.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@7.1.0"></script>
+</head>
+<body>
+  <div id="vis"/>
+  <script>
+    const spec = {
+  "config": {"view": {"continuousWidth": 300, "continuousHeight": 300}},
+  "data": {"name": "data-f157fab6eaa7ed935f9a6f2c4913a8b6"},
+  "mark": {"type": "bar"},
+  "encoding": {
+    "color": {"field": "Pacto", "title": "Pacto Electoral", "type": "nominal"},
+    "tooltip": [
+      {"field": "Año", "type": "quantitative"},
+      {"field": "Pacto", "type": "nominal"},
+      {"field": "Votos", "type": "quantitative"}
+    ],
+    "x": {"field": "Año", "title": "Año", "type": "ordinal"},
+    "y": {
+      "field": "Votos",
+      "title": "Total Votos del Pacto",
+      "type": "quantitative"
+    }
+  },
+  "title": "Pactos más votados por Año",
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+  "datasets": {
+    "data-f157fab6eaa7ed935f9a6f2c4913a8b6": [
+      {"Año": 1989, "Pacto": "Alianza de Centro", "Votos": 1742030},
+      {"Año": 1989, "Pacto": "Alianza de centro", "Votos": 37390},
+      {
+        "Año": 1989,
+        "Pacto": "Concertación por la Democracia",
+        "Votos": 34997100
+      },
+      {"Año": 1989, "Pacto": "Democracia y Progreso", "Votos": 23235810},
+      {"Año": 1989, "Pacto": "Independiente", "Votos": 1279410},
+      {"Año": 1989, "Pacto": "Liberal-Socialista Chileno", "Votos": 2061380},
+      {"Año": 1989, "Pacto": "Partido Nacional", "Votos": 538190},
+      {"Año": 1989, "Pacto": "Partido del Sur", "Votos": 473870},
+      {"Año": 1989, "Pacto": "Unidad para la Democracia", "Votos": 3606010},
+      {
+        "Año": 1993,
+        "Pacto": "Alternativa Democrática de Izquierda",
+        "Votos": 3500820
+      },
+      {
+        "Año": 1993,
+        "Pacto": "Alternativa Demócratica de Izquierda",
+        "Votos": 33250
+      },
+      {
+        "Año": 1993,
+        "Pacto": "Alternativa democrática de Izquierda",
+        "Votos": 806860
+      },
+      {
+        "Año": 1993,
+        "Pacto": "Concertación por la Democracia",
+        "Votos": 37332760
+      },
+      {"Año": 1993, "Pacto": "Democracia y Progreso", "Votos": 1239200},
+      {"Año": 1993, "Pacto": "Independiente", "Votos": 56940},
+      {"Año": 1993, "Pacto": "Independientes", "Votos": 14100},
+      {"Año": 1993, "Pacto": "La Nueva Izquierda", "Votos": 961950},
+      {"Año": 1993, "Pacto": "Unión por el Progreso", "Votos": 2099820},
+      {
+        "Año": 1993,
+        "Pacto": "Unión por el Progreso de Chile",
+        "Votos": 21378870
+      },
+      {"Año": 1997, "Pacto": "Alianza por Chile", "Votos": 222840},
+      {"Año": 1997, "Pacto": "Chile 2000", "Votos": 1196730},
+      {
+        "Año": 1997,
+        "Pacto": "Concertación por la Democracia",
+        "Votos": 29277020
+      },
+      {"Año": 1997, "Pacto": "Humanista", "Votos": 9320},
+      {"Año": 1997, "Pacto": "Independiente", "Votos": 400220},
+      {"Año": 1997, "Pacto": "La Izquierda", "Votos": 4383970},
+      {"Año": 1997, "Pacto": "Partido Humanista", "Votos": 1676650},
+      {"Año": 1997, "Pacto": "Unión Por Chile", "Votos": 2751360},
+      {"Año": 1997, "Pacto": "Unión por Chile", "Votos": 18043320},
+      {"Año": 2001, "Pacto": "Alianza", "Votos": 323030},
+      {"Año": 2001, "Pacto": "Alianza por Chile", "Votos": 26878920},
+      {
+        "Año": 2001,
+        "Pacto": "Concertación por la Democracia",
+        "Votos": 29429890
+      },
+      {"Año": 2001, "Pacto": "Independiente", "Votos": 779920},
+      {"Año": 2001, "Pacto": "Independientes", "Votos": 70780},
+      {"Año": 2001, "Pacto": "Partido Comunista", "Votos": 3206880},
+      {"Año": 2001, "Pacto": "Partido Humanista", "Votos": 690500},
+      {"Año": 2001, "Pacto": "Partido Liberal", "Votos": 34750},
+      {"Año": 2001, "Pacto": "Partidos Humanista", "Votos": 6420},
+      {"Año": 2005, "Pacto": "Alianza", "Votos": 25563860},
+      {"Año": 2005, "Pacto": "Concertación Democrática", "Votos": 34172470},
+      {"Año": 2005, "Pacto": "Fuerza Regional Independiente", "Votos": 772130},
+      {"Año": 2005, "Pacto": "Independiente", "Votos": 623870},
+      {"Año": 2005, "Pacto": "Juntos Podemos", "Votos": 67100},
+      {"Año": 2005, "Pacto": "Juntos Podemos Más", "Votos": 4819080},
+      {"Año": 2009, "Pacto": "Chile Limpio Vota Feliz", "Votos": 274680},
+      {"Año": 2009, "Pacto": "Chile Limpio Vote Feliz", "Votos": 204340},
+      {"Año": 2009, "Pacto": "Chile Limpio, Vote Feliz", "Votos": 235280},
+      {"Año": 2009, "Pacto": "Chile Limpio. Vote Feliz", "Votos": 2853700},
+      {"Año": 2009, "Pacto": "Coalición por el Cambio", "Votos": 28746740},
+      {
+        "Año": 2009,
+        "Pacto": "Concertación y Juntos Podemos",
+        "Votos": 26077940
+      },
+      {"Año": 2009, "Pacto": "Concertación y Juntos podemos", "Votos": 3312990},
+      {"Año": 2009, "Pacto": "Independiente", "Votos": 1365200},
+      {"Año": 2009, "Pacto": "Independientes", "Votos": 108590},
+      {"Año": 2009, "Pacto": "Nueva Mayoría para Chile", "Votos": 3026270},
+      {"Año": 2013, "Pacto": "Alianza", "Votos": 22538010},
+      {"Año": 2013, "Pacto": "Independiente", "Votos": 2066250},
+      {"Año": 2013, "Pacto": "Nueva Constitución para Chile", "Votos": 1729030},
+      {"Año": 2013, "Pacto": "Nueva Mayoría", "Votos": 29679180},
+      {"Año": 2013, "Pacto": "PRI", "Votos": 34040},
+      {"Año": 2013, "Pacto": "Partido Humanista", "Votos": 2088990},
+      {
+        "Año": 2013,
+        "Pacto": "Partido Regionalista de los Independientes",
+        "Votos": 689040
+      },
+      {"Año": 2013, "Pacto": "Si tú quieres, Chile cambia", "Votos": 3378130},
+      {"Año": 2017, "Pacto": "B. Por Todo Chile", "Votos": 2342700},
+      {"Año": 2017, "Pacto": "Candidatura independiente", "Votos": 1044270},
+      {
+        "Año": 2017,
+        "Pacto": "D. Partido de Trabajadores Revolucionarios",
+        "Votos": 46610
+      },
+      {"Año": 2017, "Pacto": "G. Frente Amplio", "Votos": 9883790},
+      {"Año": 2017, "Pacto": "H. Sumemos", "Votos": 940840},
+      {
+        "Año": 2017,
+        "Pacto": "K. Coalición Regionalista Verde",
+        "Votos": 1151790
+      },
+      {"Año": 2017, "Pacto": "M. Unión Patriótica", "Votos": 510580},
+      {"Año": 2017, "Pacto": "N. La Fuerza de la Mayoría", "Votos": 14431030},
+      {"Año": 2017, "Pacto": "O. Convergencia Democrática", "Votos": 6405460},
+      {"Año": 2017, "Pacto": "P. Chile Vamos", "Votos": 23212490},
+      {"Año": 2021, "Pacto": "AA. Chile Podemos +", "Votos": 1468747},
+      {"Año": 2021, "Pacto": "AB. Partido de la Gente", "Votos": 527684},
+      {
+        "Año": 2021,
+        "Pacto": "AE. Partido de Trabajadores Revolucionarios",
+        "Votos": 190473
+      },
+      {"Año": 2021, "Pacto": "AH. Nuevo Pacto Social", "Votos": 1055567},
+      {"Año": 2021, "Pacto": "AL. Partido Ecologista Verde", "Votos": 313471},
+      {"Año": 2021, "Pacto": "AM. Union Patriotica", "Votos": 75928},
+      {"Año": 2021, "Pacto": "AM. Unión Patriótica", "Votos": 181608},
+      {"Año": 2021, "Pacto": "AN. Dignidad Ahora", "Votos": 606818},
+      {"Año": 2021, "Pacto": "AP. Frente Social Cristiano", "Votos": 745904},
+      {"Año": 2021, "Pacto": "AR. Apruebo Dignidad", "Votos": 1307550},
+      {"Año": 2021, "Pacto": "AT. Nuevo Tiempo", "Votos": 18886},
+      {"Año": 2021, "Pacto": "AW. Independientes Unidos", "Votos": 336494},
+      {"Año": 2021, "Pacto": "AY. Partido Progresista", "Votos": 2697},
+      {
+        "Año": 2021,
+        "Pacto": "AY. Partido Progresista de Chile",
+        "Votos": 110289
+      },
+      {"Año": 2021, "Pacto": "Candidatura Independiente", "Votos": 90942},
+      {"Año": 2025, "Pacto": " CHILE GRANDE Y UNIDO", "Votos": 359426},
+      {"Año": 2025, "Pacto": "CAMBIO POR CHILE", "Votos": 8564236},
+      {"Año": 2025, "Pacto": "CHILE GRANDE Y UNIDO", "Votos": 7618884},
+      {"Año": 2025, "Pacto": "Candidatura independiente", "Votos": 145940},
+      {
+        "Año": 2025,
+        "Pacto": "IZQUIERDA ECOLOGISTA POPULAR ANIMALISTA Y HUMANISTA",
+        "Votos": 836557
+      },
+      {"Año": 2025, "Pacto": "MOVIMIENTO AMARILLOS POR CHILE", "Votos": 203171},
+      {"Año": 2025, "Pacto": "PARTIDO ALIANZA VERDE POPULAR", "Votos": 134406},
+      {"Año": 2025, "Pacto": "PARTIDO ALIANZA VERDE POPULAR ", "Votos": 161855},
+      {"Año": 2025, "Pacto": "PARTIDO DE LA GENTE", "Votos": 4230565},
+      {
+        "Año": 2025,
+        "Pacto": "PARTIDO DE TRABAJADORES REVOLUCIONARIOS",
+        "Votos": 66622
+      },
+      {"Año": 2025, "Pacto": "PARTIDO ECOLOGISTA VERDE", "Votos": 110640},
+      {"Año": 2025, "Pacto": "PARTIDO ECOLOGISTA VERDE ", "Votos": 147070},
+      {"Año": 2025, "Pacto": "POPULAR", "Votos": 76366},
+      {"Año": 2025, "Pacto": "Partido Ecologista Verde", "Votos": 401770},
+      {"Año": 2025, "Pacto": "UNIDAD POR CHILE", "Votos": 9281883},
+      {
+        "Año": 2025,
+        "Pacto": "VERDES, REGIONALISTAS Y HUMANISTAS",
+        "Votos": 2178088
+      }
+    ]
+  }
+};
+    vegaEmbed("#vis", spec, {mode: "vega-lite"}).then(console.log).catch(console.warn);
+  </script>
+</body>
+</html>
