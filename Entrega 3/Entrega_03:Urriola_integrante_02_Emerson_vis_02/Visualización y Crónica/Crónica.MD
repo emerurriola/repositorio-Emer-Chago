@@ -1,0 +1,17 @@
+# Un breve recorrido por las elecciones Parlamentarias Chilenas desde el retorno a la democracia: 1989-2025
+
+**Por: Emerson Urriola**
+
+*A finales de los años ochenta, con la caída del régimen militar de Augusto Pinochet, los actores políticos chilenos afrontaron una gran misión: reconstruir los partidos políticos y reorganizar las coaliciones o pactos electorales que agruparían a estas fuerzas tras 17 años de dictadura. En aquel escenario surgieron dos grandes bloques políticos que lideraron las elecciones de 1989.*
+
+*Por un lado, quienes fueron opositores al régimen se agruparon bajo la coalición de “Concertación de Partidos por la Democracia”. Este bloque estaba conformado por la Democracia Cristiana (DC); el Partido Por la Democracia (PPD); el Partido Socialista (PS); el Partido Radical y otro grupo de partidos políticos más pequeños como el Mapu y la Izquierda Cristina. Esta coalición logró obtener en su primera elección 67 de 120 escaños en el Congreso Nacional para la cámara baja.*
+
+*Mientras que su competencia más cercana estaba en el pacto “Democracia y Progreso” en la cual se encontraban los Partidos Políticos RN y la UDI, lo cuales fueron el segundo pacto más votado con 48 de los 120 escaños para la cámara baja.*
+
+*Estos pactos se apoderaron del escenario político durante las décadas de 1990 y 2000. en las elecciones de 1993 la Concertación aumentó su participación a 70 escaños en la Cámara Baja, mientras que la “Unión por el Progreso de Chile” (ex “Democracia y Progreso”) obtuvo los otros escaños (50). Este escenario dejó prácticamente fuera del Congreso a cualquier partido que no formara parte de una de estas dos grandes coaliciones políticas.*
+
+*La lógica de este bipartidismo tan potente o de “dos grandes coaliciones” se mantuvo durante siete elecciones Parlamentarias consecutivas (1989-2013), aunque con pequeñas variaciones de resultados. Por ejemplo, en las elecciones de 1997, dos escaños fueron obtenidos por candidatos fuera de pactos y otros dos por el pacto “Chile 2000”, el cual solo participó en esos comicios.*
+
+*Sin embargo, esta estructura de los dos grandes bloques comenzó a cambiar con la implementación del sistema proporcional en las elecciones Parlamentarias de 2017. El cambio redujo el número de distritos de 60 a 28 y los escaños aumentaron de 120 a 150. A diferencia de las elecciones pasadas, donde solo dos pactos lograban una representación significativa, en 2017 siete pactos lograron llegar a la cámara de Diputados.* 
+
+*Es en ese contexto que el Frente Amplio (antes coalición; ahora partido político) irrumpió con espectacularidad en la Cámara Baja en 2017, obteniendo 20 escaños y fragmentando las fuerzas de la izquierda chilena hasta ese momento. Con el paso de los años, el escenario político se ha ido transformando, dando paso a una mayor fragmentación de las fuerzas políticas y de los pactos electorales. Desde entonces, ya no existen únicamente dos grandes coaliciones predominantes, sino múltiples fuerzas que compiten por obtener escaños en el Congreso Nacional. Por ejemplo, el PDG en 2021 y 2025 y, el Partido Social Cristiano en 2025. Esto es solo una pequeña muestra de cómo ha sido la evolución de la Cámara de Diputados.*   
