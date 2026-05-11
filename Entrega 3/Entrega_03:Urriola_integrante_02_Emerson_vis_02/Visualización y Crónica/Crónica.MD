@@ -8,9 +8,13 @@
 
 *Mientras que su competencia más cercana estaba en el pacto “Democracia y Progreso” en la cual se encontraban los Partidos Políticos RN y la UDI, lo cuales fueron el segundo pacto más votado con 48 de los 120 escaños para la cámara baja.*
 
+## El escenario político 
+
 *Estos pactos se apoderaron del escenario político durante las décadas de 1990 y 2000. en las elecciones de 1993 la Concertación aumentó su participación a 70 escaños en la Cámara Baja, mientras que la “Unión por el Progreso de Chile” (ex “Democracia y Progreso”) obtuvo los otros escaños (50). Este escenario dejó prácticamente fuera del Congreso a cualquier partido que no formara parte de una de estas dos grandes coaliciones políticas.*
 
 *La lógica de este bipartidismo tan potente o de “dos grandes coaliciones” se mantuvo durante siete elecciones Parlamentarias consecutivas (1989-2013), aunque con pequeñas variaciones de resultados. Por ejemplo, en las elecciones de 1997, dos escaños fueron obtenidos por candidatos fuera de pactos y otros dos por el pacto “Chile 2000”, el cual solo participó en esos comicios.*
+
+## La irrupción del Frente Amplio en el Congreso
 
 *Sin embargo, esta estructura de los dos grandes bloques comenzó a cambiar con la implementación del sistema proporcional en las elecciones Parlamentarias de 2017. El cambio redujo el número de distritos de 60 a 28 y los escaños aumentaron de 120 a 150. A diferencia de las elecciones pasadas, donde solo dos pactos lograban una representación significativa, en 2017 siete pactos lograron llegar a la cámara de Diputados.* 
 

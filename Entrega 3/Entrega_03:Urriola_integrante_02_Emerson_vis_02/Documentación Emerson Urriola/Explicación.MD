@@ -11,9 +11,15 @@
 ### Ejemplos sobre preguntas que puede responder su visualización de datos final (o el conjunto de visualizaciones que crearon)
 
 *¿A simple vista se puede ver un aumento en las coaliciones políticas a partir del año 2017 con el inicio del sistema proporcional?*
+
 *¿Cuántas coaliciones hay por cada elección?, ¿Existe un aumento significativo con el cambio de sistema electoral?*
+
 *¿Cuáles son las coaliciones más predominantes durante la década de los 90 y 2000?*
+
 *¿Se puede observar una tendencia a partir de las diferentes elecciones parlamentarias?*
+
 *¿Existen coaliciones más pequeñas o emergentes que triunfen en las elecciones parlamentarias antes de 2017?*
+
 *¿Qué resultados se pueden leer observando estos gráficos?*
+
 *¿Existe una diversidad política más amplia en el Congreso a partir del uso del sistema proporcional?*
