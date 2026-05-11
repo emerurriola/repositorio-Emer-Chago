@@ -6,13 +6,13 @@
 
 ## Variables incorporadas
 
-*Distrito Electoral: Cuantitativa, nominal
-Nombre del Candidato: Cualitativa, nominal
-Pacto (o coalición): Cualitativa, nominal
-Partido Político del Candidato: Cualitativa, nominal
-Cantidad total de Votos por Candidato: Cuantitativa
-Porcentaje de votos obtenidos: Cuantitativa
-Resultado: Cualitativa, nominal
+*Distrito Electoral: Cuantitativa, nominal;
+Nombre del Candidato: Cualitativa, nominal;
+Pacto (o coalición): Cualitativa, nominal;
+Partido Político del Candidato: Cualitativa, nominal;
+Cantidad total de Votos por Candidato: Cuantitativa;
+Porcentaje de votos obtenidos: Cuantitativa;
+Resultado: Cualitativa, nominal;
 Año de la elección: Cuantitativa, por intervalo*
 
 ## Observaciones
