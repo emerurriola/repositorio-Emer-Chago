@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Representar o Fragmentar</title>
+    <title>Representar o Fragmentar | Cámara Baja 1989-2025</title>
 
     <link rel="stylesheet" href="style.css">
 
@@ -18,36 +18,32 @@
 
 <body>
 
-<!-- ================= PORTADA ================= -->
+<!-- ========================================= -->
+<!-- HERO -->
+<!-- ========================================= -->
 
 <header class="hero">
 
-    <img src="https://www.latercera.com/nacional/noticia/la-lucha-por-el-congreso-en-cifras/" class="hero-img">
-
-    <div class="overlay"></div>
-
     <div class="hero-content">
 
+        <img
+            src="Camara Baja.png"
+            alt="Representar o Fragmentar"
+            class="hero-logo">
+
         <p class="categoria">
-            WEBSTORY · POLÍTICA
-        </p>
 
-        <h1>
-
-            REPRESENTAR
-
-            <span>O</span>
-
-            FRAGMENTAR
-
-        </h1>
-
-        <p class="hero-text">
-
-            Un recorrido interactivo por la evolución de las elecciones
-            parlamentarias chilenas entre 1989 y 2025.
+            WEBSTORY · POLÍTICA CHILENA · 1989–2025
 
         </p>
+
+        <h2>
+
+            Cómo la Cámara de Diputadas y Diputados pasó
+            de dos grandes coaliciones a un escenario
+            crecientemente fragmentado.
+
+        </h2>
 
         <button id="start-btn">
 
@@ -59,62 +55,98 @@
 
 </header>
 
-<!-- ================= PREGUNTA ================= -->
+<!-- ========================================= -->
+<!-- INTRODUCCIÓN -->
+<!-- ========================================= -->
 
-<section class="question">
+<section class="intro">
 
     <h2>
 
-        ¿Más partidos significan más democracia?
+        Un breve recorrido por las elecciones parlamentarias chilenas
 
     </h2>
 
     <p>
 
-        Desde el retorno a la democracia, el Congreso chileno ha cambiado
-        profundamente. La reforma electoral de 2017 transformó la forma
-        en que se distribuyen los escaños y modificó el mapa político.
+        Desde el retorno a la democracia, la representación política en
+        Chile ha experimentado profundas transformaciones. Lo que comenzó
+        como un sistema dominado por dos grandes coaliciones evolucionó,
+        tras la reforma electoral de 2017, hacia un Congreso con múltiples
+        fuerzas políticas compitiendo por la representación ciudadana.
 
     </p>
 
-    <div class="options">
-
-        <button class="option">
-
-            Más representación
-
-        </button>
-
-        <button class="option">
-
-            Más gobernabilidad
-
-        </button>
-
-    </div>
-
 </section>
 
-<!-- ================= CAPÍTULO 1 ================= -->
+<!-- ========================================= -->
+<!-- ACTO I -->
+<!-- ========================================= -->
 
-<section class="chapter">
+<section class="chapter chapter-1989">
+
+    <span class="year-title">
+
+        1989
+
+    </span>
 
     <h2>
 
-        1989–2013
+        Reconstruir la democracia
 
     </h2>
 
-    <h3>
+    <p>
 
-        El predominio de dos grandes bloques
+        A finales de los años ochenta, con la caída del régimen militar de
+        Augusto Pinochet, los actores políticos chilenos afrontaron una
+        gran misión: reconstruir los partidos políticos y reorganizar las
+        coaliciones que agruparían a estas fuerzas tras 17 años de
+        dictadura.
 
-    </h3>
+    </p>
 
     <p>
 
-        Durante siete elecciones parlamentarias el sistema binominal
-        favoreció la estabilidad política mediante dos grandes coaliciones.
+        En aquel escenario surgieron dos grandes bloques políticos que
+        lideraron las elecciones parlamentarias de 1989.
+
+    </p>
+
+</section>
+
+<!-- ========================================= -->
+<!-- ACTO II -->
+<!-- ========================================= -->
+
+<section class="chapter chapter-coaliciones">
+
+    <span class="year-title">
+
+        1989–2013
+
+    </span>
+
+    <h2>
+
+        El predominio de dos grandes coaliciones
+
+    </h2>
+
+    <p>
+
+        Por un lado, quienes fueron opositores al régimen se agruparon bajo
+        la Concertación de Partidos por la Democracia. La coalición obtuvo
+        67 de los 120 escaños de la Cámara Baja en las primeras elecciones
+        democráticas.
+
+    </p>
+
+    <p>
+
+        Su principal competidor fue Democracia y Progreso, conformado por
+        Renovación Nacional y la UDI, que alcanzó 48 escaños.
 
     </p>
 
@@ -122,13 +154,13 @@
 
         <div class="concertacion bar">
 
-            Concertación
+            Concertación · 67 escaños
 
         </div>
 
         <div class="derecha bar">
 
-            Alianza
+            Democracia y Progreso · 48 escaños
 
         </div>
 
@@ -136,83 +168,47 @@
 
 </section>
 
-<!-- ================= CAPÍTULO 2 ================= -->
+<!-- ========================================= -->
+<!-- ACTO III -->
+<!-- ========================================= -->
 
-<section class="chapter">
+<section class="chapter chapter-bipartidismo">
 
-    <h2>
+    <span class="year-title">
 
-        2017
+        1993–2013
 
-    </h2>
-
-    <h3>
-
-        La reforma electoral
-
-    </h3>
-
-    <p>
-
-        El sistema proporcional permitió el ingreso de nuevos partidos y
-        aumentó la diversidad política dentro del Congreso.
-
-    </p>
-
-    <button id="fragment-btn">
-
-        Fragmentar el Congreso
-
-    </button>
-
-    <div id="fragment-container">
-
-        <div class="fragment"></div>
-        <div class="fragment"></div>
-
-    </div>
-
-</section>
-
-<!-- ================= CAPÍTULO 3 ================= -->
-
-<section class="chapter">
+    </span>
 
     <h2>
 
-        2025
+        El escenario político de los noventa y los dos mil
 
     </h2>
 
-    <h3>
-
-        Un Congreso más fragmentado
-
-    </h3>
-
     <p>
 
-        Hoy existen muchos más partidos políticos representados en la
-        Cámara de Diputadas y Diputados que hace tres décadas.
+        Durante las décadas de 1990 y 2000, ambas coaliciones dominaron el
+        Congreso Nacional. En 1993 la Concertación aumentó su presencia a
+        70 escaños, dejando escaso espacio para fuerzas ajenas a estos dos
+        grandes pactos.
 
     </p>
 
-    <div class="grid-partidos">
+    <p>
 
-        <div>RN</div>
-        <div>UDI</div>
-        <div>PS</div>
-        <div>FA</div>
-        <div>PC</div>
-        <div>DC</div>
-        <div>Republicanos</div>
-        <div>PDG</div>
+        La lógica bipartidista se mantuvo durante siete elecciones
+        parlamentarias consecutivas, aunque con pequeñas excepciones como
+        el pacto Chile 2000 o candidaturas independientes que lograron
+        representación puntual.
 
-    </div>
+    </p>
 
 </section>
 
-<!-- ================= LÍNEA DE TIEMPO ================= -->
+<!-- ========================================= -->
+<!-- TIMELINE -->
+<!-- ========================================= -->
 
 <section class="timeline">
 
@@ -224,75 +220,64 @@
 
     <div class="line">
 
-        <div class="year">1989</div>
-
+        <div class="year selected">1989</div>
         <div class="year">1993</div>
-
         <div class="year">1997</div>
-
         <div class="year">2001</div>
-
         <div class="year">2005</div>
-
         <div class="year">2009</div>
-
         <div class="year">2013</div>
-
         <div class="year highlight">2017</div>
-
         <div class="year">2021</div>
-
         <div class="year">2025</div>
 
     </div>
 
 </section>
 
-<!-- ================= DATOS ================= -->
+<!-- ========================================= -->
+<!-- TRANSICIÓN -->
+<!-- ========================================= -->
 
-<section class="stats">
+<section class="break-section">
+
+    <div class="break-line"></div>
 
     <h2>
 
-        Algunos datos
+        2017
 
     </h2>
 
-    <div class="cards">
+    <h3>
 
-        <div class="card">
+        La línea que lo cambió todo
 
-            <h3>1989</h3>
+    </h3>
 
-            <p>
+    <div class="numbers">
 
-                Predominio de dos grandes coaliciones.
+        <div>
 
-            </p>
+            <span>60 → 28</span>
 
-        </div>
-
-        <div class="card">
-
-            <h3>2017</h3>
-
-            <p>
-
-                Se implementa el sistema proporcional.
-
-            </p>
+            <p>Distritos electorales</p>
 
         </div>
 
-        <div class="card">
+        <div>
 
-            <h3>2025</h3>
+            <span>120 → 150</span>
 
-            <p>
+            <p>Diputadas y diputados</p>
 
-                Mayor diversidad de partidos en el Congreso.
+        </div>
 
-            </p>
+        <div>
+
+            <span>2 → 7</span>
+
+            <p>Pactos con representación</p>
 
         </div>
 
@@ -300,33 +285,142 @@
 
 </section>
 
-<!-- ================= FINAL ================= -->
+<!-- ========================================= -->
+<!-- ACTO IV -->
+<!-- ========================================= -->
 
-<footer>
+<section class="chapter chapter-2017">
 
     <h2>
 
-        REPRESENTAR O FRAGMENTAR
+        La irrupción del Frente Amplio
 
     </h2>
 
     <p>
 
-        La reforma electoral abrió las puertas a una representación
-        política más diversa. Sin embargo, también incrementó la
-        fragmentación del Congreso.
+        La implementación del sistema proporcional modificó la distribución
+        del poder político dentro del Congreso. Por primera vez, siete
+        pactos lograron representación significativa en la Cámara de
+        Diputados.
+
+    </p>
+
+    <p>
+
+        En ese contexto, el Frente Amplio irrumpió en la política nacional
+        obteniendo 20 escaños y alterando el equilibrio histórico de la
+        izquierda chilena.
+
+    </p>
+
+</section>
+
+<!-- ========================================= -->
+<!-- FRAGMENTACIÓN -->
+<!-- ========================================= -->
+
+<section class="fragmentacion">
+
+    <h2>
+
+        Del bipartidismo a la fragmentación
+
+    </h2>
+
+    <button id="fragment-btn">
+
+        Visualizar fragmentación
+
+    </button>
+
+    <div id="fragment-container">
+
+        <div class="fragment"></div>
+
+    </div>
+
+</section>
+
+<!-- ========================================= -->
+<!-- ACTO V -->
+<!-- ========================================= -->
+
+<section class="chapter chapter-actualidad">
+
+    <span class="year-title">
+
+        2021–2025
+
+    </span>
+
+    <h2>
+
+        Un Congreso más diverso
+
+    </h2>
+
+    <p>
+
+        Desde entonces, ya no existen únicamente dos grandes coaliciones
+        predominantes. Nuevas fuerzas como el Partido de la Gente o el
+        Partido Social Cristiano han ingresado a la disputa parlamentaria,
+        transformando la composición de la Cámara Baja.
+
+    </p>
+
+    <p>
+
+        La representación política es hoy más diversa, pero también más
+        fragmentada. El equilibrio entre ambas dimensiones continúa siendo
+        uno de los principales desafíos del sistema político chileno.
+
+    </p>
+
+    <div class="grid-partidos">
+
+        <div>RN</div>
+        <div>UDI</div>
+        <div>PS</div>
+        <div>FA</div>
+        <div>PC</div>
+        <div>DC</div>
+        <div>PDG</div>
+        <div>PSC</div>
+
+    </div>
+
+</section>
+
+<!-- ========================================= -->
+<!-- CIERRE -->
+<!-- ========================================= -->
+
+<footer>
+
+    <h2>
+
+        ¿Representar o fragmentar?
+
+    </h2>
+
+    <p>
+
+        El aumento de la representación política ha permitido la llegada de
+        nuevas voces al Congreso Nacional. Sin embargo, también ha
+        complejizado la construcción de acuerdos y la gobernabilidad del
+        sistema político chileno.
 
     </p>
 
     <h3>
 
-        ¿La diversidad fortalece la democracia o dificulta la gobernabilidad?
+        Una misma transformación puede interpretarse desde ambas
+        perspectivas.
 
     </h3>
 
-    <br>
-
-    <p>
+    <p class="creditos">
 
         Proyecto realizado por Santiago Alcázar y Emerson Urriola.
 

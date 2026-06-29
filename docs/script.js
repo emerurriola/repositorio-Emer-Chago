@@ -1,21 +1,34 @@
-//===============================
+// ======================================================
+// REPRESENTAR O FRAGMENTAR
+// SCRIPT V2
+// ======================================================
+
+
+// ===========================================
 // BOTÓN COMENZAR
-//===============================
+// ===========================================
 
 const startButton = document.getElementById("start-btn");
 
-startButton.addEventListener("click", () => {
+if(startButton){
 
-    document.querySelector(".question").scrollIntoView({
-        behavior: "smooth"
+    startButton.addEventListener("click",()=>{
+
+        document.querySelector(".intro")
+        .scrollIntoView({
+
+            behavior:"smooth"
+
+        });
+
     });
 
-});
+}
 
 
-//===============================
-// ANIMACIÓN DE APARICIÓN
-//===============================
+// ===========================================
+// APARICIÓN DE SECCIONES
+// ===========================================
 
 const observer = new IntersectionObserver((entries)=>{
 
@@ -30,10 +43,12 @@ const observer = new IntersectionObserver((entries)=>{
     });
 
 },{
-    threshold:0.25
+    threshold:0.2
 });
 
-document.querySelectorAll("section, footer").forEach(section=>{
+
+document.querySelectorAll("section, footer")
+.forEach(section=>{
 
     section.classList.add("hidden");
 
@@ -42,36 +57,34 @@ document.querySelectorAll("section, footer").forEach(section=>{
 });
 
 
-//===============================
-// ANIMACIÓN DE BARRAS
-//===============================
-
-const barObserver = new IntersectionObserver((entries)=>{
-
-    entries.forEach(entry=>{
-
-        if(entry.isIntersecting){
-
-            const bars = document.querySelectorAll(".bar");
-
-            bars[0].style.width = "58%";
-            bars[1].style.width = "42%";
-
-        }
-
-    });
-
-},{
-    threshold:0.4
-});
+// ===========================================
+// ANIMACIÓN DE ESCAÑOS 1989
+// ===========================================
 
 const seats = document.querySelector(".seats");
 
 if(seats){
 
-    document.querySelectorAll(".bar").forEach(bar=>{
+    const barObserver =
+    new IntersectionObserver((entries)=>{
 
-        bar.style.width="0";
+        entries.forEach(entry=>{
+
+            if(entry.isIntersecting){
+
+                const bars =
+                document.querySelectorAll(".bar");
+
+                bars[0].style.width = "58%";
+                bars[1].style.width = "42%";
+
+            }
+
+        });
+
+    },{
+
+        threshold:0.4
 
     });
 
@@ -80,75 +93,65 @@ if(seats){
 }
 
 
-//===============================
+// ===========================================
 // FRAGMENTACIÓN DEL CONGRESO
-//===============================
+// ===========================================
 
-const fragmentButton = document.getElementById("fragment-btn");
+const fragmentButton =
+document.getElementById("fragment-btn");
 
-fragmentButton.addEventListener("click",()=>{
+if(fragmentButton){
 
-    const container =
-    document.getElementById("fragment-container");
+    fragmentButton.addEventListener("click",()=>{
 
-    container.innerHTML="";
+        const container =
+        document.getElementById("fragment-container");
 
-    const colores=[
+        container.innerHTML = "";
 
-        "#C1121F",
-        "#0D3B66",
-        "#F4D35E",
-        "#2A9D8F",
-        "#8E44AD",
-        "#F77F00",
-        "#5AA9E6",
-        "#495057"
+        const colores = [
 
-    ];
+            "#EA3747", // rojo
+            "#15254B", // azul
+            "#4A4B70", // morado
+            "#E89B57", // naranjo
+            "#8E44AD",
+            "#2A9D8F",
+            "#495057",
+            "#C77DFF",
+            "#F4A261",
+            "#577590"
 
-    colores.forEach(color=>{
+        ];
 
-        const bloque=document.createElement("div");
+        colores.forEach((color,index)=>{
 
-        bloque.classList.add("mini-block");
+            setTimeout(()=>{
 
-        bloque.style.background=color;
+                const bloque =
+                document.createElement("div");
 
-        container.appendChild(bloque);
+                bloque.classList.add("mini-block");
 
-    });
+                bloque.style.background = color;
 
-});
+                container.appendChild(bloque);
 
-
-//===============================
-// OPCIONES
-//===============================
-
-const options=document.querySelectorAll(".option");
-
-options.forEach(button=>{
-
-    button.addEventListener("click",()=>{
-
-        options.forEach(btn=>{
-
-            btn.classList.remove("active");
+            }, index * 120);
 
         });
 
-        button.classList.add("active");
-
     });
 
-});
+}
 
 
-//===============================
-// LÍNEA DE TIEMPO
-//===============================
+// ===========================================
+// TIMELINE INTERACTIVA
+// ===========================================
 
-const years=document.querySelectorAll(".year");
+const years =
+document.querySelectorAll(".timeline .year");
 
 years.forEach(year=>{
 
@@ -167,16 +170,158 @@ years.forEach(year=>{
 });
 
 
-//===============================
-// EFECTO PARALLAX
-//===============================
+// ===========================================
+// EFECTO DE APARICIÓN EN PARTIDOS
+// ===========================================
 
-window.addEventListener("scroll",()=>{
+const partidos =
+document.querySelectorAll(".grid-partidos div");
 
-    const hero=document.querySelector(".hero-img");
+const partidosObserver =
+new IntersectionObserver((entries)=>{
 
-    let scroll=window.pageYOffset;
+    entries.forEach(entry=>{
 
-    hero.style.transform=`translateY(${scroll*0.3}px)`;
+        if(entry.isIntersecting){
+
+            const index =
+            [...partidos].indexOf(entry.target);
+
+            setTimeout(()=>{
+
+                entry.target.style.opacity = "1";
+
+                entry.target.style.transform =
+                "translateY(0)";
+
+            }, index * 120);
+
+        }
+
+    });
+
+},{
+    threshold:0.3
+});
+
+
+partidos.forEach(partido=>{
+
+    partido.style.opacity = "0";
+
+    partido.style.transform =
+    "translateY(40px)";
+
+    partido.style.transition =
+    "all .8s ease";
+
+    partidosObserver.observe(partido);
 
 });
+
+
+// ===========================================
+// EFECTO DE LECTURA EN TIMELINE
+// ===========================================
+
+const timelineData = {
+
+    "1989":
+    "Primeras elecciones parlamentarias tras el retorno a la democracia.",
+
+    "1993":
+    "La Concertación aumenta su presencia a 70 escaños.",
+
+    "1997":
+    "Aparecen candidaturas independientes y el pacto Chile 2000.",
+
+    "2001":
+    "Se mantiene la lógica de las dos grandes coaliciones.",
+
+    "2005":
+    "Persistencia del sistema binominal.",
+
+    "2009":
+    "Última década de hegemonía bipartidista.",
+
+    "2013":
+    "Última elección antes de la reforma proporcional.",
+
+    "2017":
+    "Se implementa el nuevo sistema electoral proporcional.",
+
+    "2021":
+    "El PDG logra una irrupción significativa.",
+
+    "2025":
+    "Mayor fragmentación y nuevas fuerzas políticas."
+};
+
+
+const timelineSection =
+document.querySelector(".timeline");
+
+if(timelineSection){
+
+    const infoBox =
+    document.createElement("p");
+
+    infoBox.classList.add("timeline-info");
+
+    infoBox.innerText =
+    timelineData["1989"];
+
+    timelineSection.appendChild(infoBox);
+
+
+    years.forEach(year=>{
+
+        year.addEventListener("click",()=>{
+
+            infoBox.innerText =
+            timelineData[year.innerText];
+
+        });
+
+    });
+
+}
+
+
+// ===========================================
+// CAMBIO DE FONDO SEGÚN ETAPA HISTÓRICA
+// ===========================================
+
+const breakSection =
+document.querySelector(".break-section");
+
+if(breakSection){
+
+    const stageObserver =
+    new IntersectionObserver((entries)=>{
+
+        entries.forEach(entry=>{
+
+            if(entry.isIntersecting){
+
+                document.body.classList
+                .add("fragmented-era");
+
+            }else{
+
+                document.body.classList
+                .remove("fragmented-era");
+
+            }
+
+        });
+
+    },{
+
+        threshold:0.5
+
+    });
+
+    stageObserver.observe(breakSection);
+
+}

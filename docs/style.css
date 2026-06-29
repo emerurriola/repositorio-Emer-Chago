@@ -1,19 +1,24 @@
 /* =======================================================
    REPRESENTAR O FRAGMENTAR
-   WebStory - Elecciones Parlamentarias en Chile
+   WebStory - V2
 ======================================================= */
 
 :root{
 
-    --azul:#0D3B66;
-    --rojo:#C1121F;
-    --amarillo:#F4D35E;
-    --gris:#F3F3F3;
-    --gris2:#E5E5E5;
-    --blanco:#FFFFFF;
-    --negro:#111111;
+    --navy:#15254B;
+    --red:#EA3747;
+    --purple:#4A4B70;
+    --orange:#E89B57;
+    --light:#E7E7E7;
+    --light2:#F4F4F4;
+    --black:#111111;
+    --white:#FFFFFF;
 
 }
+
+/* ==========================================
+BASE
+========================================== */
 
 *{
 
@@ -32,122 +37,100 @@ html{
 body{
 
     font-family:'Source Sans Pro',sans-serif;
-    background:white;
-    color:#222;
+
+    background:var(--light2);
+
+    color:var(--black);
+
     overflow-x:hidden;
 
 }
 
-/*==================================================
-PORTADA
-==================================================*/
+img{
+
+    max-width:100%;
+
+    display:block;
+
+}
+
+/* ==========================================
+HERO
+========================================== */
 
 .hero{
 
-    position:relative;
+    min-height:100vh;
 
-    width:100%;
-    height:100vh;
+    background:var(--light);
 
     display:flex;
+
     justify-content:center;
+
     align-items:center;
 
-    overflow:hidden;
-
-}
-
-.hero-img{
-
-    position:absolute;
-
-    width:100%;
-    height:100%;
-
-    object-fit:cover;
-
-    opacity:.75;
-
-    transition:transform .2s linear;
-
-}
-
-.overlay{
-
-    position:absolute;
-
-    inset:0;
-
-    background:rgba(0,0,0,.55);
+    padding:80px 10%;
 
 }
 
 .hero-content{
 
-    position:relative;
-
-    z-index:10;
-
-    width:85%;
-    max-width:900px;
+    max-width:1000px;
 
     text-align:center;
 
-    color:white;
+}
+
+.hero-logo{
+
+    width:650px;
+
+    max-width:90vw;
+
+    margin:0 auto 50px auto;
 
 }
 
 .categoria{
 
-    color:var(--amarillo);
+    font-family:'Montserrat';
 
-    letter-spacing:3px;
+    color:var(--red);
+
+    letter-spacing:4px;
 
     font-size:.9rem;
 
-    font-weight:bold;
+    font-weight:700;
 
-    margin-bottom:30px;
-
-}
-
-.hero h1{
-
-    font-family:'League Spartan',sans-serif;
-
-    font-size:7rem;
-
-    line-height:.9;
-
-    margin-bottom:30px;
+    margin-bottom:25px;
 
 }
 
-.hero span{
+.hero h2{
 
-    color:var(--amarillo);
+    font-family:'League Spartan';
 
-}
+    font-size:3.5rem;
 
-.hero-text{
+    line-height:1.1;
 
-    font-size:1.4rem;
-
-    max-width:750px;
+    max-width:900px;
 
     margin:auto;
 
-    line-height:1.8;
+    color:var(--navy);
 
 }
 
 #start-btn{
 
-    margin-top:45px;
+    margin-top:50px;
 
     border:none;
 
-    background:var(--rojo);
+    background:var(--navy);
 
     color:white;
 
@@ -167,15 +150,15 @@ PORTADA
 
 #start-btn:hover{
 
-    background:#8f1019;
-
     transform:translateY(-4px);
+
+    background:var(--red);
 
 }
 
-/*==================================================
+/* ==========================================
 SECCIONES
-==================================================*/
+========================================== */
 
 section{
 
@@ -189,9 +172,9 @@ section h2{
 
     font-size:4rem;
 
-    color:var(--azul);
+    color:var(--navy);
 
-    margin-bottom:20px;
+    margin-bottom:25px;
 
 }
 
@@ -199,9 +182,9 @@ section h3{
 
     font-family:'Montserrat';
 
-    font-size:2rem;
+    font-size:1.8rem;
 
-    margin-bottom:20px;
+    margin-bottom:25px;
 
 }
 
@@ -209,85 +192,75 @@ section p{
 
     font-size:1.2rem;
 
-    line-height:1.8;
+    line-height:1.9;
 
     max-width:850px;
 
-}
-
-/*==================================================
-PREGUNTA
-==================================================*/
-
-.question{
-
-    text-align:center;
-
-    background:var(--gris);
+    margin-bottom:25px;
 
 }
 
-.options{
+.year-title{
 
-    margin-top:60px;
+    display:inline-block;
 
-    display:flex;
-
-    justify-content:center;
-
-    gap:25px;
-
-    flex-wrap:wrap;
-
-}
-
-.option{
-
-    background:var(--azul);
+    background:var(--navy);
 
     color:white;
 
-    border:none;
+    padding:10px 22px;
 
-    padding:18px 40px;
+    border-radius:50px;
 
-    border-radius:40px;
+    font-family:'Montserrat';
 
-    cursor:pointer;
+    font-size:.9rem;
 
-    transition:.3s;
-
-    font-size:1rem;
+    margin-bottom:30px;
 
 }
 
-.option:hover{
+/* ==========================================
+INTRO
+========================================== */
 
-    transform:translateY(-5px);
+.intro{
 
-}
-
-.option.active{
-
-    background:var(--rojo);
+    background:white;
 
 }
 
-/*==================================================
-BARRAS
-==================================================*/
+/* ==========================================
+1989
+========================================== */
+
+.chapter-1989{
+
+    background:var(--light2);
+
+}
+
+/* ==========================================
+COALICIONES
+========================================== */
+
+.chapter-coaliciones{
+
+    background:white;
+
+}
 
 .seats{
 
     display:flex;
 
-    margin-top:50px;
+    margin-top:60px;
 
-    height:80px;
+    height:90px;
+
+    border-radius:12px;
 
     overflow:hidden;
-
-    border-radius:10px;
 
 }
 
@@ -311,35 +284,209 @@ BARRAS
 
 .concertacion{
 
-    background:var(--rojo);
+    background:var(--red);
 
 }
 
 .derecha{
 
-    background:var(--azul);
+    background:var(--navy);
 
 }
 
-/*==================================================
-FRAGMENTACIÓN
-==================================================*/
+/* ==========================================
+BIPARTIDISMO
+========================================== */
 
-#fragment-btn{
+.chapter-bipartidismo{
 
-    margin-top:40px;
+    background:var(--light);
 
-    padding:16px 35px;
+}
 
-    background:var(--rojo);
+/* ==========================================
+TIMELINE
+========================================== */
+
+.timeline{
+
+    background:white;
+
+}
+
+.line{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    flex-wrap:wrap;
+
+    gap:20px;
+
+    margin-top:60px;
+
+}
+
+.year{
+
+    width:85px;
+
+    height:85px;
+
+    border-radius:50%;
+
+    background:var(--navy);
 
     color:white;
 
-    border:none;
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
 
     cursor:pointer;
 
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.year:hover{
+
+    transform:scale(1.1);
+
+}
+
+.selected{
+
+    background:var(--red);
+
+}
+
+.highlight{
+
+    background:var(--orange);
+
+}
+
+/* ==========================================
+2017
+========================================== */
+
+.break-section{
+
+    background:var(--black);
+
+    color:white;
+
+    text-align:center;
+
+}
+
+.break-section h2{
+
+    color:white;
+
+    font-size:6rem;
+
+}
+
+.break-section h3{
+
+    color:var(--orange);
+
+}
+
+.break-line{
+
+    width:100%;
+
+    height:12px;
+
+    background:white;
+
+    margin-bottom:80px;
+
+}
+
+.numbers{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:50px;
+
+    flex-wrap:wrap;
+
+    margin-top:60px;
+
+}
+
+.numbers div{
+
+    background:#1c1c1c;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    min-width:240px;
+
+}
+
+.numbers span{
+
+    display:block;
+
+    font-family:'League Spartan';
+
+    font-size:3rem;
+
+    color:var(--orange);
+
+    margin-bottom:20px;
+
+}
+
+/* ==========================================
+FRAGMENTACIÓN
+========================================== */
+
+.fragmentacion{
+
+    background:var(--purple);
+
+    color:white;
+
+    text-align:center;
+
+}
+
+.fragmentacion h2{
+
+    color:white;
+
+}
+
+#fragment-btn{
+
+    border:none;
+
+    background:var(--orange);
+
+    color:white;
+
+    padding:18px 40px;
+
     border-radius:40px;
+
+    cursor:pointer;
+
+    margin-top:30px;
 
     transition:.3s;
 
@@ -347,7 +494,7 @@ FRAGMENTACIÓN
 
 #fragment-btn:hover{
 
-    transform:translateY(-3px);
+    transform:translateY(-4px);
 
 }
 
@@ -357,49 +504,51 @@ FRAGMENTACIÓN
 
     justify-content:center;
 
-    align-items:center;
-
     flex-wrap:wrap;
 
     gap:20px;
 
-    margin-top:50px;
+    margin-top:60px;
 
-    min-height:120px;
+    min-height:140px;
 
 }
 
 .fragment{
 
-    width:300px;
+    width:320px;
 
-    height:80px;
+    height:90px;
 
-    background:var(--azul);
+    background:white;
 
-    transition:1s;
+    border-radius:12px;
 
 }
 
 .mini-block{
 
-    width:85px;
+    width:90px;
 
-    height:85px;
+    height:90px;
 
-    border-radius:10px;
+    border-radius:12px;
 
     animation:aparecer .8s forwards;
 
 }
 
-/*==================================================
+/* ==========================================
 PARTIDOS
-==================================================*/
+========================================== */
+
+.chapter-actualidad{
+
+    background:white;
+
+}
 
 .grid-partidos{
-
-    margin-top:60px;
 
     display:grid;
 
@@ -407,11 +556,11 @@ PARTIDOS
 
     gap:20px;
 
+    margin-top:50px;
+
 }
 
 .grid-partidos div{
-
-    background:var(--azul);
 
     color:white;
 
@@ -427,135 +576,28 @@ PARTIDOS
 
 }
 
+.grid-partidos div:nth-child(1){background:var(--navy);}
+.grid-partidos div:nth-child(2){background:var(--purple);}
+.grid-partidos div:nth-child(3){background:var(--red);}
+.grid-partidos div:nth-child(4){background:var(--orange);}
+.grid-partidos div:nth-child(5){background:#8E44AD;}
+.grid-partidos div:nth-child(6){background:#2A9D8F;}
+.grid-partidos div:nth-child(7){background:#495057;}
+.grid-partidos div:nth-child(8){background:#C77DFF;}
+
 .grid-partidos div:hover{
 
     transform:translateY(-8px);
 
-    background:var(--rojo);
-
 }
 
-/*==================================================
-TIMELINE
-==================================================*/
-
-.timeline{
-
-    background:var(--gris);
-
-}
-
-.line{
-
-    display:flex;
-
-    justify-content:space-between;
-
-    flex-wrap:wrap;
-
-    gap:20px;
-
-    margin-top:50px;
-
-}
-
-.year{
-
-    width:90px;
-
-    height:90px;
-
-    border-radius:50%;
-
-    background:var(--azul);
-
-    color:white;
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    font-weight:bold;
-
-    cursor:pointer;
-
-    transition:.3s;
-
-}
-
-.year:hover{
-
-    transform:scale(1.1);
-
-}
-
-.year.selected{
-
-    background:var(--rojo);
-
-    transform:scale(1.15);
-
-}
-
-.highlight{
-
-    background:var(--rojo);
-
-}
-
-/*==================================================
-CARDS
-==================================================*/
-
-.cards{
-
-    display:grid;
-
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-
-    gap:30px;
-
-    margin-top:60px;
-
-}
-
-.card{
-
-    background:white;
-
-    padding:35px;
-
-    border-radius:15px;
-
-    box-shadow:0 10px 30px rgba(0,0,0,.08);
-
-    transition:.3s;
-
-}
-
-.card:hover{
-
-    transform:translateY(-8px);
-
-}
-
-.card h3{
-
-    color:var(--rojo);
-
-    margin-bottom:15px;
-
-}
-
-/*==================================================
+/* ==========================================
 FOOTER
-==================================================*/
+========================================== */
 
 footer{
 
-    background:var(--negro);
+    background:var(--black);
 
     color:white;
 
@@ -577,11 +619,9 @@ footer h2{
 
 footer h3{
 
-    margin-top:40px;
+    color:var(--orange);
 
-    color:var(--amarillo);
-
-    font-size:2rem;
+    margin:40px 0;
 
 }
 
@@ -591,13 +631,21 @@ footer p{
 
     margin:auto;
 
-    line-height:1.8;
+    line-height:1.9;
 
 }
 
-/*==================================================
+.creditos{
+
+    margin-top:60px;
+
+    opacity:.8;
+
+}
+
+/* ==========================================
 ANIMACIONES
-==================================================*/
+========================================== */
 
 .hidden{
 
@@ -637,15 +685,15 @@ ANIMACIONES
 
 }
 
-/*==================================================
+/* ==========================================
 RESPONSIVE
-==================================================*/
+========================================== */
 
 @media(max-width:900px){
 
-.hero h1{
+.hero h2{
 
-    font-size:4.8rem;
+    font-size:2.5rem;
 
 }
 
@@ -655,9 +703,9 @@ section h2{
 
 }
 
-.hero-text{
+.break-section h2{
 
-    font-size:1.2rem;
+    font-size:4rem;
 
 }
 
@@ -667,19 +715,13 @@ section h2{
 
 .hero{
 
-    height:90vh;
+    padding:60px 8%;
 
 }
 
-.hero h1{
+.hero h2{
 
-    font-size:3.4rem;
-
-}
-
-.hero-text{
-
-    font-size:1rem;
+    font-size:2rem;
 
 }
 
@@ -697,13 +739,7 @@ section h2{
 
 section h3{
 
-    font-size:1.5rem;
-
-}
-
-.options{
-
-    flex-direction:column;
+    font-size:1.4rem;
 
 }
 
@@ -730,15 +766,17 @@ section h3{
 
 }
 
-footer h2{
+.numbers{
 
-    font-size:3rem;
+    flex-direction:column;
+
+    align-items:center;
 
 }
 
-footer h3{
+footer h2{
 
-    font-size:1.4rem;
+    font-size:3rem;
 
 }
 
