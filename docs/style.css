@@ -62,12 +62,16 @@ HERO
 
     min-height:100vh;
 
-    background:var(--light);
+    background:
+    linear-gradient(rgba(10,20,40,.65), rgba(10,20,40,.65)),
+    url("BCNChile_CuentaPublicaCongreso_20190723_F024-W800.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
 
     display:flex;
-
     justify-content:center;
-
     align-items:center;
 
     padding:80px 10%;
@@ -92,35 +96,31 @@ HERO
 
 }
 
-.categoria{
+.hero h1{
 
-    font-family:'Montserrat';
-
-    color:var(--red);
-
+    font-family:'League Spartan';
+    font-size:7rem;
+    color:white;
+    text-transform:uppercase;
+    line-height:.9;
     letter-spacing:4px;
-
-    font-size:.9rem;
-
-    font-weight:700;
-
-    margin-bottom:25px;
+    margin-bottom:30px;
 
 }
 
 .hero h2{
 
-    font-family:'League Spartan';
-
-    font-size:3.5rem;
-
-    line-height:1.1;
-
+    color:white;
+    font-size:3rem;
     max-width:900px;
-
     margin:auto;
 
-    color:var(--navy);
+}
+
+.categoria{
+
+    color:#FFD166;
+    letter-spacing:4px;
 
 }
 
