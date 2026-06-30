@@ -1,11 +1,7 @@
-/* ==========================================================
+/* =======================================================
    REPRESENTAR O FRAGMENTAR
-   WEBSTORY V4
-   ========================================================== */
-
-/* ==========================
-   VARIABLES
-========================== */
+   WebStory - V2
+======================================================= */
 
 :root{
 
@@ -13,23 +9,16 @@
     --red:#EA3747;
     --purple:#4A4B70;
     --orange:#E89B57;
-
+    --light:#E7E7E7;
+    --light2:#F4F4F4;
+    --black:#111111;
     --white:#FFFFFF;
-    --light:#F7F7F7;
-    --gray:#E8E8E8;
-    --dark:#111111;
-
-    --max-width:1280px;
-
-    --shadow:0 18px 45px rgba(0,0,0,.18);
-
-    --transition:.45s ease;
 
 }
 
-/* ==========================
-RESET
-========================== */
+/* ==========================================
+BASE
+========================================== */
 
 *{
 
@@ -49,9 +38,9 @@ body{
 
     font-family:'Source Sans Pro',sans-serif;
 
-    background:var(--light);
+    background:var(--light2);
 
-    color:var(--dark);
+    color:var(--black);
 
     overflow-x:hidden;
 
@@ -59,67 +48,21 @@ body{
 
 img{
 
-    width:100%;
+    max-width:100%;
 
     display:block;
 
 }
 
-section{
-
-    padding:140px 8%;
-
-}
-
-h1,
-h2,
-h3{
-
-    font-family:'League Spartan',sans-serif;
-
-}
-
-p{
-
-    font-size:1.18rem;
-
-    line-height:1.9;
-
-}
-
-/* ==========================
-SCROLLBAR
-========================== */
-
-::-webkit-scrollbar{
-
-    width:10px;
-
-}
-
-::-webkit-scrollbar-track{
-
-    background:#ececec;
-
-}
-
-::-webkit-scrollbar-thumb{
-
-    background:var(--navy);
-
-    border-radius:20px;
-
-}
-
-/* ==========================
+/* ==========================================
 HERO
-========================== */
+========================================== */
 
 .hero{
 
-    position:relative;
-
     min-height:100vh;
+
+    background:var(--light);
 
     display:flex;
 
@@ -127,228 +70,159 @@ HERO
 
     align-items:center;
 
-    overflow:hidden;
-
-    background-image:url("img/congreso.jpg");
-
-    background-size:cover;
-
-    background-position:center;
-
-    background-attachment:fixed;
+    padding:80px 10%;
 
 }
-
-/* ==========================
-OVERLAY
-========================== */
-
-.hero-overlay{
-
-    position:absolute;
-
-    inset:0;
-
-    background:
-
-    linear-gradient(
-
-        rgba(21,37,75,.78),
-
-        rgba(21,37,75,.78)
-
-    );
-
-}
-
-/* ==========================
-CONTENIDO HERO
-========================== */
 
 .hero-content{
 
-    position:relative;
-
-    z-index:2;
-
-    max-width:950px;
+    max-width:1000px;
 
     text-align:center;
 
-    color:white;
-
 }
-
-/* ==========================
-LOGO
-========================== */
 
 .hero-logo{
 
-    width:620px;
+    width:650px;
 
-    max-width:90%;
+    max-width:90vw;
 
-    margin:auto;
-
-    margin-bottom:45px;
-
-    animation:fadeUp 1.4s ease;
+    margin:0 auto 50px auto;
 
 }
 
-/* ==========================
-CATEGORÍA
-========================== */
+.categoria{
 
-.hero-category{
+    font-family:'Montserrat';
 
-    font-family:'Montserrat',sans-serif;
+    color:var(--red);
 
     letter-spacing:4px;
 
-    text-transform:uppercase;
-
-    color:#FFD166;
+    font-size:.9rem;
 
     font-weight:700;
 
-    margin-bottom:28px;
+    margin-bottom:25px;
 
 }
 
-/* ==========================
-SUBTÍTULO
-========================== */
-
 .hero h2{
 
-    font-size:3rem;
+    font-family:'League Spartan';
 
-    line-height:1.25;
+    font-size:3.5rem;
 
-    font-weight:400;
+    line-height:1.1;
 
     max-width:900px;
 
     margin:auto;
 
-}
-
-/* ==========================
-DESCRIPCIÓN
-========================== */
-
-.hero-description{
-
-    margin-top:35px;
-
-    font-size:1.35rem;
-
-    opacity:.92;
+    color:var(--navy);
 
 }
-
-/* ==========================
-BOTÓN
-========================== */
 
 #start-btn{
 
-    margin-top:55px;
-
-    padding:18px 42px;
+    margin-top:50px;
 
     border:none;
 
-    border-radius:60px;
-
-    background:var(--red);
+    background:var(--navy);
 
     color:white;
 
-    font-size:1rem;
+    padding:18px 45px;
+
+    border-radius:40px;
 
     cursor:pointer;
 
-    transition:var(--transition);
-
     font-family:'Montserrat';
 
-    font-weight:700;
+    font-size:1rem;
+
+    transition:.3s;
 
 }
 
 #start-btn:hover{
 
-    background:var(--orange);
+    transform:translateY(-4px);
 
-    transform:translateY(-5px);
-
-}
-
-/* ==========================
-FLECHA
-========================== */
-
-.scroll-indicator{
-
-    margin-top:70px;
-
-    font-size:2rem;
-
-    animation:bounce 2s infinite;
+    background:var(--red);
 
 }
 
-/* ==========================
-ANIMACIONES
-========================== */
+/* ==========================================
+SECCIONES
+========================================== */
 
-@keyframes bounce{
+section{
 
-    0%{
-
-        transform:translateY(0);
-
-    }
-
-    50%{
-
-        transform:translateY(12px);
-
-    }
-
-    100%{
-
-        transform:translateY(0);
-
-    }
+    padding:120px 10%;
 
 }
 
-@keyframes fadeUp{
+section h2{
 
-    from{
+    font-family:'League Spartan';
 
-        opacity:0;
+    font-size:4rem;
 
-        transform:translateY(50px);
+    color:var(--navy);
 
-    }
-
-    to{
-
-        opacity:1;
-
-        transform:translateY(0);
-
-    }
+    margin-bottom:25px;
 
 }
-/* ==========================================================
-   INTRODUCCIÓN
-========================================================== */
+
+section h3{
+
+    font-family:'Montserrat';
+
+    font-size:1.8rem;
+
+    margin-bottom:25px;
+
+}
+
+section p{
+
+    font-size:1.2rem;
+
+    line-height:1.9;
+
+    max-width:850px;
+
+    margin-bottom:25px;
+
+}
+
+.year-title{
+
+    display:inline-block;
+
+    background:var(--navy);
+
+    color:white;
+
+    padding:10px 22px;
+
+    border-radius:50px;
+
+    font-family:'Montserrat';
+
+    font-size:.9rem;
+
+    margin-bottom:30px;
+
+}
+
+/* ==========================================
+INTRO
+========================================== */
 
 .intro{
 
@@ -356,235 +230,55 @@ ANIMACIONES
 
 }
 
-.intro-grid{
+/* ==========================================
+1989
+========================================== */
 
-    max-width:var(--max-width);
+.chapter-1989{
 
-    margin:auto;
-
-    display:grid;
-
-    grid-template-columns:1fr 1fr;
-
-    gap:80px;
-
-    align-items:center;
+    background:var(--light2);
 
 }
 
-.intro-image img{
+/* ==========================================
+COALICIONES
+========================================== */
 
-    border-radius:22px;
-
-    box-shadow:var(--shadow);
-
-    transition:.5s;
-
-}
-
-.intro-image img:hover{
-
-    transform:scale(1.03);
-
-}
-
-/* ==========================================================
-   CAPÍTULOS
-========================================================== */
-
-.chapter{
-
-    background:#F6F6F6;
-
-}
-
-.chapter.alt{
+.chapter-coaliciones{
 
     background:white;
 
 }
 
-.chapter-grid{
+.seats{
 
-    max-width:var(--max-width);
+    display:flex;
 
-    margin:auto;
+    margin-top:60px;
 
-    display:grid;
+    height:90px;
 
-    grid-template-columns:1fr 1fr;
+    border-radius:12px;
 
-    gap:90px;
-
-    align-items:center;
+    overflow:hidden;
 
 }
 
-.chapter-image{
+.bar{
 
-    position:relative;
+    width:0;
 
-}
-
-.chapter-image img{
-
-    border-radius:24px;
-
-    box-shadow:var(--shadow);
-
-    transition:.5s;
-
-}
-
-.chapter-image img:hover{
-
-    transform:scale(1.04);
-
-}
-
-/* ==========================================================
-TEXTO
-========================================================== */
-
-.chapter-text h2{
-
-    font-size:4rem;
-
-    color:var(--navy);
-
-    margin:25px 0;
-
-    line-height:1;
-
-}
-
-.chapter-text p{
-
-    margin-bottom:28px;
-
-}
-
-/* ==========================================================
-NÚMERO DE SECCIÓN
-========================================================== */
-
-.section-number{
-
-    display:inline-flex;
-
-    align-items:center;
+    display:flex;
 
     justify-content:center;
 
-    width:70px;
-
-    height:70px;
-
-    border-radius:50%;
-
-    background:var(--orange);
-
-    color:white;
-
-    font-family:'League Spartan';
-
-    font-size:2rem;
-
-    margin-bottom:30px;
-
-}
-
-/* ==========================================================
-AÑO
-========================================================== */
-
-.year-title{
-
-    display:inline-block;
-
-    margin-left:15px;
-
-    padding:12px 26px;
-
-    border-radius:50px;
-
-    background:var(--navy);
-
-    color:white;
-
-    font-family:'Montserrat';
-
-    font-weight:700;
-
-    letter-spacing:2px;
-
-}
-
-/* ==========================================================
-TARJETA COALICIONES
-========================================================== */
-
-.chapter-card{
-
-    background:white;
-
-    border-radius:26px;
-
-    padding:50px;
-
-    box-shadow:var(--shadow);
-
-}
-
-.chapter-card h3{
-
-    color:var(--navy);
-
-    margin-bottom:40px;
-
-    font-size:2rem;
-
-}
-
-/* ==========================================================
-BARRAS
-========================================================== */
-
-.seat-wrapper{
-
-    display:flex;
-
-    align-items:flex-end;
-
-    gap:20px;
-
-    height:350px;
-
-}
-
-.seat{
-
-    flex:1;
-
-    display:flex;
-
-    flex-direction:column;
-
-    justify-content:flex-end;
-
     align-items:center;
 
     color:white;
 
-    border-radius:18px 18px 0 0;
+    font-weight:bold;
 
-    transition:.5s;
-
-}
-
-.seat:hover{
-
-    transform:translateY(-8px);
+    transition:1.2s;
 
 }
 
@@ -592,508 +286,165 @@ BARRAS
 
     background:var(--red);
 
-    height:67%;
-
 }
 
 .derecha{
 
     background:var(--navy);
 
-    height:48%;
+}
+
+/* ==========================================
+BIPARTIDISMO
+========================================== */
+
+.chapter-bipartidismo{
+
+    background:var(--light);
 
 }
 
-.seat span{
-
-    margin-bottom:12px;
-
-    font-weight:bold;
-
-    text-align:center;
-
-}
-
-.seat strong{
-
-    font-family:'League Spartan';
-
-    font-size:4rem;
-
-}
-
-.seat small{
-
-    margin-top:8px;
-
-    margin-bottom:25px;
-
-    font-size:1rem;
-
-}
-
-.seat-footer{
-
-    margin-top:25px;
-
-    text-align:center;
-
-    color:#666;
-
-    font-weight:bold;
-
-}
-
-/* ==========================================================
-VS CARD
-========================================================== */
-
-.vs-card{
-
-    background:white;
-
-    border-radius:26px;
-
-    box-shadow:var(--shadow);
-
-    padding:70px;
-
-    display:flex;
-
-    justify-content:space-between;
-
-    align-items:center;
-
-}
-
-.team{
-
-    width:120px;
-
-    height:120px;
-
-    border-radius:50%;
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    color:white;
-
-    font-size:3rem;
-
-}
-
-.team.red{
-
-    background:var(--red);
-
-}
-
-.team.blue{
-
-    background:var(--navy);
-
-}
-
-.vs{
-
-    font-family:'League Spartan';
-
-    font-size:3rem;
-
-    color:var(--purple);
-
-}
-
-/* ==========================================================
-VISUAL 1
-========================================================== */
-
-.graphic-section{
-
-    background:#f9f9f9;
-
-}
-
-.graphic-header{
-
-    max-width:1000px;
-
-    margin:auto;
-
-    text-align:center;
-
-}
-
-.graphic-header h2{
-
-    font-size:4rem;
-
-    color:var(--navy);
-
-    margin-top:20px;
-
-}
-
-.graphic-intro{
-
-    max-width:900px;
-
-    margin:40px auto;
-
-    text-align:center;
-
-}
-
-.graphic-container{
-
-    max-width:1100px;
-
-    margin:60px auto;
-
-    background:white;
-
-    border-radius:25px;
-
-    padding:40px;
-
-    box-shadow:var(--shadow);
-
-}
-
-.graphic-container img{
-
-    width:100%;
-
-    border-radius:15px;
-
-}
-
-.graphic-caption{
-
-    max-width:900px;
-
-    margin:auto;
-
-    text-align:center;
-
-    font-style:italic;
-
-    color:#666;
-
-    font-size:1.1rem;
-
-}
-/* ==========================================================
-   TIMELINE
-========================================================== */
-
-.timeline-section{
-
-    background:white;
-
-}
-
-.timeline-header{
-
-    max-width:900px;
-
-    margin:auto;
-
-    text-align:center;
-
-}
-
-.timeline-header h2{
-
-    font-size:4rem;
-
-    color:var(--navy);
-
-    margin:20px 0;
-
-}
-
-.timeline-header p{
-
-    margin-top:20px;
-
-}
+/* ==========================================
+TIMELINE
+========================================== */
 
 .timeline{
 
-    position:relative;
+    background:white;
 
-    max-width:1200px;
+}
 
-    margin:90px auto 70px auto;
+.line{
 
     display:flex;
 
     justify-content:space-between;
 
-    align-items:center;
+    flex-wrap:wrap;
+
+    gap:20px;
+
+    margin-top:60px;
 
 }
 
-.timeline-line{
+.year{
 
-    position:absolute;
+    width:85px;
 
-    left:0;
-
-    right:0;
-
-    top:50%;
-
-    height:6px;
-
-    background:#d9d9d9;
-
-    transform:translateY(-50%);
-
-    z-index:1;
-
-}
-
-.timeline-item{
-
-    position:relative;
-
-    z-index:2;
-
-    width:74px;
-
-    height:74px;
+    height:85px;
 
     border-radius:50%;
 
     background:var(--navy);
 
+    color:white;
+
     display:flex;
 
     justify-content:center;
 
     align-items:center;
 
-    color:white;
-
     cursor:pointer;
-
-    transition:.35s;
-
-    font-family:'Montserrat';
 
     font-weight:bold;
 
-}
-
-.timeline-item:hover{
-
-    transform:scale(1.12);
+    transition:.3s;
 
 }
 
-.timeline-item.active{
+.year:hover{
+
+    transform:scale(1.1);
+
+}
+
+.selected{
 
     background:var(--red);
 
 }
 
-.timeline-item.special{
+.highlight{
 
     background:var(--orange);
 
-    transform:scale(1.12);
-
 }
 
-.timeline-box{
+/* ==========================================
+2017
+========================================== */
 
-    max-width:850px;
+.break-section{
 
-    margin:auto;
-
-    margin-top:60px;
-
-    padding:45px;
-
-    background:white;
-
-    border-radius:22px;
-
-    box-shadow:var(--shadow);
-
-    text-align:center;
-
-}
-
-.timeline-box h3{
-
-    font-size:3rem;
-
-    color:var(--navy);
-
-    margin-bottom:15px;
-
-}
-
-.timeline-box p{
-
-    margin:0;
-
-}
-
-/* ==========================================================
-TRANSICIÓN 2017
-========================================================== */
-
-.transition-2017{
-
-    display:grid;
-
-    grid-template-columns:45% 55%;
-
-    min-height:80vh;
-
-}
-
-.transition-left{
-
-    background:var(--navy);
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-}
-
-.transition-left span{
-
-    font-family:'League Spartan';
-
-    font-size:12rem;
+    background:var(--black);
 
     color:white;
 
-    opacity:.18;
+    text-align:center;
 
 }
 
-.transition-right{
+.break-section h2{
 
-    background:#f4f4f4;
+    color:white;
+
+    font-size:6rem;
+
+}
+
+.break-section h3{
+
+    color:var(--orange);
+
+}
+
+.break-line{
+
+    width:100%;
+
+    height:12px;
+
+    background:white;
+
+    margin-bottom:80px;
+
+}
+
+.numbers{
 
     display:flex;
 
-    flex-direction:column;
-
     justify-content:center;
 
-    padding:90px;
+    gap:50px;
+
+    flex-wrap:wrap;
+
+    margin-top:60px;
 
 }
 
-.transition-right h2{
+.numbers div{
 
-    font-size:4rem;
+    background:#1c1c1c;
 
-    color:var(--navy);
+    padding:40px;
 
-    margin-bottom:35px;
+    border-radius:20px;
 
-}
-
-.transition-right p{
-
-    max-width:650px;
+    min-width:240px;
 
 }
 
-/* ==========================================================
-NÚMEROS
-========================================================== */
-
-.numbers-section{
-
-    background:white;
-
-}
-
-.numbers-title{
-
-    text-align:center;
-
-    margin-bottom:70px;
-
-}
-
-.numbers-title h2{
-
-    margin-top:25px;
-
-    font-size:4rem;
-
-    color:var(--navy);
-
-}
-
-.numbers-grid{
-
-    max-width:1200px;
-
-    margin:auto;
-
-    display:grid;
-
-    grid-template-columns:repeat(3,1fr);
-
-    gap:35px;
-
-}
-
-.number-card{
-
-    background:white;
-
-    border-radius:24px;
-
-    padding:55px;
-
-    box-shadow:var(--shadow);
-
-    text-align:center;
-
-    transition:.4s;
-
-}
-
-.number-card:hover{
-
-    transform:translateY(-10px);
-
-}
-
-.icon{
-
-    font-size:3rem;
-
-    margin-bottom:25px;
-
-}
-
-.number-card span{
+.numbers span{
 
     display:block;
 
     font-family:'League Spartan';
 
-    font-size:4rem;
+    font-size:3rem;
 
     color:var(--orange);
 
@@ -1101,147 +452,13 @@ NÚMEROS
 
 }
 
-.number-card p{
+/* ==========================================
+FRAGMENTACIÓN
+========================================== */
 
-    margin:0;
+.fragmentacion{
 
-    color:#555;
-
-}
-
-/* ==========================================================
-CAPÍTULO 2017
-========================================================== */
-
-.chapter-2017{
-
-    background:#f7f7f7;
-
-}
-
-.chapter-2017 .chapter-grid{
-
-    align-items:center;
-
-}
-
-.chapter-2017 h2{
-
-    color:var(--navy);
-
-}
-
-/* ==========================================================
-EFECTO IMÁGENES
-========================================================== */
-
-.chapter-image{
-
-    overflow:hidden;
-
-    border-radius:24px;
-
-}
-
-.chapter-image img{
-
-    transition:.8s;
-
-}
-
-.chapter-image:hover img{
-
-    transform:scale(1.05);
-
-}
-/* ==========================================================
-   VISUAL STORY
-========================================================== */
-
-.visual-story{
-
-    background:#f7f7f7;
-
-}
-
-.visual-story{
-
-    max-width:1400px;
-
-    margin:auto;
-
-    display:grid;
-
-    grid-template-columns:1fr 1.2fr;
-
-    gap:80px;
-
-    align-items:center;
-
-}
-
-.visual-story-text h2{
-
-    font-size:4rem;
-
-    color:var(--navy);
-
-    margin:25px 0;
-
-    line-height:1;
-
-}
-
-.visual-story-image{
-
-    overflow:hidden;
-
-    border-radius:26px;
-
-    box-shadow:var(--shadow);
-
-}
-
-.visual-story-image img{
-
-    transition:.8s;
-
-}
-
-.visual-story-image:hover img{
-
-    transform:scale(1.05);
-
-}
-
-/* ==========================================================
-   FRAGMENTACIÓN
-========================================================== */
-
-.fragment-section{
-
-    position:relative;
-
-    min-height:90vh;
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    background:
-
-        linear-gradient(rgba(21,37,75,.88),
-        rgba(21,37,75,.88)),
-
-        url("img/congreso.jpg");
-
-    background-size:cover;
-
-    background-position:center;
-
-    background-attachment:fixed;
+    background:var(--purple);
 
     color:white;
 
@@ -1249,111 +466,39 @@ EFECTO IMÁGENES
 
 }
 
-.fragment-overlay{
-
-    position:absolute;
-
-    inset:0;
-
-}
-
-.fragment-content{
-
-    position:relative;
-
-    z-index:2;
-
-    max-width:900px;
-
-}
-
-.fragment-content h2{
+.fragmentacion h2{
 
     color:white;
-
-    font-size:5rem;
-
-    margin:30px 0;
-
-}
-
-.fragment-content p{
-
-    max-width:720px;
-
-    margin:auto;
 
 }
 
 #fragment-btn{
 
-    margin-top:55px;
-
-    padding:18px 45px;
-
     border:none;
-
-    border-radius:60px;
 
     background:var(--orange);
 
     color:white;
 
+    padding:18px 40px;
+
+    border-radius:40px;
+
     cursor:pointer;
 
-    font-size:1rem;
+    margin-top:30px;
 
-    font-family:'Montserrat';
-
-    font-weight:bold;
-
-    transition:.35s;
+    transition:.3s;
 
 }
 
 #fragment-btn:hover{
 
-    transform:translateY(-6px);
-
-    background:var(--red);
-
-}
-
-/* ==========================================================
-   ANIMACIÓN
-========================================================== */
-
-.fragment-animation{
-
-    background:white;
-
-}
-
-.fragment-header{
-
-    text-align:center;
-
-    max-width:850px;
-
-    margin:auto;
-
-}
-
-.fragment-header h2{
-
-    font-size:4rem;
-
-    color:var(--navy);
-
-    margin-bottom:20px;
+    transform:translateY(-4px);
 
 }
 
 #fragment-container{
-
-    margin:80px auto;
-
-    max-width:1200px;
 
     display:flex;
 
@@ -1361,477 +506,172 @@ EFECTO IMÁGENES
 
     flex-wrap:wrap;
 
-    gap:22px;
+    gap:20px;
 
-    min-height:180px;
+    margin-top:60px;
+
+    min-height:140px;
 
 }
 
 .fragment{
 
-    width:350px;
+    width:320px;
 
-    height:100px;
+    height:90px;
 
-    background:var(--navy);
+    background:white;
 
-    border-radius:18px;
+    border-radius:12px;
 
 }
 
 .mini-block{
 
-    width:95px;
+    width:90px;
 
-    height:95px;
+    height:90px;
 
-    border-radius:16px;
+    border-radius:12px;
 
-    animation:fragmentGrow .7s ease forwards;
-
-}
-
-@keyframes fragmentGrow{
-
-    from{
-
-        opacity:0;
-
-        transform:scale(.4);
-
-    }
-
-    to{
-
-        opacity:1;
-
-        transform:scale(1);
-
-    }
+    animation:aparecer .8s forwards;
 
 }
 
-/* ==========================================================
-   CONGRESO ACTUAL
-========================================================== */
+/* ==========================================
+PARTIDOS
+========================================== */
 
-.current-section{
+.chapter-actualidad{
 
-    background:#f7f7f7;
+    background:white;
+
+}
+
+.grid-partidos{
 
     display:grid;
 
-    grid-template-columns:1fr 1fr;
-
-    gap:80px;
-
-    align-items:center;
-
-}
-
-.current-left h2{
-
-    font-size:4rem;
-
-    color:var(--navy);
-
-    margin:25px 0;
-
-}
-
-.party-grid{
-
-    display:grid;
-
-    grid-template-columns:repeat(3,1fr);
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
 
     gap:20px;
 
+    margin-top:50px;
+
 }
 
-.party-grid div{
+.grid-partidos div{
+
+    color:white;
 
     padding:35px;
 
     text-align:center;
 
-    color:white;
-
-    border-radius:18px;
+    border-radius:12px;
 
     font-weight:bold;
 
-    transition:.35s;
-
-    box-shadow:var(--shadow);
+    transition:.3s;
 
 }
 
-.party-grid div:hover{
+.grid-partidos div:nth-child(1){background:var(--navy);}
+.grid-partidos div:nth-child(2){background:var(--purple);}
+.grid-partidos div:nth-child(3){background:var(--red);}
+.grid-partidos div:nth-child(4){background:var(--orange);}
+.grid-partidos div:nth-child(5){background:#8E44AD;}
+.grid-partidos div:nth-child(6){background:#2A9D8F;}
+.grid-partidos div:nth-child(7){background:#495057;}
+.grid-partidos div:nth-child(8){background:#C77DFF;}
+
+.grid-partidos div:hover{
 
     transform:translateY(-8px);
 
 }
 
-.party-grid div:nth-child(1){background:#15254B;}
-.party-grid div:nth-child(2){background:#243B72;}
-.party-grid div:nth-child(3){background:#EA3747;}
-.party-grid div:nth-child(4){background:#E89B57;}
-.party-grid div:nth-child(5){background:#8E44AD;}
-.party-grid div:nth-child(6){background:#2A9D8F;}
-.party-grid div:nth-child(7){background:#495057;}
-.party-grid div:nth-child(8){background:#C77DFF;}
-.party-grid div:nth-child(9){background:#6C757D;}
-.party-grid div:nth-child(10){background:#0E7490;}
-.party-grid div:nth-child(11){background:#A855F7;}
-.party-grid div:nth-child(12){background:#D97706;}
+/* ==========================================
+FOOTER
+========================================== */
 
-/* ==========================================================
-   CITA
-========================================================== */
+footer{
 
-.quote-section{
-
-    background:var(--navy);
+    background:var(--black);
 
     color:white;
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-}
-
-.quote-box{
-
-    max-width:900px;
 
     text-align:center;
 
+    padding:120px 10%;
+
 }
 
-.quote-box p{
+footer h2{
 
     font-family:'League Spartan';
 
-    font-size:3rem;
+    font-size:5rem;
 
-    line-height:1.3;
-
-    color:white;
+    margin-bottom:30px;
 
 }
 
-/* ==========================================================
-   EFECTOS GENERALES
-========================================================== */
+footer h3{
 
-.reveal{
+    color:var(--orange);
+
+    margin:40px 0;
+
+}
+
+footer p{
+
+    max-width:850px;
+
+    margin:auto;
+
+    line-height:1.9;
+
+}
+
+.creditos{
+
+    margin-top:60px;
+
+    opacity:.8;
+
+}
+
+/* ==========================================
+ANIMACIONES
+========================================== */
+
+.hidden{
 
     opacity:0;
 
     transform:translateY(70px);
 
-    transition:1s ease;
+    transition:1s;
 
 }
 
-.reveal.active{
+.show{
 
     opacity:1;
 
     transform:translateY(0);
 
 }
-/* ==========================================================
-   CONCLUSIÓN
-========================================================== */
 
-.final-section{
-
-    position:relative;
-
-    min-height:90vh;
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    background:
-
-        linear-gradient(rgba(21,37,75,.85),
-        rgba(21,37,75,.85)),
-
-        url("img/congreso.jpg");
-
-    background-size:cover;
-
-    background-position:center;
-
-    background-attachment:fixed;
-
-    color:white;
-
-}
-
-.final-overlay{
-
-    position:absolute;
-
-    inset:0;
-
-}
-
-.final-content{
-
-    position:relative;
-
-    z-index:2;
-
-    max-width:900px;
-
-    text-align:center;
-
-}
-
-.final-content h2{
-
-    font-size:5rem;
-
-    margin:30px 0;
-
-    color:white;
-
-}
-
-.final-content p{
-
-    font-size:1.3rem;
-
-    margin-bottom:30px;
-
-}
-
-/* ==========================================================
-REFLEXIÓN FINAL
-========================================================== */
-
-.ending{
-
-    background:white;
-
-}
-
-.ending-grid{
-
-    max-width:1300px;
-
-    margin:auto;
-
-    display:grid;
-
-    grid-template-columns:1fr 1fr;
-
-    gap:90px;
-
-    align-items:center;
-
-}
-
-.ending-question h2{
-
-    color:var(--orange);
-
-    margin-bottom:40px;
-
-    font-size:2rem;
-
-}
-
-.ending-question h1{
-
-    font-size:6rem;
-
-    line-height:.9;
-
-    color:var(--navy);
-
-}
-
-.fragmentar{
-
-    color:var(--red)!important;
-
-}
-
-.ending-question span{
-
-    display:block;
-
-    font-family:'League Spartan';
-
-    font-size:3rem;
-
-    margin:25px 0;
-
-    color:#999;
-
-}
-
-.ending-text p{
-
-    margin-bottom:28px;
-
-}
-
-/* ==========================================================
-FOOTER
-========================================================== */
-
-footer{
-
-    position:relative;
-
-    overflow:hidden;
-
-    padding:120px 8%;
-
-    color:white;
-
-    background:
-
-        linear-gradient(rgba(17,17,17,.92),
-        rgba(17,17,17,.92)),
-
-        url("img/congreso.jpg");
-
-    background-size:cover;
-
-    background-position:center;
-
-}
-
-.footer-overlay{
-
-    position:absolute;
-
-    inset:0;
-
-    backdrop-filter:blur(2px);
-
-}
-
-.footer-content{
-
-    position:relative;
-
-    z-index:2;
-
-    max-width:1200px;
-
-    margin:auto;
-
-    text-align:center;
-
-}
-
-.footer-logo{
-
-    width:340px;
-
-    margin:auto;
-
-    margin-bottom:50px;
-
-}
-
-.footer-description{
-
-    max-width:700px;
-
-    margin:auto;
-
-    opacity:.9;
-
-}
-
-.footer-line{
-
-    width:140px;
-
-    height:4px;
-
-    background:var(--orange);
-
-    margin:60px auto;
-
-}
-
-.credits{
-
-    display:grid;
-
-    grid-template-columns:repeat(3,1fr);
-
-    gap:40px;
-
-    text-align:left;
-
-}
-
-.credits h3{
-
-    color:var(--orange);
-
-    margin-bottom:18px;
-
-    font-size:1.5rem;
-
-}
-
-.credits p{
-
-    margin-bottom:10px;
-
-    opacity:.85;
-
-}
-
-.footer-bottom{
-
-    margin-top:80px;
-
-    padding-top:35px;
-
-    border-top:1px solid rgba(255,255,255,.15);
-
-    text-align:center;
-
-    opacity:.7;
-
-}
-
-/* ==========================================================
-ANIMACIONES GENERALES
-========================================================== */
-
-.fade-up{
-
-    animation:fadeUp 1s ease forwards;
-
-}
-
-@keyframes fadeUp{
+@keyframes aparecer{
 
     from{
 
         opacity:0;
 
-        transform:translateY(40px);
+        transform:translateY(40px) scale(.7);
 
     }
 
@@ -1839,67 +679,17 @@ ANIMACIONES GENERALES
 
         opacity:1;
 
-        transform:translateY(0);
+        transform:translateY(0) scale(1);
 
     }
 
 }
 
-.scale{
-
-    animation:scaleIn .8s ease forwards;
-
-}
-
-@keyframes scaleIn{
-
-    from{
-
-        opacity:0;
-
-        transform:scale(.85);
-
-    }
-
-    to{
-
-        opacity:1;
-
-        transform:scale(1);
-
-    }
-
-}
-
-/* ==========================================================
+/* ==========================================
 RESPONSIVE
-========================================================== */
+========================================== */
 
-@media(max-width:1200px){
-
-.chapter-grid,
-.intro-grid,
-.visual-story,
-.current-section,
-.ending-grid{
-
-    grid-template-columns:1fr;
-
-}
-
-.timeline{
-
-    flex-wrap:wrap;
-
-    gap:30px;
-
-}
-
-.timeline-line{
-
-    display:none;
-
-}
+@media(max-width:900px){
 
 .hero h2{
 
@@ -1907,7 +697,13 @@ RESPONSIVE
 
 }
 
-.final-content h2{
+section h2{
+
+    font-size:3rem;
+
+}
+
+.break-section h2{
 
     font-size:4rem;
 
@@ -1915,23 +711,11 @@ RESPONSIVE
 
 }
 
-@media(max-width:900px){
-
-section{
-
-    padding:90px 8%;
-
-}
+@media(max-width:768px){
 
 .hero{
 
-    background-attachment:scroll;
-
-}
-
-.hero-logo{
-
-    width:280px;
+    padding:60px 8%;
 
 }
 
@@ -1941,110 +725,60 @@ section{
 
 }
 
-.chapter-text h2,
-.timeline-header h2,
-.current-left h2,
-.visual-story-text h2,
-.final-content h2{
+section{
+
+    padding:90px 8%;
+
+}
+
+section h2{
+
+    font-size:2.5rem;
+
+}
+
+section h3{
+
+    font-size:1.4rem;
+
+}
+
+.seats{
+
+    flex-direction:column;
+
+    height:auto;
+
+}
+
+.concertacion,
+.derecha{
+
+    width:100% !important;
+
+    height:70px;
+
+}
+
+.line{
+
+    justify-content:center;
+
+}
+
+.numbers{
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+footer h2{
 
     font-size:3rem;
 
 }
 
-.numbers-grid{
-
-    grid-template-columns:1fr;
-
 }
 
-.party-grid{
-
-    grid-template-columns:repeat(2,1fr);
-
-}
-
-.credits{
-
-    grid-template-columns:1fr;
-
-    text-align:center;
-
-}
-
-.ending-question h1{
-
-    font-size:4rem;
-
-}
-
-}
-
-@media(max-width:600px){
-
-.hero{
-
-    padding:40px 8%;
-
-}
-
-.hero-category{
-
-    font-size:.8rem;
-
-    letter-spacing:2px;
-
-}
-
-.hero-description{
-
-    font-size:1rem;
-
-}
-
-.timeline-item{
-
-    width:58px;
-
-    height:58px;
-
-    font-size:.8rem;
-
-}
-
-.party-grid{
-
-    grid-template-columns:1fr;
-
-}
-
-.section-number{
-
-    width:55px;
-
-    height:55px;
-
-    font-size:1.5rem;
-
-}
-
-.year-title{
-
-    margin-left:0;
-
-    margin-top:20px;
-
-}
-
-.final-content h2{
-
-    font-size:2.8rem;
-
-}
-
-.quote-box p{
-
-    font-size:2rem;
-
-}
-
-}
