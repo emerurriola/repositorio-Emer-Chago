@@ -63,8 +63,8 @@ HERO
     min-height:100vh;
 
     background:
-    linear-gradient(rgba(10,20,40,.65), rgba(10,20,40,.65)),
-    url("Cámara_Baja.jpg");
+    linear-gradient(rgba(21,37,75,.55), rgba(21,37,75,.55)),
+    url("Camara_Baja.jpg");
 
     background-size:cover;
     background-position:center;
