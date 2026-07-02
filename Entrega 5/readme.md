@@ -15,3 +15,8 @@ A		Diseño de la Webstory   Contenido escrito de la Webstory
 B	            (Paleta de colores,         (Crónica, Historia,
                         elementos visuales y      estructura y distribución de lo escrito)
                         animaciones de la página)          
+
+| elemento | santiago |  Emerson|
+|-----------|-----------|-----------|
+| A  | diseño de la Webstory | contenido escrito de la webstory  |
+| B  | paleta de colores, elementos visuales y animación de la página  | Crónica, historia, estructura, distribución de contenido, visualizaciones  |
