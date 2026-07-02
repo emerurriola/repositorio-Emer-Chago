@@ -1,6 +1,6 @@
 /* =======================================================
    REPRESENTAR O FRAGMENTAR
-   WebStory - V3.0 (Diseño Equilibrado e Interactivo)
+   WebStory - V3.1 (Corrección de Diseño y Contraste)
 ======================================================= */
 
 :root {
@@ -64,6 +64,19 @@ img {
 .p-intro {
     font-size: 1.25rem !important;
     margin: 0 auto;
+}
+
+/* MEJORAS DE CONTRASTE SOLICITADAS */
+.p-highlight-dark {
+    color: #FFFFFF !important; /* Resalta en fondo morado */
+    font-weight: 500;
+}
+
+.p-footer-highlight {
+    color: var(--orange) !important; /* Da máxima fuerza y distinción visual al párrafo final */
+    font-size: 1.25rem !important;
+    max-width: 800px;
+    margin: 0 auto 25px auto;
 }
 
 /* ==========================================
@@ -204,6 +217,53 @@ section h3 {
 }
 
 /* ==========================================
+CORRECCIÓN: ESTILOS DE TARJETAS RESTAURADOS
+========================================== */
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo recuperado de la tarjeta "17" */
+.decorative-card {
+    background: var(--navy);
+    color: white;
+    padding: 40px 30px;
+    border-radius: 16px;
+    text-align: center;
+    max-width: 340px;
+    box-shadow: 0 12px 30px rgba(21, 37, 75, 0.15);
+}
+
+.card-huge {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 5.5rem;
+    display: block;
+    color: var(--orange);
+    line-height: 1;
+    margin-bottom: 12px;
+    font-weight: 900;
+}
+
+/* Estilo recuperado de la cita del Frente Amplio */
+.quote-card {
+    border-left: 6px solid var(--red);
+    padding: 20px 30px;
+    background: rgba(234, 55, 71, 0.06);
+    border-radius: 0 12px 12px 0;
+    max-width: 450px;
+}
+
+.quote-card p {
+    font-size: 1.25rem !important;
+    font-style: italic;
+    line-height: 1.6 !important;
+    color: var(--purple);
+    margin-bottom: 0 !important;
+}
+
+/* ==========================================
 INTERACTIVIDAD: POPUPS / MODALES
 ========================================== */
 .btn-info-trigger {
@@ -321,15 +381,6 @@ INTERACTIVIDAD: POPUPS / MODALES
 
 /* PROTAGONISTAS CARDS */
 .protagonistas-section { background: var(--white); }
-.section-tagline {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 0.85rem;
-    color: var(--red);
-    font-weight: bold;
-    letter-spacing: 2px;
-    display: block;
-    margin-bottom: 10px;
-}
 
 .protagonista-card {
     background: var(--light2);
@@ -596,7 +647,7 @@ footer h2 { font-family: 'League Spartan', sans-serif; font-size: 3.5rem; margin
 footer h3 { color: var(--orange); margin: 30px 0; font-size: 1.5rem; }
 .creditos { margin-top: 50px; opacity: .5; font-size: 0.85rem; }
 
-/* Animaciones de Entrada */
+/* Animaciones de Entrada (Intersección) */
 .hidden { opacity: 0; transform: translateY(40px); transition: opacity 0.7s, transform 0.7s; }
 .show { opacity: 1; transform: translateY(0); }
 
