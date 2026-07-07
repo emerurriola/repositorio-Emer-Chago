@@ -10,6 +10,7 @@
 </head>
 <body>
 
+<!-- Modales del Sistema Electoral (Popups Interactivos) -->
 <div id="modal-binominal" class="info-modal-overlay">
     <div class="info-modal-content">
         <span class="close-modal" data-target="modal-binominal">&times;</span>
@@ -29,11 +30,12 @@
         <h4>La Apertura de Llaves</h4>
         <p>Reemplazó al binominal utilizando el método D'Hondt para asignar escaños en directa proporción a los votos totales obtenidos por listas y partidos.</p>
         <div class="modal-stat">
-            <strong>DATO CLAVE:</strong> Redujo los distritos a 28 pero aumentó los escaños de la Cámara a 155, permitiendo el ingreso de fuerzas alternativas con porcentajes de votación significativamente menores. 
+            <strong>DATO CLAVE:</strong> Redujo los distritos a 28 pero aumentó los escaños de la Cámara a 155, permitiendo el ingreso de fuerzas alternativas con porcentajes de votación significativamente menores.
         </div>
     </div>
 </div>
 
+<!-- HERO PORTADA -->
 <header class="hero">
     <div class="hero-overlay"></div>
     <div class="hero-content">
@@ -44,37 +46,53 @@
     </div>
 </header>
 
+<!-- INTRODUCCIÓN DISTRIBUIDA -->
 <section class="intro">
     <div class="container-narrow text-center-desktop">
         <h2>Un breve recorrido por las elecciones parlamentarias chilenas</h2>
-        <p class="paragraph-balanced p-intro"> Desde el retorno a la democracia, la representación política en Chile ha experimentado profundas transformaciones. Lo que comenzó como un sistema dominado por dos grandes coaliciones evolucionó, tras la reforma electoral de 2017, hacia un Congreso caracterizado por la presencia de múltiples fuerzas políticas que compiten por la representación ciudadana. Este cambio se explica por las diferencias entre los dos sistemas electorales que han regido las elecciones parlamentarias desde 1989. El sistema binominal (1989-2017) se caracterizó por la elección de dos representantes en cada uno de los 60 distritos, conformando una Cámara de Diputados de 120 escaños. Su diseño favorecía a las dos principales coaliciones políticas, la Concertación y la Alianza, dificultando el acceso de partidos pequeños o candidaturas independientes al Congreso. Esta situación se refleja en los resultados electorales del período, donde la competencia estuvo concentrada casi exclusivamente en ambos bloques. Además, una lista que obtenía la primera mayoría podía terminar con el mismo número de representantes que la segunda lista, salvo que duplicara su votación, regla que incentivaba la estabilidad de las grandes coaliciones y limitaba la representación de otras fuerzas políticas. En contraste, el sistema proporcional (2017-actualidad) distribuye los escaños de acuerdo con la proporción de votos obtenida por cada partido o pacto electoral. En consecuencia, las listas con mayor respaldo ciudadano acceden a una mayor cantidad de representantes, pero sin excluir a las fuerzas políticas con menores porcentajes de votación. Este mecanismo ha favorecido una representación parlamentaria más diversa, facilitando el ingreso de nuevos partidos y candidaturas independientes, y contribuyendo a una mayor fragmentación del sistema político.</p>
+        <p class="paragraph-balanced p-intro">Desde el retorno a la democracia, la representación política en Chile ha experimentado profundas transformaciones. Lo que comenzó como un sistema dominado por dos grandes coaliciones evolucionó, tras la reforma electoral de 2017, hacia un Congreso con múltiples fuerzas políticas compitiendo por la representación ciudadana. Esto se explica porque el funcionamiento de estos dos mecanismos es completamente diferente.</p>
     </div>
 </section>
 
+<!-- SECCIÓN PROTAGONISTAS INTERACTIVOS -->
 <section class="protagonistas-section">
     <div class="container-narrow text-center-desktop">
-        <h3> Porque toda historia tiene a sus protagonistas</h3>
+        <h3>Porque toda historia tiene a sus protagonistas</h3>
+        <p class="p-instruction-click">Haz clic en cada recuadro para conocer sus detalles históricos:</p>
     </div>
     <div class="grid-two-columns space-top-desktop">
-        <div class="protagonista-card card-tradicional">
+        <!-- Bloque Tradicional -->
+        <div class="protagonista-card card-tradicional clickable-target" data-target="info-tradicional">
             <div class="card-indicator indicators-navy"></div>
             <h4>El Bloque Tradicional</h4>
-            <p> La Concertación y la Alianza representaron el orden institucional y el control legislativo durante casi tres décadas bajo las rígidas reglas del sistema binominal. Mientras la Concertación se caracterizaba por reunir partidos de orientación más progresista, comprometidos con los derechos humanos y la democracia, la Alianza, bloque que agrupaba a los principales partidos de la derecha tradicional, se caracterizaba por mantener posturas de negacionismo respecto de los acontecimientos ocurridos durante la dictadura e, incluso, por la presencia de sectores más extremos, como la UDI. En la actualidad, el espacio que antes ocupaba la Alianza es representado por partidos como el Partido Nacional Libertario, el Partido Social Cristiano y el Partido Republicano, lo que refleja un cambio en la configuración de la derecha chilena.</p>
+            <p class="card-preview-text">La Concertación y la Alianza representaron el orden institucional y el control legislativo por casi tres décadas bajo las rígidas reglas del equilibrio binominal. (Haz clic para expandir)</p>
+            
+            <div id="info-tradicional" class="protagonista-expanded-content">
+                <p>Mientras que la <strong>Concertación</strong> se caracterizaba por tener partidos políticos de corte más progresista, comprometidos con los derechos humanos y la democracia. La <strong>Alianza</strong>, bloque que convocaba a partidos políticos de la derecha tradicional, se caracterizaba por un negacionismo a acontecimientos de la dictadura, e incluso cierto fanatismo en los sectores más extremos de la época como la <strong>Unión Demócrata Independiente (UDI)</strong>. Hoy los partidos que ocupan ese lugar son el <strong>Partido Nacional Libertario</strong>, <strong>Social Cristiano</strong> y <strong>Partido Republicano</strong>, cambiando el esquema de ubicación de los partidos de la derecha chilena.</p>
+            </div>
         </div>
-        <div class="protagonista-card card-emergente">
+
+        <!-- Fuerzas Emergentes -->
+        <div class="protagonista-card card-emergente clickable-target" data-target="info-emergentes">
             <div class="card-indicator indicators-red"></div>
-            <h4>Las Fuerzas que Emergieron </h4>
-            <p>Con la llegada del Frente Amplio, el escenario político dentro de la Cámara de Diputadas y Diputados cambió significativamente. En las elecciones de 2017, esta coalición logró instalarse como una fuerza relevante en el Congreso, coincidiendo con la implementación del nuevo sistema electoral proporcional. Este cambio contribuyó a romper el histórico duopolio conformado por Chile Vamos (sucesor de la Alianza) y la Nueva Mayoría (sucesora de la Concertación). Posteriormente, se incorporaron nuevas fuerzas políticas provenientes de distintos sectores ideológicos, como el Partido Republicano, el Partido Social Cristiano, el Partido de la Gente y el Partido Nacional Libertario, ampliando la oferta de representación política disponible para la ciudadanía. </p>
+            <h4>Las Fuerzas que emergieron</h4>
+            <p class="card-preview-text">Pero con la llegada del Frente Amplio el escenario dentro de la Cámara Baja del Congreso cambió totalmente. (Haz clic para expandir)</p>
+            
+            <div id="info-emergentes" class="protagonista-expanded-content">
+                <p>Esta colectividad por ese entonces se instaló con bastante peso dentro del parlamento en 2017 con el recién llegado sistema proporcional. Con este elemento, se rompió el duopolio electoral de <strong>Chile Vamos</strong> (ex<strong>Alianza</strong>) y la <strong>Nueva Mayoría</strong> (ex<strong>Concertación</strong>). Pronto se sumarían partidos políticos de todos los espectros como el <strong>Partido Republicano</strong>, <strong>Partido Social Cristiano</strong>, <strong>Partido de la Gente (PDG)</strong>, <strong>Partido Nacional Libertario</strong>. Ofreciéndole a la ciudadanía una amplia gama de representación política.</p>
+            </div>
         </div>
     </div>
 </section>
 
+<!-- ACTO I -->
 <section class="chapter chapter-1989 split-layout">
     <div class="text-side">
         <span class="year-title">1989</span>
         <h2>Reconstruir la democracia</h2>
-        <p class="paragraph-balanced"> A finales de la década de 1980, con el término del régimen militar de Augusto Pinochet, los actores políticos chilenos enfrentaron el desafío de reconstruir el sistema de partidos y reorganizar las coaliciones que agruparían a las distintas fuerzas políticas tras 17 años de dictadura. En ese contexto surgieron dos grandes bloques que dominarían las elecciones parlamentarias de 1989: la Concertación de Partidos por la Democracia y la Alianza. La Concertación estuvo liderada por la Democracia Cristiana (DC) e integrada, entre otros, por el Partido por la Democracia (PPD), el Partido Socialista (PS), el Partido Radical (PR), el Partido Socialdemócrata (PSD), la Izquierda Cristiana (IC), el Movimiento de Acción Popular Unitario (MAPU), el Partido Liberal (PL), el Partido Humanista (PH), Los Verdes y Alianza de Centro. Por su parte, la Alianza estuvo encabezada por la Unión Demócrata Independiente (UDI) y Renovación Nacional (RN), incorporando además, según el periodo electoral, a partidos como el Partido Nacional (PN), la Unión de Centro Centro (UCC) y el Partido del Sur.</p>
-        <p class="paragraph-balanced"> En este escenario de reconstrucción democrática nacieron los principales pactos políticos que competirían en las elecciones parlamentarias de 1989, inaugurando un ciclo político marcado por el sistema electoral binominal, cuyas reglas favorecieron la consolidación de dos grandes coaliciones durante gran parte del período democrático. <button class="btn-info-trigger" data-modal="modal-binominal">Sistema Binominal ⓘ</button></p>
+        <p class="paragraph-balanced">Al cierre de la década de los ochenta, con la caída del régimen militar de Augusto Pinochet, los actores políticos chilenos afrontaron una gran misión: reconstruir los partidos políticos y reorganizar las coaliciones que agruparían a estas fuerzas tras 17 años de dictadura.</p>
+        <p class="paragraph-balanced text-distributed-highlight">El sistema binominal (1989-2017) se caracteriza porque en cada distrito (60) normalmente se elegían 2 representantes (120 en total); lo que favorecía a los dos grandes bloques políticos como la <strong>Concertación</strong> y <strong>Alianza</strong>. Era muy difícil que partidos pequeños obtuvieran escaños; eso se puede ver en resultados de elecciones bajo este sistema. Incluso una lista que ganaba podía terminar con la misma cantidad de representantes que la segunda lista, salvo que la duplicara en votos.</p>
+        <p class="paragraph-balanced">En aquel escenario surgieron dos grandes bloques políticos que lideraron las elecciones parlamentarias de 1989. La <strong>Concertación</strong>, bloque liderado por la <strong>Democracia Cristiana (DC)</strong> y acompañado por el <strong>Partido por la Democracia (PPD)</strong>, <strong>Partido Socialista (PS)</strong>, <strong>Partido Radical (PR)</strong>, <strong>Partido Social Demócrata (PSD)</strong>, <strong>Izquierda Cristiana (IC)</strong>, <strong>Movimiento de Acción Popular (MAPU)</strong>, <strong>Partido Liberal (PL)</strong>, <strong>Partido Humanista (PH)</strong>, <strong>Los Verdes</strong> y <strong>Alianza Centro</strong>. Y la <strong>Alianza</strong>, bloque liderado por <strong>Unión Demócrata Independiente (UDI)</strong>, <strong>Renovación Nacional (RN)</strong> y partidos que fueron variando con los años, como <strong>Partido Nacional (PN)</strong>, <strong>Unión de Centro Centro (UCC)</strong> y <strong>Partido del Sur</strong>. <button class="btn-info-trigger" data-modal="modal-binominal">Sistema Binominal ⓘ</button></p>
     </div>
     <div class="visual-side flex-center">
         <div class="decorative-card">
@@ -84,40 +102,41 @@
     </div>
 </section>
 
+<!-- ACTO II -->
 <section class="chapter chapter-coaliciones split-layout reverse">
     <div class="text-side">
-        <span class="year-title">1989–2025</span>
-        <h2>El motor electoral durante los primeros años de democracia</h2>
-        <p class="paragraph-balanced"> La Concertación surgió como una coalición de centroizquierda que dominó la política parlamentaria durante más de cinco elecciones consecutivas. Su éxito se sustentó en una sólida disciplina interna y en una estrategia electoral altamente compatible con la lógica del sistema binominal. Su mejor desempeño se registró en las elecciones de 1993, cuando obtuvo 70 de los 120 escaños de la Cámara de Diputados, consolidando su posición como la principal fuerza política del Congreso Nacional.</p>
-        <p class="paragraph-balanced"> Por su parte, la Alianza, integrada principalmente por la Unión Demócrata Independiente (UDI) y Renovación Nacional (RN), además de otros partidos según el periodo electoral, alcanzó 50 escaños en esos comicios. La amplia representación obtenida por ambas coaliciones evidenció cómo el sistema binominal favorecía la concentración de la representación parlamentaria en dos grandes bloques, dificultando el ingreso de partidos pequeños e independientes. Como resultado, durante gran parte del período comprendido entre 1989 y 2017, la competencia política estuvo dominada por estas dos coaliciones, un escenario muy distinto al observado en la actualidad bajo el sistema proporcional.</p>
+        <span class="year-title">1989–2013</span>
+        <h2>El motor electoral de la Concertación</h2>
+        <p class="paragraph-balanced">La <strong>Concertación de Partidos por la Democracia</strong> se erigió como una coalición de centroizquierda imbatible durante más de 5 elecciones parlamentarias. Su éxito radicó en una disciplina interna estricta y una ingeniería electoral óptima para la lógica del binominal, alcanzando 67 de los 120 escaños iniciales.</p>
+        <p class="paragraph-balanced">Su contraparte opositora de centroderecha, <strong>Democracia y Progreso</strong> (<strong>UDI</strong> y <strong>RN</strong>) también renombrada como <strong>Alianza</strong>, consolidó 48 escaños, sepultando de forma matemática cualquier intento de partidos independientes o fuera del binomio por entrar al Congreso.</p>
         <div class="seats">
-            <div class="concertacion bar">Concertación · 70</div>
-            <div class="derecha bar">Democracia y Progreso · 50</div>
+            <div class="concertacion bar">Concertación · 67</div>
+            <div class="derecha bar">Democracia y Progreso · 48</div>
         </div>
     </div>
     <div class="visual-side">
         <div class="image-box">
-            <img src="V1.png" alt="Número de Parlamentarios por Pacto Electoral y Año (1989-2013)" class="embedded-visual">
-            <p class="image-caption">V 1: El gráfico de barras muestra la prolongada estabilidad de dos coaliciones con el sistema binominal.</p>
-            <img src="V2.png" alt="Número de Parlamentarios por Pacto Electoral y Año (2017-2025)" class="embedded-visual">
-            <p class="image-caption">V 2: El gráfico de barras muestra el aumento de coaliciones con el sistema proporcional.</p>
+            <img src="visual1.png" alt="Número de Parlamentarios por Pacto Electoral y Año" class="embedded-visual">
+            <p class="image-caption">Visual 1: El gráfico de barras muestra la prolongada estabilidad de los dos bloques tradicionales y su posterior ruptura.</p>
         </div>
     </div>
 </section>
 
+<!-- ACTO III -->
 <section class="chapter chapter-bipartidismo">
     <div class="grid-two-columns">
         <div>
             <span class="year-title">1993–2013</span>
             <h2>La hegemonía del pacto binominal</h2>
-            <p class="paragraph-balanced">El sistema permitía que la lista que obtuviera el segundo lugar, siempre que alcanzara aproximadamente un tercio de los votos en un distrito y la lista vencedora no duplicara su votación, asegurara uno de los dos escaños en disputa. En consecuencia, era poco frecuente que una misma coalición obtuviera ambos escaños de un distrito. Una de las principales excepciones ocurrió en las elecciones de 1993, cuando la Concertación logró 70 escaños en la Cámara de Diputados gracias a una serie de doblajes en distritos estratégicos. Durante este período, partidos con un importante respaldo electoral, como el Partido Comunista (PC), obtuvieron entre un 5 % y un 9 % de los votos a nivel nacional en distintas elecciones.</p>
+            <p class="paragraph-balanced">A lo largo de los noventa y los dos mil, los dos grandes bloques clausuraron la representación del Parlamento. En 1993 la <strong>Concertación</strong> expandió su presencia legislativa a 70 parlamentarios, disminuyendo al mínimo la competencia exterior.</p>
         </div>
         <div>
-            <p class="paragraph-balanced space-top-desktop"> Sin embargo, debido a las reglas del sistema binominal, no consiguieron representación en la Cámara de Diputados durante la década de 1990 ni en gran parte de los años 2000. En este contexto, la competencia electoral no se producía únicamente entre la Concertación y la Alianza, sino también al interior de cada coalición. En la Concertación, partidos como la Democracia Cristiana (DC) y el Partido por la Democracia (PPD) competían entre sí por el escaño que correspondía al pacto. Del mismo modo, en la Alianza, la Unión Demócrata Independiente (UDI) y Renovación Nacional (RN) disputaban la representación de su coalición en cada distrito.</p>
+            <p class="paragraph-balanced space-top-desktop">Este duopolio perduró de manera estable durante siete procesos eleccionarios sucesivos, con raras excepciones geográficas marginales o candidaturas de carácter estrictamente personal.</p>
         </div>
     </div>
 </section>
 
+<!-- TIMELINE -->
 <section class="timeline split-layout">
     <div class="text-side">
         <h2>Línea de tiempo histórica</h2>
@@ -137,12 +156,13 @@
     </div>
     <div class="visual-side">
         <div class="image-box">
-            <img src="V3.png" alt="Coaliciones por año de elección" class="embedded-visual">
-            <p class="image-caption">Visual 3: Cronología interactiva que exhibe el nacimiento, mutación y fin de los pactos en el hemiciclo.</p>
+            <img src="visual2.png" alt="Coaliciones por año de elección" class="embedded-visual">
+            <p class="image-caption">Visual 2: Cronología interactiva que exhibe el nacimiento, mutación y fin de los pactos en el hemiciclo.</p>
         </div>
     </div>
 </section>
 
+<!-- FILTRO ELECTORAL -->
 <section class="disueltos-section">
     <div class="container-narrow">
         <span class="year-title">FILTRO ELECTORAL</span>
@@ -163,16 +183,18 @@
         <div class="disuelto-card">
             <h5>Nueva Mayoría / Convergencia</h5>
             <span class="badge-disuelto">Fin de Ciclo Histórico</span>
-            <p>La mutación definitiva de la Concertación en 2013 marcó el término legal e histórico del bloque tradicional tras las tensiones de su propio eje político.</p>
+            <p>La mutación definitiva de la <strong>Concertación</strong> en 2013 marcó el término legal e histórico del bloque tradicional tras las tensiones de su propio eje político.</p>
         </div>
     </div>
 </section>
 
+<!-- TRANSICIÓN INCISIVA 2017 -->
 <section class="break-section">
     <div class="break-line-orange"></div>
-    <span class="break-alert">EL PUNTO DE QUIEBRE INCIS微</span>
+    <span class="break-alert">EL PUNTO DE QUIEBRE INCISIVO</span>
     <h2>2017</h2>
     <h3>La reforma estructural que demolió la unidad</h3>
+    <p class="break-description paragraph-balanced text-distributed-highlight-dark">En el sistema proporcional (2017-actualidad), los representantes se asignan según el porcentaje de votos que obtiene cada partido o lista. Si un partido recibe más votos, obtiene más escaños en proporción, lo que permite una representación más diversa y facilita la entrada de partidos pequeños o independientes, lo que es como una cascada de votos.</p>
     <p class="break-description paragraph-balanced">En 2017 se puso fin definitivo al histórico Sistema Binominal, implementando un nuevo régimen electoral de carácter proporcional. Este cambio de reglas de juego barrió con los incentivos que forzaban la unidad histórica de los grandes bloques institucionales. <button class="btn-info-trigger trigger-white" data-modal="modal-proporcional">Sistema Proporcional ⓘ</button></p>
     
     <div class="numbers">
@@ -182,7 +204,7 @@
         </div>
         <div>
             <span>120 → 155</span>
-            <p>Diputadas y diputados</p>
+            <p>Diputadas y diputados reales</p>
         </div>
         <div>
             <span>2 → 7</span>
@@ -191,11 +213,12 @@
     </div>
 </section>
 
+<!-- ACTO IV -->
 <section class="chapter chapter-2017 split-layout">
     <div class="text-side">
         <h2>La irrupción del Frente Amplio</h2>
-        <p class="paragraph-balanced"> La implementación del sistema electoral proporcional flexibilizó las condiciones de acceso a la representación legislativa. En las elecciones de 2017, el Frente Amplio se convirtió en la principal fuerza política emergente del nuevo escenario al obtener 20 escaños en la Cámara de Diputados, consolidándose como un actor relevante en el Congreso Nacional. </p>
-        <p class="paragraph-balanced"> Su irrupción modificó el equilibrio de fuerzas dentro de la izquierda chilena y evidenció los efectos del nuevo sistema electoral. A diferencia del período binominal, el acceso a la representación parlamentaria dejó de estar concentrado casi exclusivamente en las dos grandes coaliciones tradicionales, favoreciendo la incorporación de nuevas fuerzas políticas al Congreso.</p>
+        <p class="paragraph-balanced">El naciente entorno proporcional flexibilizó las exigencias de entrada legislativa. El <strong>Frente Amplio</strong> se convirtió en el principal catalizador de esta reforma en 2017, consolidando un hito al obtener 20 diputados en la Cámara.</p>
+        <p class="paragraph-balanced">Esta irrupción alteró irreversiblemente la correlación de fuerzas de la izquierda chilena, demostrando de forma empírica que el binomio tradicional de poder ya no controlaba de manera exclusiva las llaves de acceso parlamentario.</p>
     </div>
     <div class="visual-side flex-center">
         <div class="quote-card">
@@ -204,6 +227,7 @@
     </div>
 </section>
 
+<!-- FRAGMENTACIÓN -->
 <section class="fragmentacion">
     <h2>Del bipartidismo a la fragmentación</h2>
     <p class="paragraph-balanced p-highlight-dark">Haz clic en el simulador para reproducir de forma visual cómo el Congreso atomizó su representación en los últimos ciclos políticos:</p>
@@ -213,6 +237,7 @@
     </div>
 </section>
 
+<!-- ESPEJO TEMPORAL -->
 <section class="espejo-section">
     <div class="container-narrow text-center-desktop">
         <span class="year-title">ESPEJO PARLAMENTARIO</span>
@@ -225,15 +250,15 @@
             <h4>Bloques Fundacionales (1989)</h4>
             <div class="party-item-box item-navy">
                 <strong>Concertación</strong>
-                <span>PDC, PPD, PS, PR</span>
+                <span><strong>PDC</strong>, <strong>PPD</strong>, <strong>PS</strong>, <strong>PR</strong></span>
             </div>
             <div class="party-item-box item-purple">
                 <strong>Democracia y Progreso</strong>
-                <span>RN, UDI</span>
+                <span><strong>RN</strong>, <strong>UDI</strong></span>
             </div>
             <div class="party-item-box item-light">
                 <strong>Fuerzas Menores</strong>
-                <span>PAIS, Liberal-Socialista</span>
+                <span><strong>PAIS</strong>, <strong>Liberal-Socialista</strong></span>
             </div>
         </div>
         
@@ -241,43 +266,45 @@
             <h4>Atomización Absoluta (2025)</h4>
             <div class="party-item-box item-red">
                 <strong>Frente Amplio / PC</strong>
-                <span>Izquierda Transformadora</span>
+                <span>Izquierda Transformadora (<strong>FA</strong> / <strong>PC</strong>)</span>
             </div>
             <div class="party-item-box item-navy">
                 <strong>Chile Vamos</strong>
-                <span>RN, UDI, Evópoli</span>
+                <span><strong>RN</strong>, <strong>UDI</strong>, <strong>Evópoli</strong></span>
             </div>
             <div class="party-item-box item-orange">
                 <strong>Republicanos / PSC</strong>
-                <span>Derecha Conservadora</span>
+                <span>Derecha Conservadora (<strong>Partido Republicano</strong> / <strong>PSC</strong>)</span>
             </div>
             <div class="party-item-box item-dark">
                 <strong>Fuerzas del Centro</strong>
-                <span>Demócratas, Amarillos, PDG</span>
+                <span><strong>Demócratas</strong>, <strong>Amarillos</strong>, <strong>PDG</strong></span>
             </div>
         </div>
     </div>
 </section>
 
+<!-- ACTO V -->
 <section class="chapter chapter-actualidad">
     <div class="container-narrow text-center-desktop">
         <span class="year-title">2021–2025</span>
         <h2>Un Congreso fragmentado</h2>
-        <p class="paragraph-balanced">Hoy en día, las dos alianzas gobernantes históricas carecen del control absoluto de las votaciones. Colectividades con identidades específicas o liderazgos de carácter marcadamente personalista modificaron las dinámicas internas de debate en la Cámara.</p>
-        <p class="paragraph-balanced">La composición parlamentaria actual ofrece mayores niveles de representatividad, pero el constante desborde de fuerzas impone desafíos severos a la gobernabilidad y la construcción de acuerdos nacionales firmes.</p>
+        <p class="paragraph-balanced">Hoy en día, las dos alianzas gobernantes históricas carecen del control absoluto de las votaciones. Colectividades con identidades específicas o liderazgos de carácter marcadamente personalista modificaron las dinámicas internas de debate en la Cámara. Nuevas fuerzas como el <strong>Partido de la Gente (PDG)</strong> o el <strong>Partido Social Cristiano (PSC)</strong> han ingresado a la disputa parlamentaria, transformando la composición de la Cámara Baja.</p>
+        <p class="paragraph-balanced">La composición parlamentaria actual offers mayores niveles de representatividad, pero el constante desborde de fuerzas impone desafíos severos a la gobernabilidad y la construcción de acuerdos nacionales firmes.</p>
     </div>
     <div class="grid-partidos">
-        <div>Renovación Nacional</div>
-        <div>Unión Demócrata Independiente</div>
-        <div>Partido Socialista</div>
-        <div>Frente Amplio</div>
-        <div>Partido Comunista</div>
-        <div>Democracia Cristiana</div>
-        <div>Partido De la Gente</div>
-        <div>Partido Social Cristiano</div>
+        <div><strong>RN</strong></div>
+        <div><strong>UDI</strong></div>
+        <div><strong>PS</strong></div>
+        <div><strong>FA</strong></div>
+        <div><strong>PC</strong></div>
+        <div><strong>DC</strong></div>
+        <div><strong>PDG</strong></div>
+        <div><strong>PSC</strong></div>
     </div>
 </section>
 
+<!-- CIERRE -->
 <footer>
     <h2>¿Representar o fragmentar?</h2>
     <p class="paragraph-balanced p-footer-highlight">El aumento en los índices de representatividad facilitó el ingreso de voces históricamente excluidas al Congreso. No obstante, ha incrementado de manera sustantiva las dificultades operativas de gobernabilidad parlamentaria en Chile.</p>
