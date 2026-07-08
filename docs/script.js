@@ -1,6 +1,6 @@
 // ======================================================
 // REPRESENTAR O FRAGMENTAR
-// SCRIPT V3.0 (Interactividad Extendida y Modales)
+// SCRIPT V3.1 (Interactividad Extendida y Modales)
 // ======================================================
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }, { threshold: 0.1 });
 
-    document.querySelectorAll("section, footer, .protagonista-card, .disuelto-card").forEach(el => {
+    document.querySelectorAll("section, footer, .protagonista-card, .disuelto-card, .decorative-card").forEach(el => {
         el.classList.add("hidden");
         observer.observe(el);
     });
@@ -103,7 +103,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // 6. LÍNEA DE TIEMPO INTERACTIVA
     const timelineData = {
-        "1989": "Nace la Concertación de Partidos por la Democracia, integrada por 17 partidos de oposición, entre ellos la Democracia Cristiana (DC), el Partido por la Democracia (PPD), el Partido Radical (PR) y diversas facciones del Partido Socialista (PS). En las primeras elecciones parlamentarias tras el retorno a la democracia obtuvo 67 escaños en la Cámara de Diputados. Por su parte, la Alianza, conformada por Renovación Nacional (RN) y la Unión Demócrata Independiente (UDI), consiguió 48 escaños, una cifra significativa considerando que estaba integrada únicamente por dos partidos. Los restantes escaños fueron obtenidos por un candidato independiente y por las coaliciones Unidad para la Democracia y Liberal Socialista Chileno, ambas de tendencia izquierdista.",
+        "1989": "Nace la Concertación de Partidos por la Democracia, integrada por 17 partidos de oposición, entre ellos la Democracia Cristiana (DC), el Partido por la Democracia (PPD), el Partido Radical (PR) y diversas facciones del Partido Socialista (PS). En las primeras elecciones parlamentarias tras el retorno a la democracia obtuvo 67 escaños en la Cámara de Diputados. Por su parte, la Alianza, conformada por Renovación Nacional (RN) y la Unión Demócrata Identificadora (UDI), consiguió 48 escaños, una cifra significativa considerando que estaba integrada únicamente por dos partidos. Los restantes escaños fueron obtenidos por un candidato independiente y por las coaliciones Unidad para la Democracia y Liberal Socialista Chileno, ambas de tendencia izquierdista.",
         "1993": "La Concertación aumentó su representación parlamentaria al obtener 70 escaños, mientras que la Alianza alcanzó 50. El resultado consolidó el predominio de ambos bloques políticos, dejando escaso espacio para fuerzas políticas ajenas a estas coaliciones y reforzando el carácter bipolar del sistema binominal.",
         "1997": "La coalición Chile 2000, de orientación populista y liderada por Francisco Javier Errázuriz (Fra Fra), obtuvo dos escaños en la Cámara de Diputados, aunque no volvería a participar con éxito en las siguientes elecciones. Además, resultaron electos dos candidatos independientes: Rosa González Román, por el Distrito 1, y Samuel Venegas Vargas, por el Distrito 15, constituyendo una de las pocas excepciones al predominio de las grandes coaliciones.",
         "2001": "La Concertación y la Alianza retomaron el control casi absoluto del Congreso Nacional. La Concertación obtuvo 63 escaños, mientras que la Alianza alcanzó 57, manteniendo la lógica de competencia entre los dos principales bloques políticos.",
