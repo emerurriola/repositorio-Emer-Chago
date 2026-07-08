@@ -621,12 +621,12 @@ INTERACTIVIDAD: POPUPS / MODALES
 
 /* Fragmentación */
 .fragmentacion { 
-    background: var(--light2); /* Gris claro de tu paleta */
-    color: var(--navy);       /* Texto oscuro para que sea legible */
+    background: #2b2b2b; /* Color Grafito Oscuro */
+    color: white; 
     text-align: left; 
 }
 .fragmentacion h2 { 
-    color: var(--navy);        /* Ti­tulo en azul marino para combinar */
+    color: white; 
 }
 #fragment-btn {
     border: none; 
