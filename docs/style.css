@@ -622,7 +622,7 @@ INTERACTIVIDAD: POPUPS / MODALES
 /* Fragmentación */
 .fragmentacion { 
     background: var(--light2); /* Gris claro de tu paleta */
-    color: var(--black);       /* Texto oscuro para que sea legible */
+    color: var(--navy);       /* Texto oscuro para que sea legible */
     text-align: left; 
 }
 .fragmentacion h2 { 
