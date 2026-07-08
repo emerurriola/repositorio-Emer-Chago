@@ -10,16 +10,45 @@
   <script>
     const spec = {
   "config": {"view": {"continuousWidth": 300, "continuousHeight": 300}},
-  "data": {"name": "data-7ca19d6ddb7a765dd6826fa8aaad7a14"},
+  "data": {"name": "data-cf52520e9ba3833f82c8994b6a8ad6b7"},
   "mark": {"type": "bar"},
   "encoding": {
-    "color": {"field": "año elección", "type": "nominal"},
-    "x": {"field": "año elección", "type": "nominal"},
-    "y": {"field": "coalición", "type": "nominal"}
+    "color": {
+      "field": "año elección",
+      "title": "Año de Elección",
+      "type": "nominal"
+    },
+    "tooltip": [
+      {"field": "año elección", "type": "quantitative"},
+      {"field": "coalición", "type": "nominal"},
+      {
+        "aggregate": "count",
+        "title": "Número de Parlamentarios",
+        "type": "quantitative"
+      }
+    ],
+    "x": {
+      "field": "año elección",
+      "title": "Año de Elección",
+      "type": "nominal"
+    },
+    "y": {
+      "field": "coalición",
+      "title": "Pacto Electoral Consolidado",
+      "type": "nominal"
+    }
   },
+  "params": [
+    {
+      "name": "param_5",
+      "select": {"type": "interval", "encodings": ["x", "y"]},
+      "bind": "scales"
+    }
+  ],
+  "title": "Número de Parlamentarios por Pacto Electoral y Año de Elección (Coaliciones Consolidadas)",
   "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
   "datasets": {
-    "data-7ca19d6ddb7a765dd6826fa8aaad7a14": [
+    "data-cf52520e9ba3833f82c8994b6a8ad6b7": [
       {
         "Distrito": 1,
         "parlamentario/a": "Luis Leblanc Valenzuela",
@@ -761,7 +790,7 @@
       {
         "Distrito": 42,
         "parlamentario/a": "Hosaín Sabag Castillo",
-        "coalición": "Independiente ",
+        "coalición": "Independientes (Consolidado)",
         "partido político": "Independiente",
         "Votos obtenidos": 43194,
         "% obtenido": "39,06%",
@@ -2192,7 +2221,7 @@
       {
         "Distrito": 1,
         "parlamentario/a": "Rosa González Román",
-        "coalición": "Independiente ",
+        "coalición": "Independientes (Consolidado)",
         "partido político": "Independiente",
         "Votos obtenidos": 17680,
         "% obtenido": "26,20%",
@@ -2435,7 +2464,7 @@
       {
         "Distrito": 15,
         "parlamentario/a": "Samuel Venegas Rubio",
-        "coalición": "Independiente ",
+        "coalición": "Independientes (Consolidado)",
         "partido político": "Independiente",
         "Votos obtenidos": 22342,
         "% obtenido": "33,03%",
@@ -4370,7 +4399,7 @@
       {
         "Distrito": 2,
         "parlamentario/a": "Marta Isasi Barbieri",
-        "coalición": "Fuerza Regional Independiente",
+        "coalición": "Independientes (Consolidado)",
         "partido político": "Partido de Acción Regionalista de Chile",
         "Votos obtenidos": 24350,
         "% obtenido": "26,66%",
@@ -5558,7 +5587,7 @@
       {
         "Distrito": 8,
         "parlamentario/a": "Pedro Velásquez Seguel",
-        "coalición": "Independiente",
+        "coalición": "Independientes (Consolidado)",
         "partido político": "Independiente.",
         "Votos obtenidos": 25919,
         "% obtenido": "24,37%",
@@ -6494,7 +6523,7 @@
       {
         "Distrito": 60,
         "parlamentario/a": "Miodrag Marinovic Solo De Zaldívar",
-        "coalición": "Independiente",
+        "coalición": "Independientes (Consolidado)",
         "partido político": "Independiente",
         "Votos obtenidos": 17512,
         "% obtenido": "26,47%",
@@ -6881,7 +6910,7 @@
       {
         "Distrito": 22,
         "parlamentario/a": "Giorgio Jackson Drago",
-        "coalición": "Independiente ",
+        "coalición": "Independientes (Consolidado)",
         "partido político": "Independiente",
         "Votos obtenidos": 55259,
         "% obtenido": "48,17%",
@@ -7097,7 +7126,7 @@
       {
         "Distrito": 34,
         "parlamentario/a": "Alejandra Sepúlveda Orbenes",
-        "coalición": "Independiente ",
+        "coalición": "Independientes (Consolidado)",
         "partido político": "Independiente",
         "Votos obtenidos": 35012,
         "% obtenido": "42,16%",
@@ -7565,7 +7594,7 @@
       {
         "Distrito": 60,
         "parlamentario/a": "Gabriel Boric Font",
-        "coalición": "Independiente ",
+        "coalición": "Independientes (Consolidado)",
         "partido político": "Independiente",
         "Votos obtenidos": 15417,
         "% obtenido": "26,18%",
@@ -8789,7 +8818,7 @@
       {
         "Distrito": 23,
         "parlamentario/a": "René Saffirio Espinoza",
-        "coalición": "Independiente",
+        "coalición": "Independientes (Consolidado)",
         "partido político": "Independiente",
         "Votos obtenidos": 38578,
         "% obtenido": "17,15%",
@@ -9059,7 +9088,7 @@
       {
         "Distrito": 3,
         "parlamentario/a": "Yovana Ahumada Palma",
-        "coalición": "Partido de la Gente ",
+        "coalición": "Partido de la Gente (Consolidado)",
         "partido político": "Partido de la Gente ",
         "Votos obtenidos": 11851,
         "% obtenido": "6,51%",
@@ -9176,7 +9205,7 @@
       {
         "Distrito": 5,
         "parlamentario/a": "Víctor Pino Fuentes",
-        "coalición": "Partido de la Gente ",
+        "coalición": "Partido de la Gente (Consolidado)",
         "partido político": "Partido de la Gente ",
         "Votos obtenidos": 9260,
         "% obtenido": "3,91%",
@@ -9248,7 +9277,7 @@
       {
         "Distrito": 6,
         "parlamentario/a": "Gaspar Rivas Sánchez",
-        "coalición": "Partido de la Gente ",
+        "coalición": "Partido de la Gente (Consolidado)",
         "partido político": "Partido de la Gente ",
         "Votos obtenidos": 14846,
         "% obtenido": "4,18%",
@@ -9392,7 +9421,7 @@
       {
         "Distrito": 8,
         "parlamentario/a": "Rubén Oyarzo Figueroa",
-        "coalición": "Partido de la Gente ",
+        "coalición": "Partido de la Gente (Consolidado)",
         "partido político": "Partido de la Gente ",
         "Votos obtenidos": 6943,
         "% obtenido": "1,48%",
@@ -9887,7 +9916,7 @@
       {
         "Distrito": 17,
         "parlamentario/a": "Francisco Pulgar Castillo",
-        "coalición": "Independientes Unidos",
+        "coalición": "Independientes (Consolidado)",
         "partido político": "Centro Unido",
         "Votos obtenidos": 23049,
         "% obtenido": "9,54%",
@@ -10040,7 +10069,7 @@
       {
         "Distrito": 20,
         "parlamentario/a": "Roberto Arroyo Muñoz",
-        "coalición": "Partido de la Gente ",
+        "coalición": "Partido de la Gente (Consolidado)",
         "partido político": "Partido de la Gente ",
         "Votos obtenidos": 9465,
         "% obtenido": "2,73%",
@@ -10076,7 +10105,7 @@
       {
         "Distrito": 21,
         "parlamentario/a": "Karen Medina Vásquez",
-        "coalición": "Partido de la Gente ",
+        "coalición": "Partido de la Gente (Consolidado)",
         "partido político": "Partido de la Gente ",
         "Votos obtenidos": 10056,
         "% obtenido": "5,13%",
@@ -10346,7 +10375,7 @@
       {
         "Distrito": 28,
         "parlamentario/a": "Carlos Bianchi Chelech",
-        "coalición": "Independiente",
+        "coalición": "Independientes (Consolidado)",
         "partido político": "Independiente",
         "Votos obtenidos": 26297,
         "% obtenido": "40,45%",
@@ -10454,7 +10483,7 @@
       {
         "Distrito": 3,
         "parlamentario/a": "Fabián Ossandón Briceño",
-        "coalición": "Partido de la Gente",
+        "coalición": "Partido de la Gente (Consolidado)",
         "partido político": "Partido de la Gente ",
         "Votos obtenidos": 33381,
         "% obtenido": "10,42%",
@@ -10499,7 +10528,7 @@
       {
         "Distrito": 4,
         "parlamentario/a": "Paula Olmos Contreras",
-        "coalición": "Partido de la Gente",
+        "coalición": "Partido de la Gente (Consolidado)",
         "partido político": "Partido de la Gente ",
         "Votos obtenidos": 10046,
         "% obtenido": "5,79%",
@@ -10562,7 +10591,7 @@
       {
         "Distrito": 5,
         "parlamentario/a": "Eileen Urqueta Rojas",
-        "coalición": "Partido de la Gente",
+        "coalición": "Partido de la Gente (Consolidado)",
         "partido político": "Partido de la Gente ",
         "Votos obtenidos": 15849,
         "% obtenido": "3,51%",
@@ -10643,7 +10672,7 @@
       {
         "Distrito": 6,
         "parlamentario/a": "Javier Olivares Avendaño",
-        "coalición": "Partido de la Gente",
+        "coalición": "Partido de la Gente (Consolidado)",
         "partido político": "Partido de la Gente ",
         "Votos obtenidos": 32334,
         "% obtenido": "5,46%",
@@ -10715,7 +10744,7 @@
       {
         "Distrito": 7,
         "parlamentario/a": "Juan Marcelo Valenzuela Henríquez",
-        "coalición": "Partido de la Gente",
+        "coalición": "Partido de la Gente (Consolidado)",
         "partido político": "Partido de la Gente ",
         "Votos obtenidos": 26410,
         "% obtenido": "4,69%",
@@ -10778,7 +10807,7 @@
       {
         "Distrito": 8,
         "parlamentario/a": "Cristian Contreras Radovic",
-        "coalición": "Partido de la Gente",
+        "coalición": "Partido de la Gente (Consolidado)",
         "partido político": "Partido de la Gente ",
         "Votos obtenidos": 53487,
         "% obtenido": "6,87%",
@@ -10841,7 +10870,7 @@
       {
         "Distrito": 9,
         "parlamentario/a": "Tamara Ramírez Ramírez",
-        "coalición": "Partido de la Gente",
+        "coalición": "Partido de la Gente (Consolidado)",
         "partido político": "Partido de la Gente ",
         "Votos obtenidos": 24269,
         "% obtenido": "4,68%",
@@ -11003,7 +11032,7 @@
       {
         "Distrito": 12,
         "parlamentario/a": "Pamela Jiles Moreno",
-        "coalición": "Partido de la Gente",
+        "coalición": "Partido de la Gente (Consolidado)",
         "partido político": "Partido de la Gente ",
         "Votos obtenidos": 97421,
         "% obtenido": "15,37%",
@@ -11012,7 +11041,7 @@
       {
         "Distrito": 12,
         "parlamentario/a": "Zandra Parisi Fernández",
-        "coalición": "Partido de la Gente",
+        "coalición": "Partido de la Gente (Consolidado)",
         "partido político": "Partido de la Gente ",
         "Votos obtenidos": 15682,
         "% obtenido": "2,47%",
@@ -11282,7 +11311,7 @@
       {
         "Distrito": 17,
         "parlamentario/a": "Guillermo Valdés Carmona",
-        "coalición": "Partido de la Gente",
+        "coalición": "Partido de la Gente (Consolidado)",
         "partido político": "Partido de la Gente ",
         "Votos obtenidos": 12500,
         "% obtenido": "2,70%",
@@ -11435,7 +11464,7 @@
       {
         "Distrito": 20,
         "parlamentario/a": "Patricio Briones Moller",
-        "coalición": "Partido de la Gente",
+        "coalición": "Partido de la Gente (Consolidado)",
         "partido político": "Partido de la Gente ",
         "Votos obtenidos": 18387,
         "% obtenido": "3,09%",
@@ -11480,7 +11509,7 @@
       {
         "Distrito": 21,
         "parlamentario/a": "Lilian Betancurt Delgado",
-        "coalición": "Partido de la Gente",
+        "coalición": "Partido de la Gente (Consolidado)",
         "partido político": "Partido de la Gente ",
         "Votos obtenidos": 14640,
         "% obtenido": "3,70%",
@@ -11579,7 +11608,7 @@
       {
         "Distrito": 23,
         "parlamentario/a": "Flor Contreras Vivallo",
-        "coalición": "Partido de la Gente",
+        "coalición": "Partido de la Gente (Consolidado)",
         "partido político": "Partido de la Gente ",
         "Votos obtenidos": 10812,
         "% obtenido": "2,51%",
@@ -11705,7 +11734,7 @@
       {
         "Distrito": 26,
         "parlamentario/a": "Alex Nahuelquín Nahuelquín",
-        "coalición": "Partido de la Gente",
+        "coalición": "Partido de la Gente (Consolidado)",
         "partido político": "Partido de la Gente ",
         "Votos obtenidos": 30374,
         "% obtenido": "10,21%",
@@ -11741,7 +11770,7 @@
       {
         "Distrito": 28,
         "parlamentario/a": "Carlos Bianchi Chelech",
-        "coalición": "Independiente",
+        "coalición": "Independientes (Consolidado)",
         "partido político": "Independiente",
         "Votos obtenidos": 25009,
         "% obtenido": "24,89%",
