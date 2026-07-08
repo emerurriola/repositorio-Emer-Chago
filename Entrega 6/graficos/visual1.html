@@ -1,0 +1,4239 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/vega@6.2.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@6.4.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@7.1.0"></script>
+</head>
+<body>
+  <div id="vis"/>
+  <script>
+    const spec = {
+  "config": {"view": {"continuousWidth": 300, "continuousHeight": 300}},
+  "data": {"name": "data-1b949387f86159575523608c750f68d3"},
+  "mark": {"type": "bar"},
+  "encoding": {
+    "color": {
+      "field": "coalición",
+      "title": "Pacto Electoral",
+      "type": "nominal"
+    },
+    "tooltip": [
+      {"field": "año elección", "type": "quantitative"},
+      {"field": "coalición", "type": "nominal"},
+      {"aggregate": "count", "type": "quantitative"}
+    ],
+    "x": {
+      "field": "año elección",
+      "title": "Año de Elección",
+      "type": "nominal"
+    },
+    "y": {
+      "aggregate": "count",
+      "title": "Número de Parlamentarios",
+      "type": "quantitative"
+    }
+  },
+  "params": [
+    {
+      "name": "param_4",
+      "select": {"type": "interval", "encodings": ["x", "y"]},
+      "bind": "scales"
+    }
+  ],
+  "title": "Número de Parlamentarios por Pacto Electoral y Año de Elección (2017-2025)",
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+  "datasets": {
+    "data-1b949387f86159575523608c750f68d3": [
+      {
+        "Distrito": 1,
+        "parlamentario/a": "Vlado Mirosevic Verdugo",
+        "coalición": "Frente Amplio ",
+        "partido político": "Partido Liberal",
+        "Votos obtenidos": 24273,
+        "% obtenido": "34,10%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 1,
+        "parlamentario/a": "Nino Baltolu Rasera",
+        "coalición": "Chile Vamos",
+        "partido político": "Unión Demócrata Independiente",
+        "Votos obtenidos": 9272,
+        "% obtenido": "13,03%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 1,
+        "parlamentario/a": "Luis Rocafull López",
+        "coalición": "Nueva Mayoría",
+        "partido político": "Partido Socialista",
+        "Votos obtenidos": 6430,
+        "% obtenido": "9,03%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 2,
+        "parlamentario/a": "Renzo Trisotti Martínez",
+        "coalición": "Chile Vamos",
+        "partido político": "Unión Demócrata Independiente",
+        "Votos obtenidos": 20084,
+        "% obtenido": "22,21%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 2,
+        "parlamentario/a": "Ramón Galleguillos Castillo",
+        "coalición": "Chile Vamos",
+        "partido político": "Renovación Nacional",
+        "Votos obtenidos": 17279,
+        "% obtenido": "19,02%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 2,
+        "parlamentario/a": "Hugo Gutiérrez Gálvez",
+        "coalición": "Nueva Mayoría",
+        "partido político": "Partido Comunista",
+        "Votos obtenidos": 14332,
+        "% obtenido": "15,87%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 3,
+        "parlamentario/a": "Paulina Núñez Urrutia",
+        "coalición": "Chile Vamos",
+        "partido político": "Renovación Nacional",
+        "Votos obtenidos": 37768,
+        "% obtenido": "23,27%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 3,
+        "parlamentario/a": "José Miguel Castro Bascuñán",
+        "coalición": "Chile Vamos",
+        "partido político": "Renovación Nacional",
+        "Votos obtenidos": 5183,
+        "% obtenido": "3,19%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 3,
+        "parlamentario/a": "Marcela Hernando Pérez",
+        "coalición": "Nueva Mayoría",
+        "partido político": "Partido Radical",
+        "Votos obtenidos": 14817,
+        "% obtenido": "9,13%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 3,
+        "parlamentario/a": "Esteban Velásquez Núñez",
+        "coalición": "Coalición Regionalista Verde ",
+        "partido político": "Frente Regional Verde Social",
+        "Votos obtenidos": 10067,
+        "% obtenido": "6,20%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 3,
+        "parlamentario/a": "Catalina Pérez Salinas",
+        "coalición": "Frente Amplio ",
+        "partido político": "Revolución Democrática",
+        "Votos obtenidos": 6106,
+        "% obtenido": "3,76%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 4,
+        "parlamentario/a": "Daniella Cicardini Milla",
+        "coalición": "Nueva Mayoría",
+        "partido político": "Partido Socialista",
+        "Votos obtenidos": 16488,
+        "% obtenido": "17,55%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 4,
+        "parlamentario/a": "Juan Santana Castillo",
+        "coalición": "Nueva Mayoría",
+        "partido político": "Partido Socialista",
+        "Votos obtenidos": 6245,
+        "% obtenido": "6,66%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 4,
+        "parlamentario/a": "Sofía Cid Versalovic",
+        "coalición": "Chile Vamos",
+        "partido político": "Renovación Nacional",
+        "Votos obtenidos": 13325,
+        "% obtenido": "14,20%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 4,
+        "parlamentario/a": "Nicolás Noman Garrido",
+        "coalición": "Chile Vamos",
+        "partido político": "Unión Demócrata Independiente",
+        "Votos obtenidos": 5974,
+        "% obtenido": "6,37%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 4,
+        "parlamentario/a": "Jaime Mulet Martínez",
+        "coalición": "Coalición Regionalista Verde ",
+        "partido político": "Frente Regional Verde Social",
+        "Votos obtenidos": 9393,
+        "% obtenido": "10,06%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 5,
+        "parlamentario/a": "Sergio Gahona Salazar",
+        "coalición": "Chile Vamos",
+        "partido político": "Unión Demócrata Independiente",
+        "Votos obtenidos": 27332,
+        "% obtenido": "11,77%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 5,
+        "parlamentario/a": "Juán Manuel Fuenzalida Cobo",
+        "coalición": "Chile Vamos",
+        "partido político": "Unión Demócrata Independiente",
+        "Votos obtenidos": 4331,
+        "% obtenido": "1,87%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 5,
+        "parlamentario/a": "Francisco Eguiguren Correa",
+        "coalición": "Chile Vamos",
+        "partido político": "Renovación Nacional",
+        "Votos obtenidos": 11132,
+        "% obtenido": "4,80%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 5,
+        "parlamentario/a": "Pedro Velásquez Seguel",
+        "coalición": "Coalición Regionalista Verde ",
+        "partido político": "Frente Regionalista Verde Social",
+        "Votos obtenidos": 22587,
+        "% obtenido": "9,68%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 5,
+        "parlamentario/a": "Daniel Núñez Arancibia",
+        "coalición": "Nueva Mayoría",
+        "partido político": "Partido Comunista",
+        "Votos obtenidos": 15300,
+        "% obtenido": "6,61%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 5,
+        "parlamentario/a": "Raúl Saldívar Auger",
+        "coalición": "Nueva Mayoría",
+        "partido político": "Partido Socialista",
+        "Votos obtenidos": 11077,
+        "% obtenido": "4,78%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 5,
+        "parlamentario/a": "Matías Walker Prieto",
+        "coalición": "Nueva Mayoría",
+        "partido político": "Democracia Cristiana ",
+        "Votos obtenidos": 15468,
+        "% obtenido": "6,66%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 6,
+        "parlamentario/a": "Andrés Longton Herrera",
+        "coalición": "Chile Vamos",
+        "partido político": "Renovación Nacional",
+        "Votos obtenidos": 38874,
+        "% obtenido": "12,21%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 6,
+        "parlamentario/a": "Luis Pardo Sáinz",
+        "coalición": "Chile Vamos",
+        "partido político": "Renovación Nacional",
+        "Votos obtenidos": 15725,
+        "% obtenido": "4,96%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 6,
+        "parlamentario/a": "Camila Flores Oporto",
+        "coalición": "Chile Vamos",
+        "partido político": "Renovación Nacional",
+        "Votos obtenidos": 15283,
+        "% obtenido": "4,81%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 6,
+        "parlamentario/a": "Pablo Kast Sommerhoff",
+        "coalición": "Chile Vamos",
+        "partido político": "Evopoli",
+        "Votos obtenidos": 28465,
+        "% obtenido": "8,94%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 6,
+        "parlamentario/a": "Marcelo Schilling Rodríguez",
+        "coalición": "Nueva Mayoría",
+        "partido político": "Partido Socialista",
+        "Votos obtenidos": 20072,
+        "% obtenido": "6,31%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 6,
+        "parlamentario/a": "Carolina Marzán Pinto",
+        "coalición": "Nueva Mayoría",
+        "partido político": "Partido por la Democracia ",
+        "Votos obtenidos": 14422,
+        "% obtenido": "4,53%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 6,
+        "parlamentario/a": "Daniel Verdessi Belemmi",
+        "coalición": "Nueva Mayoría",
+        "partido político": "Democracia Cristiana ",
+        "Votos obtenidos": 11571,
+        "% obtenido": "3,65%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 6,
+        "parlamentario/a": "Diego Ibáñez Cotroneo",
+        "coalición": "Frente Amplio ",
+        "partido político": "Partido Humanista",
+        "Votos obtenidos": 9185,
+        "% obtenido": "2,89%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 7,
+        "parlamentario/a": "María José Hoffmann Opazo",
+        "coalición": "Chile Vamos",
+        "partido político": "Unión Demócrata Independiente",
+        "Votos obtenidos": 34690,
+        "% obtenido": "10,78%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 7,
+        "parlamentario/a": "Osvaldo Urrutia Soto",
+        "coalición": "Chile Vamos",
+        "partido político": "Unión Demócrata Independiente",
+        "Votos obtenidos": 18198,
+        "% obtenido": "5,67%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 7,
+        "parlamentario/a": "Andrés Celis Montt",
+        "coalición": "Chile Vamos",
+        "partido político": "Renovación Nacional",
+        "Votos obtenidos": 21285,
+        "% obtenido": "6,62%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 7,
+        "parlamentario/a": "Camila Rojas Valderrama",
+        "coalición": "Frente Amplio ",
+        "partido político": "Partido Igualdad",
+        "Votos obtenidos": 14885,
+        "% obtenido": "4,61%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 7,
+        "parlamentario/a": "Jorge Brito Hasbún",
+        "coalición": "Frente Amplio ",
+        "partido político": "Revolución Democrática",
+        "Votos obtenidos": 13289,
+        "% obtenido": "4,13%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 7,
+        "parlamentario/a": "Rodrigo González Torres",
+        "coalición": "Nueva Mayoría",
+        "partido político": "Partido por la Democracia ",
+        "Votos obtenidos": 16849,
+        "% obtenido": "5,21%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 7,
+        "parlamentario/a": "Marcelo Díaz Díaz",
+        "coalición": "Nueva Mayoría",
+        "partido político": "Partido Socialista",
+        "Votos obtenidos": 15265,
+        "% obtenido": "4,72%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 7,
+        "parlamentario/a": "Víctor Torres Jeldes",
+        "coalición": "Nueva Mayoría",
+        "partido político": "Democracia Cristiana ",
+        "Votos obtenidos": 14942,
+        "% obtenido": "4,62%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 8,
+        "parlamentario/a": "Joaquín Lavín León",
+        "coalición": "Chile Vamos",
+        "partido político": "Unión Demócrata Independiente",
+        "Votos obtenidos": 75973,
+        "% obtenido": "17,84%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 8,
+        "parlamentario/a": "Patricio Melero Abaroa",
+        "coalición": "Chile Vamos",
+        "partido político": "Unión Demócrata Independiente",
+        "Votos obtenidos": 23042,
+        "% obtenido": "5,42%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 8,
+        "parlamentario/a": "Mario Desbordes Jiménez",
+        "coalición": "Chile Vamos",
+        "partido político": "Renovación Nacional",
+        "Votos obtenidos": 17799,
+        "% obtenido": "4,20%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 8,
+        "parlamentario/a": "Claudia Mix Jiménez",
+        "coalición": "Frente Amplio ",
+        "partido político": "Poder Ciudadano",
+        "Votos obtenidos": 20958,
+        "% obtenido": "4,94%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 8,
+        "parlamentario/a": "Pablo Vidal Rojas",
+        "coalición": "Frente Amplio ",
+        "partido político": "Revolución Democrática",
+        "Votos obtenidos": 12135,
+        "% obtenido": "2,89%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 8,
+        "parlamentario/a": "Pepe Auth Stewart",
+        "coalición": "Nueva Mayoría",
+        "partido político": "Partido Radical",
+        "Votos obtenidos": 26839,
+        "% obtenido": "6,32%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 8,
+        "parlamentario/a": "Carmen Hertz Cádiz",
+        "coalición": "Nueva Mayoría",
+        "partido político": "Partido Comunista",
+        "Votos obtenidos": 16035,
+        "% obtenido": "3,78%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 8,
+        "parlamentario/a": "Gabriel Silber Romo",
+        "coalición": "Nueva Mayoría",
+        "partido político": "Democracia Cristiana ",
+        "Votos obtenidos": 29205,
+        "% obtenido": "6,89%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 9,
+        "parlamentario/a": "Érika Olivera De la Fuente",
+        "coalición": "Chile Vamos",
+        "partido político": "Renovación Nacional",
+        "Votos obtenidos": 30817,
+        "% obtenido": "9,13%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 9,
+        "parlamentario/a": "Jorge Durán Espinoza",
+        "coalición": "Chile Vamos",
+        "partido político": "Renovación Nacional",
+        "Votos obtenidos": 19421,
+        "% obtenido": "5,78%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 9,
+        "parlamentario/a": "Sebastián Keitel Bianchi",
+        "coalición": "Chile Vamos",
+        "partido político": "Evopoli",
+        "Votos obtenidos": 30243,
+        "% obtenido": "8,96%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 9,
+        "parlamentario/a": "Karol Cariola Oliva",
+        "coalición": "Nueva Mayoría",
+        "partido político": "Partido Comunista",
+        "Votos obtenidos": 50446,
+        "% obtenido": "14,95%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 9,
+        "parlamentario/a": "Boris Barrera Moreno",
+        "coalición": "Nueva Mayoría",
+        "partido político": "Partido Comunista",
+        "Votos obtenidos": 4352,
+        "% obtenido": "1,29%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 9,
+        "parlamentario/a": "Cristina Girardi Lavín",
+        "coalición": "Nueva Mayoría",
+        "partido político": "Partido por la Democracia ",
+        "Votos obtenidos": 16211,
+        "% obtenido": "4,80%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 9,
+        "parlamentario/a": "Maite Orsini Pascal",
+        "coalición": "Frente Amplio ",
+        "partido político": "Revolución Democrática",
+        "Votos obtenidos": 21814,
+        "% obtenido": "6,48%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 10,
+        "parlamentario/a": "Marcela Sabat Fernández",
+        "coalición": "Chile Vamos",
+        "partido político": "Renovación Nacional",
+        "Votos obtenidos": 54630,
+        "% obtenido": "12,50%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 10,
+        "parlamentario/a": "Sebastián Torrealba Alvarado",
+        "coalición": "Chile Vamos",
+        "partido político": "Renovación Nacional",
+        "Votos obtenidos": 10196,
+        "% obtenido": "2,34%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 10,
+        "parlamentario/a": "Jorge Alessandri Vergara",
+        "coalición": "Chile Vamos",
+        "partido político": "Unión Demócrata Independiente",
+        "Votos obtenidos": 30833,
+        "% obtenido": "7,06%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 10,
+        "parlamentario/a": "Luciano Cruz-Coke Carvallo",
+        "coalición": "Chile Vamos",
+        "partido político": "Evopoli",
+        "Votos obtenidos": 38143,
+        "% obtenido": "8,73%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 10,
+        "parlamentario/a": "Giorgio Jackson Drago",
+        "coalición": "Frente Amplio ",
+        "partido político": "Revolución Democrática",
+        "Votos obtenidos": 103523,
+        "% obtenido": "23,68%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 10,
+        "parlamentario/a": "Natalia Castillo Muñoz",
+        "coalición": "Frente Amplio ",
+        "partido político": "Revolución Democrática",
+        "Votos obtenidos": 4453,
+        "% obtenido": "1,02%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 10,
+        "parlamentario/a": "Gonzalo Winter Etcheberry",
+        "coalición": "Frente Amplio ",
+        "partido político": "Revolución Democrática",
+        "Votos obtenidos": 5237,
+        "% obtenido": "1,20%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 10,
+        "parlamentario/a": "Maya Fernández Allende",
+        "coalición": "Nueva Mayoría",
+        "partido político": "Partido Socialista",
+        "Votos obtenidos": 28437,
+        "% obtenido": "6,50%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 11,
+        "parlamentario/a": "Gonzalo Fuenzalida Figueroa",
+        "coalición": "Chile Vamos",
+        "partido político": "Renovación Nacional",
+        "Votos obtenidos": 60132,
+        "% obtenido": "15,96%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 11,
+        "parlamentario/a": "Catalina del Real Mihovilovic",
+        "coalición": "Chile Vamos",
+        "partido político": "Renovación Nacional",
+        "Votos obtenidos": 43499,
+        "% obtenido": "11,55%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 11,
+        "parlamentario/a": "Karin Luck Urban",
+        "coalición": "Chile Vamos",
+        "partido político": "Renovación Nacional",
+        "Votos obtenidos": 6879,
+        "% obtenido": "1,83%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 11,
+        "parlamentario/a": "Francisco Undurraga Gazitúa",
+        "coalición": "Chile Vamos",
+        "partido político": "Evopoli",
+        "Votos obtenidos": 58666,
+        "% obtenido": "15,56%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 11,
+        "parlamentario/a": "Guillermo Ramírez Diez",
+        "coalición": "Chile Vamos",
+        "partido político": "Unión Demócrata Independiente",
+        "Votos obtenidos": 30731,
+        "% obtenido": "8,16%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 11,
+        "parlamentario/a": "Tomás Hirsch Goldschmidt",
+        "coalición": "Frente Amplio ",
+        "partido político": "Partido Humanista",
+        "Votos obtenidos": 23627,
+        "% obtenido": "6,27%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 12,
+        "parlamentario/a": "Ximena Ossandón Irarrázabal",
+        "coalición": "Chile Vamos",
+        "partido político": "Renovación Nacional",
+        "Votos obtenidos": 52484,
+        "% obtenido": "14,99%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 12,
+        "parlamentario/a": "Leopoldo Pérez Lahsen",
+        "coalición": "Chile Vamos",
+        "partido político": "Renovación Nacional",
+        "Votos obtenidos": 29984,
+        "% obtenido": "8,58%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 12,
+        "parlamentario/a": "Álvaro Carter Fernández",
+        "coalición": "Chile Vamos",
+        "partido político": "Unión Demócrata Independiente",
+        "Votos obtenidos": 27491,
+        "% obtenido": "7,84%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 12,
+        "parlamentario/a": "Pamela Jiles Moreno",
+        "coalición": "Frente Amplio ",
+        "partido político": "Partido Humanista",
+        "Votos obtenidos": 45222,
+        "% obtenido": "12,91%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 12,
+        "parlamentario/a": "Miguel Crispi Serrano",
+        "coalición": "Frente Amplio ",
+        "partido político": "Revolución Democrática",
+        "Votos obtenidos": 25569,
+        "% obtenido": "7,34%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 12,
+        "parlamentario/a": "Camila Vallejo Dowling",
+        "coalición": "Nueva Mayoría",
+        "partido político": "Partido Comunista",
+        "Votos obtenidos": 47807,
+        "% obtenido": "13,70%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 12,
+        "parlamentario/a": "Amaro Labra Sepúlveda",
+        "coalición": "Nueva Mayoría",
+        "partido político": "Partido Comunista",
+        "Votos obtenidos": 6316,
+        "% obtenido": "1,83%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 13,
+        "parlamentario/a": "Guillermo Teillier del Valle",
+        "coalición": "Nueva Mayoría",
+        "partido político": "Partido Comunista",
+        "Votos obtenidos": 28798,
+        "% obtenido": "11,75%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 13,
+        "parlamentario/a": "Tucapel Jiménez Fuentes",
+        "coalición": "Nueva Mayoría",
+        "partido político": "Partido por la Democracia ",
+        "Votos obtenidos": 22551,
+        "% obtenido": "9,21%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 13,
+        "parlamentario/a": "Eduardo Durán Salinas",
+        "coalición": "Chile Vamos",
+        "partido político": "Renovación Nacional",
+        "Votos obtenidos": 19744,
+        "% obtenido": "8,04%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 13,
+        "parlamentario/a": "Cristhian Moreira Barros",
+        "coalición": "Chile Vamos",
+        "partido político": "Unión Demócrata Independiente",
+        "Votos obtenidos": 18125,
+        "% obtenido": "7,40%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 13,
+        "parlamentario/a": "Gael Yeomans Araya",
+        "coalición": "Frente Amplio ",
+        "partido político": "Revolución Democrática",
+        "Votos obtenidos": 13721,
+        "% obtenido": "5,59%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 14,
+        "parlamentario/a": "Juan Antonio Coloma Álamos",
+        "coalición": "Chile Vamos",
+        "partido político": "Unión Demócrata Independiente",
+        "Votos obtenidos": 35779,
+        "% obtenido": "11,78%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 14,
+        "parlamentario/a": "Jaime Bellolio Avaria",
+        "coalición": "Chile Vamos",
+        "partido político": "Unión Demócrata Independiente",
+        "Votos obtenidos": 32044,
+        "% obtenido": "10,52%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 14,
+        "parlamentario/a": "Raúl Leiva Carvajal",
+        "coalición": "Nueva Mayoría",
+        "partido político": "Partido Socialista",
+        "Votos obtenidos": 44744,
+        "% obtenido": "14,77%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 14,
+        "parlamentario/a": "Leonardo Soto Ferrada",
+        "coalición": "Nueva Mayoría",
+        "partido político": "Partido Socialista",
+        "Votos obtenidos": 22170,
+        "% obtenido": "7,30%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 14,
+        "parlamentario/a": "Marisela Santibáñez Novoa",
+        "coalición": "Por todo Chile",
+        "partido político": "Partido Progresista",
+        "Votos obtenidos": 35984,
+        "% obtenido": "11,87%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 14,
+        "parlamentario/a": "Renato Garín González",
+        "coalición": "Frente Amplio ",
+        "partido político": "Revolución Democrática",
+        "Votos obtenidos": 11573,
+        "% obtenido": "3,82%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 15,
+        "parlamentario/a": "Javier Macaya Danús",
+        "coalición": "Chile Vamos",
+        "partido político": "Unión Demócrata Independiente",
+        "Votos obtenidos": 25219,
+        "% obtenido": "13,98%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 15,
+        "parlamentario/a": "Issa Kort Garriga",
+        "coalición": "Chile Vamos",
+        "partido político": "Unión Demócrata Independiente",
+        "Votos obtenidos": 16773,
+        "% obtenido": "9,29%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 15,
+        "parlamentario/a": "Diego Schalper Sepúlveda",
+        "coalición": "Chile Vamos",
+        "partido político": "Renovación Nacional",
+        "Votos obtenidos": 19285,
+        "% obtenido": "10,71%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 15,
+        "parlamentario/a": "Juan Luis Castro González",
+        "coalición": "Nueva Mayoría",
+        "partido político": "Partido Socialista",
+        "Votos obtenidos": 17845,
+        "% obtenido": "9,86%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 15,
+        "parlamentario/a": "Raúl Soto Mardones",
+        "coalición": "Nueva Mayoría",
+        "partido político": "Democracia Cristiana ",
+        "Votos obtenidos": 9026,
+        "% obtenido": "5,01%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 16,
+        "parlamentario/a": "Ramón Barros Montero",
+        "coalición": "Chile Vamos",
+        "partido político": "Unión Demócrata Independiente",
+        "Votos obtenidos": 21866,
+        "% obtenido": "15,91%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 16,
+        "parlamentario/a": "Virginia Troncoso Hellman",
+        "coalición": "Chile Vamos",
+        "partido político": "Unión Demócrata Independiente",
+        "Votos obtenidos": 7987,
+        "% obtenido": "5,80%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 16,
+        "parlamentario/a": "Alejandra Sepúlveda Orbenes",
+        "coalición": "Coalición Regionalista Verde ",
+        "partido político": "Frente Regional Verde Social",
+        "Votos obtenidos": 31737,
+        "% obtenido": "23,05%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 16,
+        "parlamentario/a": "Cosme Mellado Pino",
+        "coalición": "Nueva Mayoría",
+        "partido político": "Partido Radical",
+        "Votos obtenidos": 8864,
+        "% obtenido": "6,45%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 17,
+        "parlamentario/a": "Celso Morales Espinosa",
+        "coalición": "Chile Vamos",
+        "partido político": "Unión Demócrata Independiente",
+        "Votos obtenidos": 22089,
+        "% obtenido": "9,03%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 17,
+        "parlamentario/a": "Pedro Álvarez-Salamanca Ramírez",
+        "coalición": "Chile Vamos",
+        "partido político": "Unión Demócrata Independiente",
+        "Votos obtenidos": 20541,
+        "% obtenido": "8,40%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 17,
+        "parlamentario/a": "Hugo Rey Martínez",
+        "coalición": "Chile Vamos",
+        "partido político": "Renovación Nacional",
+        "Votos obtenidos": 20517,
+        "% obtenido": "8,37%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 17,
+        "parlamentario/a": "Pablo Prieto Lorca",
+        "coalición": "Chile Vamos",
+        "partido político": "Renovación Nacional",
+        "Votos obtenidos": 14338,
+        "% obtenido": "5,87%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 17,
+        "parlamentario/a": "Alexis Sepúlveda Soto",
+        "coalición": "Nueva Mayoría",
+        "partido político": "Partido Radical",
+        "Votos obtenidos": 18390,
+        "% obtenido": "7,52%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 17,
+        "parlamentario/a": "Pablo Lorenzini Basso",
+        "coalición": "Nueva Mayoría",
+        "partido político": "Democracia Cristiana ",
+        "Votos obtenidos": 19884,
+        "% obtenido": "8,14%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 17,
+        "parlamentario/a": "Florcita Alarcón Rojas",
+        "coalición": "Frente Amplio ",
+        "partido político": "Partido Humanista",
+        "Votos obtenidos": 6482,
+        "% obtenido": "2,68%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 18,
+        "parlamentario/a": "Ignacio Urrutia Bonilla",
+        "coalición": "Chile Vamos",
+        "partido político": "Unión Demócrata Independiente",
+        "Votos obtenidos": 17739,
+        "% obtenido": "14,76%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 18,
+        "parlamentario/a": "Rolando Rentería Moller",
+        "coalición": "Chile Vamos",
+        "partido político": "Unión Demócrata Independiente",
+        "Votos obtenidos": 16715,
+        "% obtenido": "13,78%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 18,
+        "parlamentario/a": "Manuel Matta Aragay",
+        "coalición": "Nueva Mayoría",
+        "partido político": "Democracia Cristiana ",
+        "Votos obtenidos": 12825,
+        "% obtenido": "10,63%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 18,
+        "parlamentario/a": "Jaime Naranjo Ortiz",
+        "coalición": "Nueva Mayoría",
+        "partido político": "Partido Socialista",
+        "Votos obtenidos": 13390,
+        "% obtenido": "11,08%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 19,
+        "parlamentario/a": "Frank Sauberbaum Muñoz",
+        "coalición": "Chile Vamos",
+        "partido político": "Renovación Nacional",
+        "Votos obtenidos": 18107,
+        "% obtenido": "9,35%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 19,
+        "parlamentario/a": "Gustavo Sanhueza Dueñas",
+        "coalición": "Chile Vamos",
+        "partido político": "Unión Demócrata Independiente",
+        "Votos obtenidos": 15680,
+        "% obtenido": "8,08%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 19,
+        "parlamentario/a": "Carlos Abel Jarpa Wevar",
+        "coalición": "Nueva Mayoría",
+        "partido político": "Partido Radical",
+        "Votos obtenidos": 15377,
+        "% obtenido": "7,93%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 19,
+        "parlamentario/a": "Loreto Carvajal Ambiado",
+        "coalición": "Nueva Mayoría",
+        "partido político": "Partido por la Democracia ",
+        "Votos obtenidos": 12734,
+        "% obtenido": "6,57%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 19,
+        "parlamentario/a": "Jorge Sabag Villalobos",
+        "coalición": "Nueva Mayoría",
+        "partido político": "Democracia Cristiana ",
+        "Votos obtenidos": 28995,
+        "% obtenido": "14,95%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 20,
+        "parlamentario/a": "Enrique van Rysselberghe Herrera",
+        "coalición": "Chile Vamos",
+        "partido político": "Unión Demócrata Independiente",
+        "Votos obtenidos": 28757,
+        "% obtenido": "8,54%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 20,
+        "parlamentario/a": "Sergio Bobadilla Muñoz",
+        "coalición": "Chile Vamos",
+        "partido político": "Unión Demócrata Independiente",
+        "Votos obtenidos": 18432,
+        "% obtenido": "5,47%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 20,
+        "parlamentario/a": "Francesca Muñoz González",
+        "coalición": "Chile Vamos",
+        "partido político": "Renovación Nacional",
+        "Votos obtenidos": 23165,
+        "% obtenido": "6,86%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 20,
+        "parlamentario/a": "Leonidas Romero Sáez",
+        "coalición": "Chile Vamos",
+        "partido político": "Renovación Nacional",
+        "Votos obtenidos": 11414,
+        "% obtenido": "3,38%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 20,
+        "parlamentario/a": "Gastón Saavedra Chandía",
+        "coalición": "Nueva Mayoría",
+        "partido político": "Partido Socialista",
+        "Votos obtenidos": 30557,
+        "% obtenido": "9,05%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 20,
+        "parlamentario/a": "Jaime Tohá González",
+        "coalición": "Nueva Mayoría",
+        "partido político": "Partido Socialista",
+        "Votos obtenidos": 8145,
+        "% obtenido": "2,41%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 20,
+        "parlamentario/a": "José Miguel Ortiz Novoa",
+        "coalición": "Nueva Mayoría",
+        "partido político": "Democracia Cristiana ",
+        "Votos obtenidos": 29496,
+        "% obtenido": "8,74%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 20,
+        "parlamentario/a": "Félix González Gatica",
+        "coalición": "Frente Amplio ",
+        "partido político": "Partido Ecologista Verde",
+        "Votos obtenidos": 18397,
+        "% obtenido": "5,45%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 21,
+        "parlamentario/a": "Iván Norambuena Farías",
+        "coalición": "Chile Vamos",
+        "partido político": "Unión Demócrata Independiente",
+        "Votos obtenidos": 33261,
+        "% obtenido": "17,42%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 21,
+        "parlamentario/a": "Cristóbal Urruticoechea Ríos",
+        "coalición": "Chile Vamos",
+        "partido político": "Renovación Nacional",
+        "Votos obtenidos": 22190,
+        "% obtenido": "11,63%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 21,
+        "parlamentario/a": "José Pérez Arriagada",
+        "coalición": "Nueva Mayoría",
+        "partido político": "Partido Radical",
+        "Votos obtenidos": 27066,
+        "% obtenido": "14,21%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 21,
+        "parlamentario/a": "Manuel Monsalve Benavides",
+        "coalición": "Nueva Mayoría",
+        "partido político": "Partido Socialista",
+        "Votos obtenidos": 19632,
+        "% obtenido": "10,30%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 21,
+        "parlamentario/a": "Joanna Pérez Olea",
+        "coalición": "Nueva Mayoría",
+        "partido político": "Democracia Cristiana ",
+        "Votos obtenidos": 12035,
+        "% obtenido": "6,26%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 22,
+        "parlamentario/a": "Diego Paulsen Kehr",
+        "coalición": "Chile Vamos",
+        "partido político": "Renovación Nacional",
+        "Votos obtenidos": 24405,
+        "% obtenido": "22,49%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 22,
+        "parlamentario/a": "Jorge Rathgeb Schifferli",
+        "coalición": "Chile Vamos",
+        "partido político": "Renovación Nacional",
+        "Votos obtenidos": 21594,
+        "% obtenido": "19,87%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 22,
+        "parlamentario/a": "Andrea Parra Sauterel",
+        "coalición": "Nueva Mayoría",
+        "partido político": "Partido por la Democracia ",
+        "Votos obtenidos": 10312,
+        "% obtenido": "9,54%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 22,
+        "parlamentario/a": "Mario Venegas Cárdenas",
+        "coalición": "Nueva Mayoría",
+        "partido político": "Democracia Cristiana ",
+        "Votos obtenidos": 14991,
+        "% obtenido": "13,86%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 23,
+        "parlamentario/a": "René Manuel García García",
+        "coalición": "Chile Vamos",
+        "partido político": "Renovación Nacional",
+        "Votos obtenidos": 23118,
+        "% obtenido": "10,28%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 23,
+        "parlamentario/a": "Miguel Mellado Suazo",
+        "coalición": "Chile Vamos",
+        "partido político": "Renovación Nacional",
+        "Votos obtenidos": 13708,
+        "% obtenido": "6,10%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 23,
+        "parlamentario/a": "Andrés Molina Magofke",
+        "coalición": "Chile Vamos",
+        "partido político": "Evopoli",
+        "Votos obtenidos": 23927,
+        "% obtenido": "10,64%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 23,
+        "parlamentario/a": "Sebastián Álvarez Ramírez",
+        "coalición": "Chile Vamos",
+        "partido político": "Evopoli",
+        "Votos obtenidos": 5319,
+        "% obtenido": "2,37%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 23,
+        "parlamentario/a": "Ricardo Celis Araya",
+        "coalición": "Nueva Mayoría",
+        "partido político": "Partido por la Democracia ",
+        "Votos obtenidos": 16335,
+        "% obtenido": "7,27%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 23,
+        "parlamentario/a": "Fernando Meza Moncada",
+        "coalición": "Nueva Mayoría",
+        "partido político": "Partido Radical",
+        "Votos obtenidos": 13696,
+        "% obtenido": "6,05%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 23,
+        "parlamentario/a": "René Saffirio Espinoza",
+        "coalición": "Independiente",
+        "partido político": "Independiente",
+        "Votos obtenidos": 38578,
+        "% obtenido": "17,15%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 24,
+        "parlamentario/a": "Bernardo Berger Fett",
+        "coalición": "Chile Vamos",
+        "partido político": "Renovación Nacional",
+        "Votos obtenidos": 24070,
+        "% obtenido": "17,29%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 24,
+        "parlamentario/a": "Gastón Von Mühlenbrock Zamora",
+        "coalición": "Chile Vamos",
+        "partido político": "Unión Demócrata Independiente",
+        "Votos obtenidos": 12542,
+        "% obtenido": "9,00%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 24,
+        "parlamentario/a": "Marcos Ilabaca Cerda",
+        "coalición": "Nueva Mayoría",
+        "partido político": "Partido Socialista",
+        "Votos obtenidos": 15739,
+        "% obtenido": "11,29%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 24,
+        "parlamentario/a": "Patricio Rosas Barrientos",
+        "coalición": "Nueva Mayoría",
+        "partido político": "Partido Socialista",
+        "Votos obtenidos": 13379,
+        "% obtenido": "9,54%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 24,
+        "parlamentario/a": "Iván Flores García",
+        "coalición": "Nueva Mayoría",
+        "partido político": "Democracia Cristiana ",
+        "Votos obtenidos": 13242,
+        "% obtenido": "9,50%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 25,
+        "parlamentario/a": "Harry Jürgensen Rundshagen",
+        "coalición": "Chile Vamos",
+        "partido político": "Renovación Nacional",
+        "Votos obtenidos": 20531,
+        "% obtenido": "15,76%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 25,
+        "parlamentario/a": "Javier Hernández Hernández",
+        "coalición": "Chile Vamos",
+        "partido político": "Unión Demócrata Independiente",
+        "Votos obtenidos": 16367,
+        "% obtenido": "12,58%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 25,
+        "parlamentario/a": "Fidel Espinoza Sandoval",
+        "coalición": "Nueva Mayoría",
+        "partido político": "Partido Socialista",
+        "Votos obtenidos": 27999,
+        "% obtenido": "21,54%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 25,
+        "parlamentario/a": "Emilia Nuyado Ancapichún",
+        "coalición": "Nueva Mayoría",
+        "partido político": "Partido Socialista",
+        "Votos obtenidos": 8149,
+        "% obtenido": "6,27%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 26,
+        "parlamentario/a": "Alejandro Santana Tirachini",
+        "coalición": "Chile Vamos",
+        "partido político": "Renovación Nacional",
+        "Votos obtenidos": 23558,
+        "% obtenido": "17,10%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 26,
+        "parlamentario/a": "Carlos Kuschel Silva",
+        "coalición": "Chile Vamos",
+        "partido político": "Renovación Nacional",
+        "Votos obtenidos": 11250,
+        "% obtenido": "8,17%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 26,
+        "parlamentario/a": "Jenny Álvarez Vera",
+        "coalición": "Nueva Mayoría",
+        "partido político": "Partido Socialista",
+        "Votos obtenidos": 10162,
+        "% obtenido": "7,38%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 26,
+        "parlamentario/a": "Alejandro Bernales Maldonado",
+        "coalición": "Frente Amplio ",
+        "partido político": "Partido Liberal",
+        "Votos obtenidos": 6200,
+        "% obtenido": "4,50%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 26,
+        "parlamentario/a": "Gabriel Ascencio Mansilla",
+        "coalición": "Nueva Mayoría",
+        "partido político": "Democracia Cristiana ",
+        "Votos obtenidos": 9326,
+        "% obtenido": "6,78%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 27,
+        "parlamentario/a": "René Alinco Bustos",
+        "coalición": "Nueva Mayoría",
+        "partido político": "Partido por la Democracia ",
+        "Votos obtenidos": 3121,
+        "% obtenido": "8,85%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 27,
+        "parlamentario/a": "Miguel Ángel Calisto Águila",
+        "coalición": "Nueva Mayoría",
+        "partido político": "Democracia Cristiana ",
+        "Votos obtenidos": 8822,
+        "% obtenido": "24,96%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 27,
+        "parlamentario/a": "Aracely Leuquén Uribe",
+        "coalición": "Chile Vamos",
+        "partido político": "Renovación Nacional",
+        "Votos obtenidos": 3925,
+        "% obtenido": "11,16%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 28,
+        "parlamentario/a": "Gabriel Boric Font",
+        "coalición": "Frente Amplio ",
+        "partido político": "Partido Humanista",
+        "Votos obtenidos": 18626,
+        "% obtenido": "32,82%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 28,
+        "parlamentario/a": "Karim Bianchi Retamales",
+        "coalición": "Nueva Mayoría",
+        "partido político": "Partido Radical",
+        "Votos obtenidos": 4190,
+        "% obtenido": "7,38%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 28,
+        "parlamentario/a": "Sandra Amar Mancilla",
+        "coalición": "Chile Vamos",
+        "partido político": "Unión Demócrata Independiente",
+        "Votos obtenidos": 6871,
+        "% obtenido": "12,08%",
+        "año elección": 2017
+      },
+      {
+        "Distrito": 1,
+        "parlamentario/a": "Vlado Mirosevic Verdugo",
+        "coalición": "Nuevo Pacto Social",
+        "partido político": "Partido Liberal",
+        "Votos obtenidos": 16819,
+        "% obtenido": "20,91%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 1,
+        "parlamentario/a": "Luis Malla Valenzuela",
+        "coalición": "Nuevo Pacto Social",
+        "partido político": "Partido Liberal",
+        "Votos obtenidos": 2699,
+        "% obtenido": "3,36%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 1,
+        "parlamentario/a": "Enrique Lee Flores",
+        "coalición": "Chile Podemos +",
+        "partido político": "Partido Regionalista Independiente Demócrata",
+        "Votos obtenidos": 7321,
+        "% obtenido": "9,10%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 2,
+        "parlamentario/a": "Renzo Trisotti Martínez",
+        "coalición": "Chile Podemos +",
+        "partido político": "Unión Demócrata Independiente",
+        "Votos obtenidos": 11079,
+        "% obtenido": "11,07%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 2,
+        "parlamentario/a": "Matías Ramírez Pascal",
+        "coalición": "Apruebo Dignidad ",
+        "partido político": "Partido Comunista",
+        "Votos obtenidos": 9861,
+        "% obtenido": "9,86%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 2,
+        "parlamentario/a": "Danisa Astudillo Peiretti",
+        "coalición": "Nuevo Pacto Social",
+        "partido político": "Partido Socialista",
+        "Votos obtenidos": 7565,
+        "% obtenido": "7,56%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 3,
+        "parlamentario/a": "Catalina Pérez Salinas",
+        "coalición": "Apruebo Dignidad ",
+        "partido político": "Revolución Democrática",
+        "Votos obtenidos": 13197,
+        "% obtenido": "7,24%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 3,
+        "parlamentario/a": "Sebastián Videla Castillo",
+        "coalición": "Nuevo Pacto Social",
+        "partido político": "Partido Liberal",
+        "Votos obtenidos": 12238,
+        "% obtenido": "6,72%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 3,
+        "parlamentario/a": "Jaime Araya Guerrero",
+        "coalición": "Nuevo Pacto Social",
+        "partido político": "Partido por la Democracia ",
+        "Votos obtenidos": 11603,
+        "% obtenido": "6,37%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 3,
+        "parlamentario/a": "Yovana Ahumada Palma",
+        "coalición": "Partido de la Gente ",
+        "partido político": "Partido de la Gente ",
+        "Votos obtenidos": 11851,
+        "% obtenido": "6,51%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 3,
+        "parlamentario/a": "José Miguel Castro Bascuñán",
+        "coalición": "Chile Podemos +",
+        "partido político": "Renovación Nacional",
+        "Votos obtenidos": 8654,
+        "% obtenido": "4,75%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 4,
+        "parlamentario/a": "Daniella Cicardini Milla",
+        "coalición": "Nuevo Pacto Social",
+        "partido político": "Partido Socialista",
+        "Votos obtenidos": 16149,
+        "% obtenido": "16,35%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 4,
+        "parlamentario/a": "Juan Santana Castillo",
+        "coalición": "Nuevo Pacto Social",
+        "partido político": "Partido Socialista",
+        "Votos obtenidos": 13445,
+        "% obtenido": "13,61%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 4,
+        "parlamentario/a": "Cristian Tapia Ramos",
+        "coalición": "Nuevo Pacto Social",
+        "partido político": "Partido por la Democracia ",
+        "Votos obtenidos": 6291,
+        "% obtenido": "6,37%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 4,
+        "parlamentario/a": "Jaime Mulet Martínez",
+        "coalición": "Apruebo Dignidad ",
+        "partido político": "Federación Regionalista Verde Social",
+        "Votos obtenidos": 8069,
+        "% obtenido": "8,17%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 4,
+        "parlamentario/a": "Sofía Cid Versalovic",
+        "coalición": "Chile Podemos +",
+        "partido político": "Renovación Nacional",
+        "Votos obtenidos": 5041,
+        "% obtenido": "6,68%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 5,
+        "parlamentario/a": "Marco Sulantay Olivares",
+        "coalición": "Chile Podemos +",
+        "partido político": "Unión Demócrata Independiente",
+        "Votos obtenidos": 18293,
+        "% obtenido": "11,77%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 5,
+        "parlamentario/a": "Juán Manuel Fuenzalida Cobo",
+        "coalición": "Chile Podemos +",
+        "partido político": "Unión Demócrata Independiente",
+        "Votos obtenidos": 9312,
+        "% obtenido": "3,93%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 5,
+        "parlamentario/a": "Nathalie Castillo Rojas",
+        "coalición": "Apruebo Dignidad ",
+        "partido político": "Partido Comunista",
+        "Votos obtenidos": 12297,
+        "% obtenido": "5,19%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 5,
+        "parlamentario/a": "Carolina Tello Rojas",
+        "coalición": "Apruebo Dignidad ",
+        "partido político": "Partido Comunista",
+        "Votos obtenidos": 12228,
+        "% obtenido": "5,16%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 5,
+        "parlamentario/a": "Daniel Manouchehri Lobos",
+        "coalición": "Nuevo Pacto Social",
+        "partido político": "Partido Socialista",
+        "Votos obtenidos": 12268,
+        "% obtenido": "5,18%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 5,
+        "parlamentario/a": "Ricardo Cifuentes Lillo",
+        "coalición": "Nuevo Pacto Social",
+        "partido político": "Democracia Cristiana ",
+        "Votos obtenidos": 11433,
+        "% obtenido": "4,83%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 5,
+        "parlamentario/a": "Víctor Pino Fuentes",
+        "coalición": "Partido de la Gente ",
+        "partido político": "Partido de la Gente ",
+        "Votos obtenidos": 9260,
+        "% obtenido": "3,91%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 6,
+        "parlamentario/a": "Diego Ibáñez Cotroneo",
+        "coalición": "Apruebo Dignidad ",
+        "partido político": "Convergencia Social",
+        "Votos obtenidos": 34419,
+        "% obtenido": "9,69%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 6,
+        "parlamentario/a": "María Francisca Bello Campos",
+        "coalición": "Apruebo Dignidad ",
+        "partido político": "Convergencia Social",
+        "Votos obtenidos": 8757,
+        "% obtenido": "2,47%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 6,
+        "parlamentario/a": "Carolina Marzán Pinto",
+        "coalición": "Nuevo Pacto Social",
+        "partido político": "Partido por la Democracia ",
+        "Votos obtenidos": 33429,
+        "% obtenido": "9,41%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 6,
+        "parlamentario/a": "Nelson Venegas Salazar",
+        "coalición": "Nuevo Pacto Social",
+        "partido político": "Partido Socialista",
+        "Votos obtenidos": 25325,
+        "% obtenido": "7,13%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 6,
+        "parlamentario/a": "Andrés Longton Herrera",
+        "coalición": "Chile Podemos +",
+        "partido político": "Renovación Nacional",
+        "Votos obtenidos": 29163,
+        "% obtenido": "7,13%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 6,
+        "parlamentario/a": "Camila Flores Oporto",
+        "coalición": "Chile Podemos +",
+        "partido político": "Renovación Nacional",
+        "Votos obtenidos": 16461,
+        "% obtenido": "4,61%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 6,
+        "parlamentario/a": "Chiara Barchiesi Chávez",
+        "coalición": "Frente Social Cristiano",
+        "partido político": "Partido Republicano",
+        "Votos obtenidos": 24520,
+        "% obtenido": "6,91%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 6,
+        "parlamentario/a": "Gaspar Rivas Sánchez",
+        "coalición": "Partido de la Gente ",
+        "partido político": "Partido de la Gente ",
+        "Votos obtenidos": 14846,
+        "% obtenido": "4,18%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 7,
+        "parlamentario/a": "Tomás Lagomarsino Guzmán",
+        "coalición": "Nuevo Pacto Social",
+        "partido político": "Partido Radical",
+        "Votos obtenidos": 26349,
+        "% obtenido": "7,38%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 7,
+        "parlamentario/a": "Tomás De Rementería Venegas",
+        "coalición": "Nuevo Pacto Social",
+        "partido político": "Partido Socialista",
+        "Votos obtenidos": 5820,
+        "% obtenido": "1,63%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 7,
+        "parlamentario/a": "Jorge Brito Hasbún",
+        "coalición": "Apruebo Dignidad ",
+        "partido político": "Revolución Democrática",
+        "Votos obtenidos": 23548,
+        "% obtenido": "6,60%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 7,
+        "parlamentario/a": "Camila Rojas Valderrama",
+        "coalición": "Apruebo Dignidad ",
+        "partido político": "Comunes",
+        "Votos obtenidos": 17761,
+        "% obtenido": "4,61%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 7,
+        "parlamentario/a": "Luis Cuello Peña y Lillo",
+        "coalición": "Apruebo Dignidad ",
+        "partido político": "Partido Comunista",
+        "Votos obtenidos": 13305,
+        "% obtenido": "3,73%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 7,
+        "parlamentario/a": "Andrés Celis Montt",
+        "coalición": "Chile Podemos +",
+        "partido político": "Renovación Nacional",
+        "Votos obtenidos": 19101,
+        "% obtenido": "5,32%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 7,
+        "parlamentario/a": "Hotuiti Teao Drago",
+        "coalición": "Chile Podemos +",
+        "partido político": "Evopoli",
+        "Votos obtenidos": 16061,
+        "% obtenido": "4,50%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 7,
+        "parlamentario/a": "Luis Sánchez Ossa",
+        "coalición": "Frente Social Cristiano",
+        "partido político": "Partido Republicano",
+        "Votos obtenidos": 16347,
+        "% obtenido": "4,58%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 8,
+        "parlamentario/a": "Carmen Hertz Cádiz",
+        "coalición": "Apruebo Dignidad ",
+        "partido político": "Partido Comunista",
+        "Votos obtenidos": 48806,
+        "% obtenido": "10,38%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 8,
+        "parlamentario/a": "Claudia Mix Jiménez",
+        "coalición": "Apruebo Dignidad ",
+        "partido político": "Comunes",
+        "Votos obtenidos": 24261,
+        "% obtenido": "5,16%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 8,
+        "parlamentario/a": "Joaquín Lavín León",
+        "coalición": "Chile Podemos +",
+        "partido político": "Unión Demócrata Independiente",
+        "Votos obtenidos": 33111,
+        "% obtenido": "7,04%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 8,
+        "parlamentario/a": "Cristián Labbé Martínez",
+        "coalición": "Chile Podemos +",
+        "partido político": "Unión Demócrata Independiente",
+        "Votos obtenidos": 11795,
+        "% obtenido": "2,51%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 8,
+        "parlamentario/a": "Agustín Romero Leiva",
+        "coalición": "Frente Social Cristiano",
+        "partido político": "Partido Republicano",
+        "Votos obtenidos": 17112,
+        "% obtenido": "3,46%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 8,
+        "parlamentario/a": "Viviana Delgado Riquelme",
+        "coalición": "Partido Ecologista Verde",
+        "partido político": "Partido Ecologista Verde",
+        "Votos obtenidos": 20036,
+        "% obtenido": "4,26%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 8,
+        "parlamentario/a": "Alberto Undurraga Vicuña",
+        "coalición": "Nuevo Pacto Social",
+        "partido político": "Democracia Cristiana ",
+        "Votos obtenidos": 17086,
+        "% obtenido": "3,63%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 8,
+        "parlamentario/a": "Rubén Oyarzo Figueroa",
+        "coalición": "Partido de la Gente ",
+        "partido político": "Partido de la Gente ",
+        "Votos obtenidos": 6943,
+        "% obtenido": "1,48%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 9,
+        "parlamentario/a": "Karol Cariola Oliva",
+        "coalición": "Apruebo Dignidad ",
+        "partido político": "Partido Comunista",
+        "Votos obtenidos": 78719,
+        "% obtenido": "23,60%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 9,
+        "parlamentario/a": "Boris Barrera Moreno",
+        "coalición": "Apruebo Dignidad ",
+        "partido político": "Partido Comunista",
+        "Votos obtenidos": 7763,
+        "% obtenido": "2,33%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 9,
+        "parlamentario/a": "Maite Orsini Pascal",
+        "coalición": "Apruebo Dignidad ",
+        "partido político": "Revolución Democrática",
+        "Votos obtenidos": 19040,
+        "% obtenido": "5,71%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 9,
+        "parlamentario/a": "Andrés Giordano Salazar",
+        "coalición": "Apruebo Dignidad ",
+        "partido político": "Revolución Democrática",
+        "Votos obtenidos": 2842,
+        "% obtenido": "0,85%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 9,
+        "parlamentario/a": "Jorge Durán Espinoza",
+        "coalición": "Chile Podemos +",
+        "partido político": "Renovación Nacional",
+        "Votos obtenidos": 21794,
+        "% obtenido": "6,53%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 9,
+        "parlamentario/a": "Érika Olivera De la Fuente",
+        "coalición": "Chile Podemos +",
+        "partido político": "Renovación Nacional",
+        "Votos obtenidos": 13803,
+        "% obtenido": "4,14%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 9,
+        "parlamentario/a": "José Carlos Meza Pereira",
+        "coalición": "Frente Social Cristiano",
+        "partido político": "Partido Republicano",
+        "Votos obtenidos": 14737,
+        "% obtenido": "4,42%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 10,
+        "parlamentario/a": "Gonzalo Winter Etcheberry",
+        "coalición": "Apruebo Dignidad ",
+        "partido político": "Convergencia Social",
+        "Votos obtenidos": 66590,
+        "% obtenido": "14,58%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 10,
+        "parlamentario/a": "Lorena Fries Monleón",
+        "coalición": "Apruebo Dignidad ",
+        "partido político": "Convergencia Social",
+        "Votos obtenidos": 11545,
+        "% obtenido": "2,53%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 10,
+        "parlamentario/a": "Emilia Schneider Videla",
+        "coalición": "Apruebo Dignidad ",
+        "partido político": "Comunes",
+        "Votos obtenidos": 26130,
+        "% obtenido": "5,72%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 10,
+        "parlamentario/a": "Alejandra Placencia Cabello",
+        "coalición": "Apruebo Dignidad ",
+        "partido político": "Partido Comunista",
+        "Votos obtenidos": 17970,
+        "% obtenido": "3,93%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 10,
+        "parlamentario/a": "Jorge Alessandri Vergara",
+        "coalición": "Chile Podemos +",
+        "partido político": "Unión Demócrata Independiente",
+        "Votos obtenidos": 49419,
+        "% obtenido": "10,82%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 10,
+        "parlamentario/a": "María Luisa Cordero Velásquez",
+        "coalición": "Chile Podemos +",
+        "partido político": "Renovación Nacional",
+        "Votos obtenidos": 20498,
+        "% obtenido": "4,49%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 10,
+        "parlamentario/a": "Johannes Kaiser Barents-Von Hohenhagen",
+        "coalición": "Frente Social Cristiano",
+        "partido político": "Partido Republicano",
+        "Votos obtenidos": 26610,
+        "% obtenido": "5,82%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 10,
+        "parlamentario/a": "Helia Molina Milman",
+        "coalición": "Nuevo Pacto Social",
+        "partido político": "Partido por la Democracia ",
+        "Votos obtenidos": 18907,
+        "% obtenido": "4,14%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 11,
+        "parlamentario/a": "Gonzalo de la Carrera Correa",
+        "coalición": "Frente Social Cristiano",
+        "partido político": "Partido Republicano",
+        "Votos obtenidos": 46032,
+        "% obtenido": "11,15%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 11,
+        "parlamentario/a": "Cristián Araya Lerdo de Tejada",
+        "coalición": "Frente Social Cristiano",
+        "partido político": "Partido Republicano",
+        "Votos obtenidos": 16734,
+        "% obtenido": "4,05%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 11,
+        "parlamentario/a": "Francisco Undurraga Gazitúa",
+        "coalición": "Chile Podemos +",
+        "partido político": "Evopoli ",
+        "Votos obtenidos": 43372,
+        "% obtenido": "10,50%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 11,
+        "parlamentario/a": "Guillermo Ramírez Diez",
+        "coalición": "Chile Podemos +",
+        "partido político": "Unión Demócrata Independiente",
+        "Votos obtenidos": 40321,
+        "% obtenido": "9,76%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 11,
+        "parlamentario/a": "Catalina del Real Mihovilovic",
+        "coalición": "Chile Podemos +",
+        "partido político": "Renovación Nacional",
+        "Votos obtenidos": 28300,
+        "% obtenido": "6,85%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 11,
+        "parlamentario/a": "Tomás Hirsch Goldschmidt",
+        "coalición": "Apruebo Dignidad ",
+        "partido político": "Comunes",
+        "Votos obtenidos": 28501,
+        "% obtenido": "6,90%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 12,
+        "parlamentario/a": "Pamela Jiles Moreno",
+        "coalición": "Dignidad Ahora",
+        "partido político": "Partido Humanista",
+        "Votos obtenidos": 77136,
+        "% obtenido": "19,66%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 12,
+        "parlamentario/a": "Hernán Palma Pérez",
+        "coalición": "Dignidad Ahora",
+        "partido político": "Partido Humanista",
+        "Votos obtenidos": 948,
+        "% obtenido": "0,24%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 12,
+        "parlamentario/a": "Mónica Arce Castro",
+        "coalición": "Dignidad Ahora",
+        "partido político": "Partido Humanista",
+        "Votos obtenidos": 1046,
+        "% obtenido": "0,27%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 12,
+        "parlamentario/a": "Ximena Ossandón Irarrázabal",
+        "coalición": "Chile Podemos +",
+        "partido político": "Renovación Nacional",
+        "Votos obtenidos": 41010,
+        "% obtenido": "10,45%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 12,
+        "parlamentario/a": "Álvaro Carter Fernández",
+        "coalición": "Chile Podemos +",
+        "partido político": "Unión Demócrata Independiente",
+        "Votos obtenidos": 30764,
+        "% obtenido": "7,84%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 12,
+        "parlamentario/a": "Ana María Gazmuri Vieira",
+        "coalición": "Apruebo Dignidad ",
+        "partido político": "Comunes",
+        "Votos obtenidos": 28401,
+        "% obtenido": "7,24%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 12,
+        "parlamentario/a": "Daniela Serrano Salazar",
+        "coalición": "Apruebo Dignidad ",
+        "partido político": "Partido Comunista",
+        "Votos obtenidos": 14727,
+        "% obtenido": "3,75%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 13,
+        "parlamentario/a": "Gael Yeomans Araya",
+        "coalición": "Apruebo Dignidad ",
+        "partido político": "Convergencia Social",
+        "Votos obtenidos": 31405,
+        "% obtenido": "13,11%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 13,
+        "parlamentario/a": "Lorena Pizarro Sierra",
+        "coalición": "Apruebo Dignidad ",
+        "partido político": "Partido Comunista",
+        "Votos obtenidos": 20788,
+        "% obtenido": "8,68%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 13,
+        "parlamentario/a": "Cristhian Moreira Barros",
+        "coalición": "Chile Podemos +",
+        "partido político": "Unión Demócrata Independiente",
+        "Votos obtenidos": 16571,
+        "% obtenido": "6,92%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 13,
+        "parlamentario/a": "Eduardo Durán Salinas",
+        "coalición": "Chile Podemos +",
+        "partido político": "Renovación Nacional",
+        "Votos obtenidos": 14559,
+        "% obtenido": "6,08%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 13,
+        "parlamentario/a": "Daniel Melo Contreras",
+        "coalición": "Nuevo Pacto Social",
+        "partido político": "Partido Socialista",
+        "Votos obtenidos": 12076,
+        "% obtenido": "5,04%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 14,
+        "parlamentario/a": "Marisela Santibáñez Novoa",
+        "coalición": "Apruebo Dignidad ",
+        "partido político": "Partido Comunista",
+        "Votos obtenidos": 55755,
+        "% obtenido": "17,72%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 14,
+        "parlamentario/a": "Camila Musante Müller",
+        "coalición": "Apruebo Dignidad ",
+        "partido político": "Comunes",
+        "Votos obtenidos": 12335,
+        "% obtenido": "3,79%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 14,
+        "parlamentario/a": "Raúl Leiva Carvajal",
+        "coalición": "Nuevo Pacto Social",
+        "partido político": "Partido Socialista",
+        "Votos obtenidos": 40850,
+        "% obtenido": "12,54%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 14,
+        "parlamentario/a": "Leonardo Soto Ferrada",
+        "coalición": "Nuevo Pacto Social",
+        "partido político": "Partido Socialista",
+        "Votos obtenidos": 20791,
+        "% obtenido": "6,38%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 14,
+        "parlamentario/a": "Juan Antonio Coloma Álamos",
+        "coalición": "Chile Podemos +",
+        "partido político": "Unión Demócrata Independiente",
+        "Votos obtenidos": 34767,
+        "% obtenido": "10,67%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 14,
+        "parlamentario/a": "Juan Irarrázaval Rossel",
+        "coalición": "Frente Social Cristiano",
+        "partido político": "Partido Republicano",
+        "Votos obtenidos": 13223,
+        "% obtenido": "4,06%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 15,
+        "parlamentario/a": "Raúl Soto Mardones",
+        "coalición": "Nuevo Pacto Social",
+        "partido político": "Partido por la Democracia ",
+        "Votos obtenidos": 55072,
+        "% obtenido": "27,76%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 15,
+        "parlamentario/a": "Marta González Olea",
+        "coalición": "Nuevo Pacto Social",
+        "partido político": "Partido por la Democracia ",
+        "Votos obtenidos": 1968,
+        "% obtenido": "0,99%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 15,
+        "parlamentario/a": "Diego Schalper Sepúlveda",
+        "coalición": "Chile Podemos +",
+        "partido político": "Renovación Nacional",
+        "Votos obtenidos": 17091,
+        "% obtenido": "8,61%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 15,
+        "parlamentario/a": "Natalia Romero Talguia",
+        "coalición": "Chile Podemos +",
+        "partido político": "Unión Demócrata Independiente",
+        "Votos obtenidos": 10327,
+        "% obtenido": "5,20%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 15,
+        "parlamentario/a": "Marcela Riquelme Aliaga",
+        "coalición": "Apruebo Dignidad ",
+        "partido político": "Convergencia Social",
+        "Votos obtenidos": 11493,
+        "% obtenido": "5,79%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 16,
+        "parlamentario/a": "Carla Morales Maldonado",
+        "coalición": "Chile Podemos +",
+        "partido político": "Renovación Nacional",
+        "Votos obtenidos": 16044,
+        "% obtenido": "11,38%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 16,
+        "parlamentario/a": "Eduardo Cornejo Lagos",
+        "coalición": "Chile Podemos +",
+        "partido político": "Unión Demócrata Independiente",
+        "Votos obtenidos": 10862,
+        "% obtenido": "8,01%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 16,
+        "parlamentario/a": "Cosme Mellado Pino",
+        "coalición": "Nuevo Pacto Social",
+        "partido político": "Partido Radical",
+        "Votos obtenidos": 13469,
+        "% obtenido": "9,93%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 16,
+        "parlamentario/a": "Félix Bugueño Sotelo",
+        "coalición": "Apruebo Dignidad ",
+        "partido político": "Federación Regionalista Verde Social",
+        "Votos obtenidos": 9035,
+        "% obtenido": "6,66%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 17,
+        "parlamentario/a": "Hugo Rey Martínez",
+        "coalición": "Chile Podemos +",
+        "partido político": "Renovación Nacional",
+        "Votos obtenidos": 17694,
+        "% obtenido": "7,32%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 17,
+        "parlamentario/a": "Jorge Guzmán Zepeda",
+        "coalición": "Chile Podemos +",
+        "partido político": "Evopoli ",
+        "Votos obtenidos": 12648,
+        "% obtenido": "5,25%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 17,
+        "parlamentario/a": "Felipe Donoso Castro",
+        "coalición": "Chile Podemos +",
+        "partido político": "Unión Demócrata Independiente",
+        "Votos obtenidos": 11761,
+        "% obtenido": "4,87%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 17,
+        "parlamentario/a": "Alexis Sepúlveda Soto",
+        "coalición": "Nuevo Pacto Social",
+        "partido político": "Partido Radical",
+        "Votos obtenidos": 14027,
+        "% obtenido": "5,81%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 17,
+        "parlamentario/a": "Benjamín Moreno Bascur",
+        "coalición": "Frente Social Cristiano",
+        "partido político": "Partido Republicano",
+        "Votos obtenidos": 16705,
+        "% obtenido": "6,91%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 17,
+        "parlamentario/a": "Mercedes Bulnes Núñez",
+        "coalición": "Apruebo Dignidad ",
+        "partido político": "Revolución Democrática",
+        "Votos obtenidos": 8418,
+        "% obtenido": "3,48%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 17,
+        "parlamentario/a": "Francisco Pulgar Castillo",
+        "coalición": "Independientes Unidos",
+        "partido político": "Centro Unido",
+        "Votos obtenidos": 23049,
+        "% obtenido": "9,54%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 18,
+        "parlamentario/a": "Paula Labra Besserer",
+        "coalición": "Chile Podemos +",
+        "partido político": "Renovación Nacional",
+        "Votos obtenidos": 13037,
+        "% obtenido": "11,06%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 18,
+        "parlamentario/a": "Gustavo Benavente Vergara",
+        "coalición": "Chile Podemos +",
+        "partido político": "Unión Demócrata Independiente",
+        "Votos obtenidos": 8089,
+        "% obtenido": "6,86%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 18,
+        "parlamentario/a": "Jaime Naranjo Ortiz",
+        "coalición": "Nuevo Pacto Social",
+        "partido político": "Partido Socialista",
+        "Votos obtenidos": 15015,
+        "% obtenido": "12,73%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 18,
+        "parlamentario/a": "Consuelo Veloso Ávila",
+        "coalición": "Apruebo Dignidad ",
+        "partido político": "Revolución Democrática",
+        "Votos obtenidos": 8913,
+        "% obtenido": "7,56%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 19,
+        "parlamentario/a": "Cristóbal Martínez Ramírez",
+        "coalición": "Chile Podemos +",
+        "partido político": "Unión Demócrata Independiente",
+        "Votos obtenidos": 29941,
+        "% obtenido": "17,79%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 19,
+        "parlamentario/a": "Marta Bravo Salinas",
+        "coalición": "Chile Podemos +",
+        "partido político": "Unión Demócrata Independiente",
+        "Votos obtenidos": 11260,
+        "% obtenido": "6,69%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 19,
+        "parlamentario/a": "Frank Sauberbaum Muñoz",
+        "coalición": "Chile Podemos +",
+        "partido político": "Renovación Nacional",
+        "Votos obtenidos": 15560,
+        "% obtenido": "9,24%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 19,
+        "parlamentario/a": "Felipe Camaño Cárdenas",
+        "coalición": "Nuevo Pacto Social",
+        "partido político": "Democracia Cristiana ",
+        "Votos obtenidos": 8102,
+        "% obtenido": "4,81%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 19,
+        "parlamentario/a": "Sara Concha Smith",
+        "coalición": "Frente Social Cristiano",
+        "partido político": "Partido Conservador Cristiano",
+        "Votos obtenidos": 5298,
+        "% obtenido": "3,15%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 20,
+        "parlamentario/a": "Francesca Muñoz González",
+        "coalición": "Chile Podemos +",
+        "partido político": "Renovación Nacional",
+        "Votos obtenidos": 32061,
+        "% obtenido": "9,25%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 20,
+        "parlamentario/a": "Leonidas Romero Sáez",
+        "coalición": "Chile Podemos +",
+        "partido político": "Renovación Nacional",
+        "Votos obtenidos": 11777,
+        "% obtenido": "3,40%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 20,
+        "parlamentario/a": "Sergio Bobadilla Muñoz",
+        "coalición": "Chile Podemos +",
+        "partido político": "Unión Demócrata Independiente",
+        "Votos obtenidos": 23732,
+        "% obtenido": "6,84%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 20,
+        "parlamentario/a": "Marlene Pérez Cartes",
+        "coalición": "Chile Podemos +",
+        "partido político": "Unión Demócrata Independiente",
+        "Votos obtenidos": 18490,
+        "% obtenido": "5,33%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 20,
+        "parlamentario/a": "Eric Aedo Jeldres",
+        "coalición": "Nuevo Pacto Social",
+        "partido político": "Democracia Cristiana ",
+        "Votos obtenidos": 10706,
+        "% obtenido": "3,09%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 20,
+        "parlamentario/a": "Félix González Gatica",
+        "coalición": "Partido Ecologista Verde",
+        "partido político": "Partido Ecologista Verde",
+        "Votos obtenidos": 30088,
+        "% obtenido": "8,68%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 20,
+        "parlamentario/a": "María Candelaria Acevedo Sáez",
+        "coalición": "Apruebo Dignidad ",
+        "partido político": "Partido Comunista",
+        "Votos obtenidos": 7002,
+        "% obtenido": "2,02%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 20,
+        "parlamentario/a": "Roberto Arroyo Muñoz",
+        "coalición": "Partido de la Gente ",
+        "partido político": "Partido de la Gente ",
+        "Votos obtenidos": 9465,
+        "% obtenido": "2,73%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 21,
+        "parlamentario/a": "Joanna Pérez Olea",
+        "coalición": "Nuevo Pacto Social",
+        "partido político": "Democracia Cristiana ",
+        "Votos obtenidos": 19465,
+        "% obtenido": "9,92%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 21,
+        "parlamentario/a": "Cristóbal Urruticoechea Ríos",
+        "coalición": "Frente Social Cristiano",
+        "partido político": "Partido Republicano",
+        "Votos obtenidos": 22772,
+        "% obtenido": "11,61%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 21,
+        "parlamentario/a": "Flor Weisse Novoa",
+        "coalición": "Chile Podemos +",
+        "partido político": "Unión Demócrata Independiente",
+        "Votos obtenidos": 21759,
+        "% obtenido": "11,09%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 21,
+        "parlamentario/a": "Karen Medina Vásquez",
+        "coalición": "Partido de la Gente ",
+        "partido político": "Partido de la Gente ",
+        "Votos obtenidos": 10056,
+        "% obtenido": "5,13%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 21,
+        "parlamentario/a": "Clara Sagardía Cabezas",
+        "coalición": "Apruebo Dignidad ",
+        "partido político": "Convergencia Social",
+        "Votos obtenidos": 8996,
+        "% obtenido": "4,59%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 22,
+        "parlamentario/a": "Jorge Rathgeb Schifferli",
+        "coalición": "Chile Podemos +",
+        "partido político": "Renovación Nacional",
+        "Votos obtenidos": 20451,
+        "% obtenido": "18,99%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 22,
+        "parlamentario/a": "Juan Carlos Beltrán Silva",
+        "coalición": "Chile Podemos +",
+        "partido político": "Renovación Nacional",
+        "Votos obtenidos": 10730,
+        "% obtenido": "9,96%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 22,
+        "parlamentario/a": "Jorge Saffirio Espinoza",
+        "coalición": "Nuevo Pacto Social",
+        "partido político": "Democracia Cristiana ",
+        "Votos obtenidos": 5892,
+        "% obtenido": "5,47%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 22,
+        "parlamentario/a": "Gloria Naveillán Arriagada",
+        "coalición": "Frente Social Cristiano",
+        "partido político": "Partido Republicano",
+        "Votos obtenidos": 6252,
+        "% obtenido": "5,81%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 23,
+        "parlamentario/a": "Henry Leal Bizama",
+        "coalición": "Chile Podemos +",
+        "partido político": "Unión Demócrata Independiente",
+        "Votos obtenidos": 17913,
+        "% obtenido": "7,43%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 23,
+        "parlamentario/a": "Miguel Becker Alvear",
+        "coalición": "Chile Podemos +",
+        "partido político": "Renovación Nacional",
+        "Votos obtenidos": 16328,
+        "% obtenido": "6,78%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 23,
+        "parlamentario/a": "Miguel Mellado Suazo",
+        "coalición": "Chile Podemos +",
+        "partido político": "Renovación Nacional",
+        "Votos obtenidos": 14160,
+        "% obtenido": "5,88%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 23,
+        "parlamentario/a": "Mauricio Ojeda Rebolledo",
+        "coalición": "Frente Social Cristiano",
+        "partido político": "Partido Republicano",
+        "Votos obtenidos": 14906,
+        "% obtenido": "6,37%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 23,
+        "parlamentario/a": "Stephan Schubert Rubio",
+        "coalición": "Frente Social Cristiano",
+        "partido político": "Partido Republicano",
+        "Votos obtenidos": 12773,
+        "% obtenido": "5,30%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 23,
+        "parlamentario/a": "Andrés Jouannet Valderrama",
+        "coalición": "Nuevo Pacto Social",
+        "partido político": "Partido Radical",
+        "Votos obtenidos": 8050,
+        "% obtenido": "3,34%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 23,
+        "parlamentario/a": "Ericka Ñanco Vásquez",
+        "coalición": "Apruebo Dignidad ",
+        "partido político": "Revolución Democrática",
+        "Votos obtenidos": 9704,
+        "% obtenido": "4,03%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 24,
+        "parlamentario/a": "Marcos Ilabaca Cerda",
+        "coalición": "Nuevo Pacto Social",
+        "partido político": "Partido Socialista",
+        "Votos obtenidos": 35469,
+        "% obtenido": "24,67%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 24,
+        "parlamentario/a": "Ana María Bravo Castro",
+        "coalición": "Nuevo Pacto Social",
+        "partido político": "Partido Socialista",
+        "Votos obtenidos": 1856,
+        "% obtenido": "1,29%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 24,
+        "parlamentario/a": "Gastón Von Mühlenbrock Zamora",
+        "coalición": "Chile Podemos +",
+        "partido político": "Unión Demócrata Independiente",
+        "Votos obtenidos": 13270,
+        "% obtenido": "9,23%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 24,
+        "parlamentario/a": "Bernardo Berger Fett",
+        "coalición": "Chile Podemos +",
+        "partido político": "Renovación Nacional",
+        "Votos obtenidos": 11107,
+        "% obtenido": "7,72%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 24,
+        "parlamentario/a": "Patricio Rosas Barrientos",
+        "coalición": "Apruebo Dignidad ",
+        "partido político": "Convergencia Social",
+        "Votos obtenidos": 6602,
+        "% obtenido": "4,59%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 25,
+        "parlamentario/a": "Emilia Nuyado Ancapichún",
+        "coalición": "Nuevo Pacto Social",
+        "partido político": "Partido Socialista",
+        "Votos obtenidos": 15958,
+        "% obtenido": "11,60%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 25,
+        "parlamentario/a": "Héctor Barría Angulo",
+        "coalición": "Nuevo Pacto Social",
+        "partido político": "Democracia Cristiana ",
+        "Votos obtenidos": 12986,
+        "% obtenido": "9,44%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 25,
+        "parlamentario/a": "Daniel Lilayu Vivanco",
+        "coalición": "Chile Podemos +",
+        "partido político": "Unión Demócrata Independiente",
+        "Votos obtenidos": 8974,
+        "% obtenido": "6,52%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 25,
+        "parlamentario/a": "Harry Jürgensen Rundshagen",
+        "coalición": "Frente Social Cristiano",
+        "partido político": "Partido Republicano",
+        "Votos obtenidos": 22539,
+        "% obtenido": "16,38%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 26,
+        "parlamentario/a": "Alejandro Bernales Maldonado",
+        "coalición": "Nuevo Pacto Social",
+        "partido político": "Partido Liberal",
+        "Votos obtenidos": 9155,
+        "% obtenido": "6,16%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 26,
+        "parlamentario/a": "Héctor Ulloa Aguilera",
+        "coalición": "Nuevo Pacto Social",
+        "partido político": "Ciudadanos",
+        "Votos obtenidos": 9107,
+        "% obtenido": "6,12%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 26,
+        "parlamentario/a": "Mauro González Villarroel",
+        "coalición": "Chile Podemos +",
+        "partido político": "Renovación Nacional",
+        "Votos obtenidos": 9545,
+        "% obtenido": "6,42%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 26,
+        "parlamentario/a": "Fernando Bórquez Montencinos",
+        "coalición": "Chile Podemos +",
+        "partido político": "Unión Demócrata Independiente",
+        "Votos obtenidos": 7670,
+        "% obtenido": "5,16%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 26,
+        "parlamentario/a": "Jaime Sáez Quiroz",
+        "coalición": "Apruebo Dignidad ",
+        "partido político": "Revolución Democrática",
+        "Votos obtenidos": 4768,
+        "% obtenido": "3,21%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 27,
+        "parlamentario/a": "Miguel Ángel Calisto Águila",
+        "coalición": "Nuevo Pacto Social",
+        "partido político": "Democracia Cristiana ",
+        "Votos obtenidos": 9738,
+        "% obtenido": "25,72%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 27,
+        "parlamentario/a": "René Alinco Bustos",
+        "coalición": "Nuevo Pacto Social",
+        "partido político": "Partido por la Democracia ",
+        "Votos obtenidos": 4798,
+        "% obtenido": "12,67%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 27,
+        "parlamentario/a": "Marcia Raphael Mora",
+        "coalición": "Chile Podemos +",
+        "partido político": "Renovación Nacional",
+        "Votos obtenidos": 3890,
+        "% obtenido": "10,28%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 28,
+        "parlamentario/a": "Carlos Bianchi Chelech",
+        "coalición": "Independiente",
+        "partido político": "Independiente",
+        "Votos obtenidos": 26297,
+        "% obtenido": "40,45%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 28,
+        "parlamentario/a": "Christian Matheson Villán",
+        "coalición": "Chile Podemos +",
+        "partido político": "Evopoli",
+        "Votos obtenidos": 7212,
+        "% obtenido": "11,09%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 28,
+        "parlamentario/a": "Javiera Morales Alvarado",
+        "coalición": "Apruebo Dignidad ",
+        "partido político": "Convergencia Social",
+        "Votos obtenidos": 4543,
+        "% obtenido": "6,99%",
+        "año elección": 2021
+      },
+      {
+        "Distrito": 1,
+        "parlamentario/a": "Luis Malla Valenzuela",
+        "coalición": "Unidad por Chile",
+        "partido político": "Partido Liberal",
+        "Votos obtenidos": 29252,
+        "% obtenido": "21,56%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 1,
+        "parlamentario/a": "Jorge Díaz Ibarra",
+        "coalición": "Unidad por Chile",
+        "partido político": "Democracia Cristiana ",
+        "Votos obtenidos": 18588,
+        "% obtenido": "13,70%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 1,
+        "parlamentario/a": "Stephanie Jéldrez Ortíz",
+        "coalición": "Cambio por Chile",
+        "partido político": "Partido Republicano",
+        "Votos obtenidos": 12608,
+        "% obtenido": "9,29%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 2,
+        "parlamentario/a": "Carlos Carvajal Gallardo",
+        "coalición": "Unidad por Chile",
+        "partido político": "Partido por la Democracia ",
+        "Votos obtenidos": 25469,
+        "% obtenido": "13,91%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 2,
+        "parlamentario/a": "Ximena Naranjo Pinto",
+        "coalición": "Chile Grande y Unido",
+        "partido político": "Unión Demócrata Independiente",
+        "Votos obtenidos": 19330,
+        "% obtenido": "10,55%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 2,
+        "parlamentario/a": "Álvaro Jofré Cáceres",
+        "coalición": "Cambio por Chile",
+        "partido político": "Partido Nacional Libertario",
+        "Votos obtenidos": 14988,
+        "% obtenido": "8,18%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 3,
+        "parlamentario/a": "Sebastián Videla Castillo",
+        "coalición": "Unidad por Chile",
+        "partido político": "Partido Liberal",
+        "Votos obtenidos": 74910,
+        "% obtenido": "23,38%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 3,
+        "parlamentario/a": "Jaime Araya Guerrero",
+        "coalición": "Unidad por Chile",
+        "partido político": "Partido por la Democracia ",
+        "Votos obtenidos": 13687,
+        "% obtenido": "4,27%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 3,
+        "parlamentario/a": "Marcela Hernando Pérez",
+        "coalición": "Unidad por Chile",
+        "partido político": "Partido Radical",
+        "Votos obtenidos": 11973,
+        "% obtenido": "3,74%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 3,
+        "parlamentario/a": "Fabián Ossandón Briceño",
+        "coalición": "Partido de la Gente",
+        "partido político": "Partido de la Gente ",
+        "Votos obtenidos": 33381,
+        "% obtenido": "10,42%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 3,
+        "parlamentario/a": "Carlo Arqueros Pizarro",
+        "coalición": "Cambio por Chile",
+        "partido político": "Partido Republicano",
+        "Votos obtenidos": 12528,
+        "% obtenido": "3,91%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 4,
+        "parlamentario/a": "Juan Santana Castillo",
+        "coalición": "Unidad por Chile",
+        "partido político": "Partido Socialista",
+        "Votos obtenidos": 19595,
+        "% obtenido": "11,30%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 4,
+        "parlamentario/a": "Cristian Tapia Ramos",
+        "coalición": "Unidad por Chile",
+        "partido político": "Partido por la Democracia ",
+        "Votos obtenidos": 18375,
+        "% obtenido": "10,59%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 4,
+        "parlamentario/a": "Jaime Mulet Martínez",
+        "coalición": "Verdes, Regionalistas y Humanistas",
+        "partido político": "Federación Regionalista Verde Social",
+        "Votos obtenidos": 20747,
+        "% obtenido": "11,96%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 4,
+        "parlamentario/a": "Paula Olmos Contreras",
+        "coalición": "Partido de la Gente",
+        "partido político": "Partido de la Gente ",
+        "Votos obtenidos": 10046,
+        "% obtenido": "5,79%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 4,
+        "parlamentario/a": "Ignacio Urcullú Clement-Lund",
+        "coalición": "Cambio por Chile",
+        "partido político": "Partido Republicano",
+        "Votos obtenidos": 8416,
+        "% obtenido": "4,85%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 5,
+        "parlamentario/a": "Daniel Manouchehri Lobos",
+        "coalición": "Unidad por Chile",
+        "partido político": "Partido Socialista",
+        "Votos obtenidos": 95526,
+        "% obtenido": "21,14%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 5,
+        "parlamentario/a": "Nathalie Castillo Rojas",
+        "coalición": "Unidad por Chile",
+        "partido político": "Partido Comunista",
+        "Votos obtenidos": 19490,
+        "% obtenido": "4,31%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 5,
+        "parlamentario/a": "Carolina Tello Rojas",
+        "coalición": "Unidad por Chile",
+        "partido político": "Frente Amplio ",
+        "Votos obtenidos": 15199,
+        "% obtenido": "3,36%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 5,
+        "parlamentario/a": "Bernardo Salinas Maya",
+        "coalición": "Unidad por Chile",
+        "partido político": "Partido Comunista",
+        "Votos obtenidos": 3843,
+        "% obtenido": "0,85%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 5,
+        "parlamentario/a": "Marco Sulantay Olivares",
+        "coalición": "Chile Grande y Unido",
+        "partido político": "Unión Demócrata Independiente",
+        "Votos obtenidos": 23061,
+        "% obtenido": "5,10%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 5,
+        "parlamentario/a": "Eileen Urqueta Rojas",
+        "coalición": "Partido de la Gente",
+        "partido político": "Partido de la Gente ",
+        "Votos obtenidos": 15849,
+        "% obtenido": "3,51%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 5,
+        "parlamentario/a": "Erich Grohs Marín",
+        "coalición": "Cambio por Chile",
+        "partido político": "Partido Nacional Libertario",
+        "Votos obtenidos": 13688,
+        "% obtenido": "3,03%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 6,
+        "parlamentario/a": "Nelson Venegas Salazar",
+        "coalición": "Unidad por Chile",
+        "partido político": "Partido Socialista",
+        "Votos obtenidos": 38396,
+        "% obtenido": "6,48%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 6,
+        "parlamentario/a": "Sofía González Cortés",
+        "coalición": "Unidad por Chile",
+        "partido político": "Partido Comunista",
+        "Votos obtenidos": 33528,
+        "% obtenido": "5,66%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 6,
+        "parlamentario/a": "Cristian Mella Andaur",
+        "coalición": "Unidad por Chile",
+        "partido político": "Democracia Cristiana ",
+        "Votos obtenidos": 31178,
+        "% obtenido": "5,26%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 6,
+        "parlamentario/a": "María Francisca Bello Campos",
+        "coalición": "Unidad por Chile",
+        "partido político": "Frente Amplio ",
+        "Votos obtenidos": 30663,
+        "% obtenido": "5,17%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 6,
+        "parlamentario/a": "Chiara Barchiesi Chávez",
+        "coalición": "Cambio por Chile",
+        "partido político": "Partido Republicano",
+        "Votos obtenidos": 63230,
+        "% obtenido": "10,67%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 6,
+        "parlamentario/a": "Benjamín Lorca Inzunza",
+        "coalición": "Cambio por Chile",
+        "partido político": "Partido Republicano",
+        "Votos obtenidos": 19768,
+        "% obtenido": "3,34%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 6,
+        "parlamentario/a": "Luis Pardo Sáinz",
+        "coalición": "Chile Grande y Unido",
+        "partido político": "Renovación Nacional",
+        "Votos obtenidos": 43785,
+        "% obtenido": "7,39%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 6,
+        "parlamentario/a": "Javier Olivares Avendaño",
+        "coalición": "Partido de la Gente",
+        "partido político": "Partido de la Gente ",
+        "Votos obtenidos": 32334,
+        "% obtenido": "5,46%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 7,
+        "parlamentario/a": "Jaime Bassa Mercado",
+        "coalición": "Unidad por Chile",
+        "partido político": "Frente Amplio ",
+        "Votos obtenidos": 40585,
+        "% obtenido": "7,21%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 7,
+        "parlamentario/a": "Jorge Brito Hasbún",
+        "coalición": "Unidad por Chile",
+        "partido político": "Frente Amplio ",
+        "Votos obtenidos": 34402,
+        "% obtenido": "6,11%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 7,
+        "parlamentario/a": "Luis Cuello Peña y Lillo",
+        "coalición": "Unidad por Chile",
+        "partido político": "Partido Comunista",
+        "Votos obtenidos": 37819,
+        "% obtenido": "6,72%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 7,
+        "parlamentario/a": "Luis Sánchez Ossa",
+        "coalición": "Cambio por Chile",
+        "partido político": "Partido Republicano",
+        "Votos obtenidos": 38072,
+        "% obtenido": "6,76%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 7,
+        "parlamentario/a": "Sebastián Zamora Soto",
+        "coalición": "Cambio por Chile",
+        "partido político": "Partido Republicano",
+        "Votos obtenidos": 25871,
+        "% obtenido": "4,59%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 7,
+        "parlamentario/a": "Hotuiti Teao Drago",
+        "coalición": "Chile Grande y Unido",
+        "partido político": "Unión Demócrata Independiente",
+        "Votos obtenidos": 46713,
+        "% obtenido": "8,30%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 7,
+        "parlamentario/a": "Andrés Celis Montt",
+        "coalición": "Chile Grande y Unido",
+        "partido político": "Renovación Nacional",
+        "Votos obtenidos": 27850,
+        "% obtenido": "4,95%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 7,
+        "parlamentario/a": "Juan Marcelo Valenzuela Henríquez",
+        "coalición": "Partido de la Gente",
+        "partido político": "Partido de la Gente ",
+        "Votos obtenidos": 26410,
+        "% obtenido": "4,69%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 8,
+        "parlamentario/a": "Gustavo Gatica Villarroel",
+        "coalición": "Unidad por Chile",
+        "partido político": "Partido Comunista",
+        "Votos obtenidos": 96002,
+        "% obtenido": "12,33%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 8,
+        "parlamentario/a": "Marcos Barraza Gómez",
+        "coalición": "Unidad por Chile",
+        "partido político": "Partido Comunista",
+        "Votos obtenidos": 26580,
+        "% obtenido": "3,41%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 8,
+        "parlamentario/a": "Tatiana Urrutia Herrera",
+        "coalición": "Unidad por Chile",
+        "partido político": "Frente Amplio ",
+        "Votos obtenidos": 33684,
+        "% obtenido": "4,33%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 8,
+        "parlamentario/a": "Agustín Romero Leiva",
+        "coalición": "Cambio por Chile",
+        "partido político": "Partido Republicano",
+        "Votos obtenidos": 54474,
+        "% obtenido": "7,00%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 8,
+        "parlamentario/a": "Enrique Bassaletti Riess",
+        "coalición": "Cambio por Chile",
+        "partido político": "Partido Republicano",
+        "Votos obtenidos": 48152,
+        "% obtenido": "6,19%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 8,
+        "parlamentario/a": "Pier Karlezi Hazleby",
+        "coalición": "Cambio por Chile",
+        "partido político": "Partido Nacional Libertario",
+        "Votos obtenidos": 23232,
+        "% obtenido": "2,98%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 8,
+        "parlamentario/a": "Cristian Contreras Radovic",
+        "coalición": "Partido de la Gente",
+        "partido político": "Partido de la Gente ",
+        "Votos obtenidos": 53487,
+        "% obtenido": "6,87%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 8,
+        "parlamentario/a": "Mario Olavarría Rodríguez",
+        "coalición": "Chile Grande y Unido",
+        "partido político": "Unión Demócrata Independiente",
+        "Votos obtenidos": 24095,
+        "% obtenido": "3,10%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 9,
+        "parlamentario/a": "Carlos Cuadrado Prats",
+        "coalición": "Unidad por Chile",
+        "partido político": "Partido por la Democracia ",
+        "Votos obtenidos": 46184,
+        "% obtenido": "8,91%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 9,
+        "parlamentario/a": "Boris Barrera Moreno",
+        "coalición": "Unidad por Chile",
+        "partido político": "Partido Comunista",
+        "Votos obtenidos": 39326,
+        "% obtenido": "7,59%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 9,
+        "parlamentario/a": "César Valenzuela Maass",
+        "coalición": "Unidad por Chile",
+        "partido político": "Partido Socialista",
+        "Votos obtenidos": 24026,
+        "% obtenido": "4,64%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 9,
+        "parlamentario/a": "José Carlos Meza Pereira",
+        "coalición": "Cambio por Chile",
+        "partido político": "Partido Republicano",
+        "Votos obtenidos": 34288,
+        "% obtenido": "6,62%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 9,
+        "parlamentario/a": "Javiera Rodríguez Pascual",
+        "coalición": "Cambio por Chile",
+        "partido político": "Partido Republicano",
+        "Votos obtenidos": 25553,
+        "% obtenido": "4,93%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 9,
+        "parlamentario/a": "Tamara Ramírez Ramírez",
+        "coalición": "Partido de la Gente",
+        "partido político": "Partido de la Gente ",
+        "Votos obtenidos": 24269,
+        "% obtenido": "4,68%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 9,
+        "parlamentario/a": "Guillermo Ramírez Diez",
+        "coalición": "Chile Grande y Unido",
+        "partido político": "Unión Demócrata Independiente",
+        "Votos obtenidos": 19361,
+        "% obtenido": "3,74%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 10,
+        "parlamentario/a": "Gonzalo Winter Etcheberry",
+        "coalición": "Unidad por Chile",
+        "partido político": "Frente Amplio ",
+        "Votos obtenidos": 94924,
+        "% obtenido": "14,56%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 10,
+        "parlamentario/a": "Emilia Schneider Videla",
+        "coalición": "Unidad por Chile",
+        "partido político": "Frente Amplio ",
+        "Votos obtenidos": 31365,
+        "% obtenido": "4,81%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 10,
+        "parlamentario/a": "Lorena Fries Monleón",
+        "coalición": "Unidad por Chile",
+        "partido político": "Frente Amplio ",
+        "Votos obtenidos": 15620,
+        "% obtenido": "0,86%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 10,
+        "parlamentario/a": "Irací Hassler Jacob",
+        "coalición": "Unidad por Chile",
+        "partido político": "Partido Comunista",
+        "Votos obtenidos": 47064,
+        "% obtenido": "7,22%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 10,
+        "parlamentario/a": "José Antonio Kast Adriasola",
+        "coalición": "Cambio por Chile",
+        "partido político": "Partido Republicano",
+        "Votos obtenidos": 57245,
+        "% obtenido": "8,78%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 10,
+        "parlamentario/a": "Hans Marowski Cuevas",
+        "coalición": "Cambio por Chile",
+        "partido político": "Partido Nacional Libertario",
+        "Votos obtenidos": 28163,
+        "% obtenido": "4,32%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 10,
+        "parlamentario/a": "Francisco Orrego Gutiérrez",
+        "coalición": "Chile Grande y Unido",
+        "partido político": "Renovación Nacional",
+        "Votos obtenidos": 61027,
+        "% obtenido": "9,36%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 10,
+        "parlamentario/a": "Jorge Alessandri Vergara",
+        "coalición": "Chile Grande y Unido",
+        "partido político": "Unión Demócrata Independiente",
+        "Votos obtenidos": 56977,
+        "% obtenido": "8,74%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 11,
+        "parlamentario/a": "Diego Schalper Sepúlveda",
+        "coalición": "Chile Grande y Unido",
+        "partido político": "Renovación Nacional",
+        "Votos obtenidos": 69960,
+        "% obtenido": "13,09%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 11,
+        "parlamentario/a": "Claudia Mora Vega",
+        "coalición": "Chile Grande y Unido",
+        "partido político": "Renovación Nacional",
+        "Votos obtenidos": 20496,
+        "% obtenido": "3,83%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 11,
+        "parlamentario/a": "Constanza Hube Portus",
+        "coalición": "Chile Grande y Unido",
+        "partido político": "Unión Demócrata Independiente",
+        "Votos obtenidos": 56840,
+        "% obtenido": "10,63%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 11,
+        "parlamentario/a": "Catalina del Real Mihovilovic",
+        "coalición": "Cambio por Chile",
+        "partido político": "Partido Republicano",
+        "Votos obtenidos": 57641,
+        "% obtenido": "10,78%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 11,
+        "parlamentario/a": "Cristián Araya Lerdo de Tejada",
+        "coalición": "Cambio por Chile",
+        "partido político": "Partido Republicano",
+        "Votos obtenidos": 42945,
+        "% obtenido": "8,03%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 11,
+        "parlamentario/a": "Constanza Schönhaut Soto",
+        "coalición": "Unidad por Chile",
+        "partido político": "Frente Amplio ",
+        "Votos obtenidos": 26274,
+        "% obtenido": "4,91%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 12,
+        "parlamentario/a": "Álvaro Carter Fernández",
+        "coalición": "Cambio por Chile",
+        "partido político": "Partido Republicano",
+        "Votos obtenidos": 71126,
+        "% obtenido": "11,22%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 12,
+        "parlamentario/a": "Macarena Santelices Cañas",
+        "coalición": "Cambio por Chile",
+        "partido político": "Partido Republicano",
+        "Votos obtenidos": 23737,
+        "% obtenido": "3,74%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 12,
+        "parlamentario/a": "Pamela Jiles Moreno",
+        "coalición": "Partido de la Gente",
+        "partido político": "Partido de la Gente ",
+        "Votos obtenidos": 97421,
+        "% obtenido": "15,37%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 12,
+        "parlamentario/a": "Zandra Parisi Fernández",
+        "coalición": "Partido de la Gente",
+        "partido político": "Partido de la Gente ",
+        "Votos obtenidos": 15682,
+        "% obtenido": "2,47%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 12,
+        "parlamentario/a": "Ana María Gazmuri Vieira",
+        "coalición": "Verdes, Regionalistas y Humanistas",
+        "partido político": "Acción Humanista ",
+        "Votos obtenidos": 59163,
+        "% obtenido": "9,33%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 12,
+        "parlamentario/a": "Ximena Ossandón Irarrázabal",
+        "coalición": "Chile Grande y Unido",
+        "partido político": "Renovación Nacional",
+        "Votos obtenidos": 50084,
+        "% obtenido": "7,90%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 12,
+        "parlamentario/a": "Daniela Serrano Salazar",
+        "coalición": "Unidad por Chile",
+        "partido político": "Partido Comunista",
+        "Votos obtenidos": 45860,
+        "% obtenido": "7,23%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 13,
+        "parlamentario/a": "Gael Yeomans Araya",
+        "coalición": "Unidad por Chile",
+        "partido político": "Frente Amplio ",
+        "Votos obtenidos": 47227,
+        "% obtenido": "12,56%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 13,
+        "parlamentario/a": "Lorena Pizarro Sierra",
+        "coalición": "Unidad por Chile",
+        "partido político": "Partido Comunista",
+        "Votos obtenidos": 30851,
+        "% obtenido": "8,20%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 13,
+        "parlamentario/a": "Felipe Ross Correa",
+        "coalición": "Cambio por Chile",
+        "partido político": "Partido Republicano",
+        "Votos obtenidos": 36921,
+        "% obtenido": "9,82%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 13,
+        "parlamentario/a": "Valentina Becerra Peña",
+        "coalición": "Cambio por Chile",
+        "partido político": "Partido Republicano",
+        "Votos obtenidos": 22556,
+        "% obtenido": "6,00%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 13,
+        "parlamentario/a": "Eduardo Durán Salinas",
+        "coalición": "Chile Grande y Unido",
+        "partido político": "Renovación Nacional",
+        "Votos obtenidos": 17809,
+        "% obtenido": "4,74%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 14,
+        "parlamentario/a": "Ignacio Achurra Díaz",
+        "coalición": "Unidad por Chile",
+        "partido político": "Frente Amplio ",
+        "Votos obtenidos": 49941,
+        "% obtenido": "8,55%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 14,
+        "parlamentario/a": "Marisela Santibáñez Novoa",
+        "coalición": "Unidad por Chile",
+        "partido político": "Partido Comunista",
+        "Votos obtenidos": 47456,
+        "% obtenido": "8,13%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 14,
+        "parlamentario/a": "Raúl Leiva Carvajal",
+        "coalición": "Unidad por Chile",
+        "partido político": "Partido Socialista",
+        "Votos obtenidos": 41941,
+        "% obtenido": "7,18%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 14,
+        "parlamentario/a": "Diego Vergara Rodríguez",
+        "coalición": "Cambio por Chile",
+        "partido político": "Partido Republicano",
+        "Votos obtenidos": 46174,
+        "% obtenido": "7,91%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 14,
+        "parlamentario/a": "Juan Irarrázaval Rossel",
+        "coalición": "Cambio por Chile",
+        "partido político": "Partido Republicano",
+        "Votos obtenidos": 43387,
+        "% obtenido": "7,43%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 14,
+        "parlamentario/a": "Jaime Coloma Álamos",
+        "coalición": "Chile Grande y Unido",
+        "partido político": "Unión Demócrata Independiente",
+        "Votos obtenidos": 46865,
+        "% obtenido": "8,02%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 15,
+        "parlamentario/a": "Raúl Soto Mardones",
+        "coalición": "Unidad por Chile",
+        "partido político": "Partido por la Democracia ",
+        "Votos obtenidos": 65612,
+        "% obtenido": "18,85%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 15,
+        "parlamentario/a": "Fernando Zamorano Peralta",
+        "coalición": "Unidad por Chile",
+        "partido político": "Partido por la Democracia ",
+        "Votos obtenidos": 4630,
+        "% obtenido": "1,33%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 15,
+        "parlamentario/a": "Valentina Cáceres Monsalvez",
+        "coalición": "Unidad por Chile",
+        "partido político": "Frente Amplio ",
+        "Votos obtenidos": 25967,
+        "% obtenido": "7,46%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 15,
+        "parlamentario/a": "Natalia Romero Talguia",
+        "coalición": "Chile Grande y Unido",
+        "partido político": "Unión Demócrata Independiente",
+        "Votos obtenidos": 34855,
+        "% obtenido": "10,01%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 15,
+        "parlamentario/a": "Fernando Ugarte Tejeda",
+        "coalición": "Cambio por Chile",
+        "partido político": "Partido Republicano",
+        "Votos obtenidos": 28892,
+        "% obtenido": "8,30%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 16,
+        "parlamentario/a": "Carolina Cucumides Calderón",
+        "coalición": "Unidad por Chile",
+        "partido político": "Partido Socialista",
+        "Votos obtenidos": 23100,
+        "% obtenido": "8,85%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 16,
+        "parlamentario/a": "Félix Bugueño Sotelo",
+        "coalición": "Unidad por Chile",
+        "partido político": "Frente Amplio ",
+        "Votos obtenidos": 20565,
+        "% obtenido": "7,88%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 16,
+        "parlamentario/a": "Ricardo Neumann Bertín",
+        "coalición": "Chile Grande y Unido",
+        "partido político": "Unión Demócrata Independiente",
+        "Votos obtenidos": 31844,
+        "% obtenido": "12,21%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 16,
+        "parlamentario/a": "Sebastián Cristoffanini Jaraquemada",
+        "coalición": "Cambio por Chile",
+        "partido político": "Partido Republicano",
+        "Votos obtenidos": 17608,
+        "% obtenido": "6,75%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 17,
+        "parlamentario/a": "Priscilla Castillo Gerli",
+        "coalición": "Unidad por Chile",
+        "partido político": "Democracia Cristiana ",
+        "Votos obtenidos": 47964,
+        "% obtenido": "10,37%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 17,
+        "parlamentario/a": "Javier Muñoz Riquelme",
+        "coalición": "Unidad por Chile",
+        "partido político": "Democracia Cristiana ",
+        "Votos obtenidos": 34965,
+        "% obtenido": "7,55%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 17,
+        "parlamentario/a": "Roberto Celedón Fernández",
+        "coalición": "Unidad por Chile",
+        "partido político": "Frente Amplio ",
+        "Votos obtenidos": 44677,
+        "% obtenido": "9,66%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 17,
+        "parlamentario/a": "Benjamín Moreno Bascur",
+        "coalición": "Cambio por Chile",
+        "partido político": "Partido Republicano",
+        "Votos obtenidos": 34451,
+        "% obtenido": "7,45%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 17,
+        "parlamentario/a": "Germán Verdugo Soto",
+        "coalición": "Cambio por Chile",
+        "partido político": "Partido Nacional Libertario",
+        "Votos obtenidos": 21484,
+        "% obtenido": "4,65%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 17,
+        "parlamentario/a": "Jorge Guzmán Zepeda",
+        "coalición": "Chile Grande y Unido",
+        "partido político": "Evopoli ",
+        "Votos obtenidos": 37180,
+        "% obtenido": "8,04%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 17,
+        "parlamentario/a": "Guillermo Valdés Carmona",
+        "coalición": "Partido de la Gente",
+        "partido político": "Partido de la Gente ",
+        "Votos obtenidos": 12500,
+        "% obtenido": "2,70%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 18,
+        "parlamentario/a": "Cristián Menchaca Pinochet",
+        "coalición": "Cambio por Chile",
+        "partido político": "Partido Republicano",
+        "Votos obtenidos": 32735,
+        "% obtenido": "13,55%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 18,
+        "parlamentario/a": "Daniel Bustos Leal",
+        "coalición": "Cambio por Chile",
+        "partido político": "Partido Republicano",
+        "Votos obtenidos": 13629,
+        "% obtenido": "5,64%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 18,
+        "parlamentario/a": "Consuelo Veloso Ávila",
+        "coalición": "Unidad por Chile",
+        "partido político": "Partido Radical",
+        "Votos obtenidos": 35978,
+        "% obtenido": "14,89%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 18,
+        "parlamentario/a": "Rodrigo Ramírez Parra",
+        "coalición": "Chile Grande y Unido",
+        "partido político": "Renovación Nacional",
+        "Votos obtenidos": 19521,
+        "% obtenido": "8,08%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 19,
+        "parlamentario/a": "Cristóbal Martínez Ramírez",
+        "coalición": "Chile Grande y Unido",
+        "partido político": "Unión Demócrata Independiente",
+        "Votos obtenidos": 24969,
+        "% obtenido": "7,46%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 19,
+        "parlamentario/a": "Carlos Chandía Alarcón",
+        "coalición": "Chile Grande y Unido",
+        "partido político": "Renovación Nacional",
+        "Votos obtenidos": 23318,
+        "% obtenido": "6,96%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 19,
+        "parlamentario/a": "Felipe Camaño Cárdenas",
+        "coalición": "Unidad por Chile",
+        "partido político": "Democracia Cristiana ",
+        "Votos obtenidos": 38958,
+        "% obtenido": "11,63%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 19,
+        "parlamentario/a": "Francisco Crisóstomo Llanos",
+        "coalición": "Unidad por Chile",
+        "partido político": "Partido Socialista",
+        "Votos obtenidos": 15857,
+        "% obtenido": "4,74%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 19,
+        "parlamentario/a": "Sara Concha Smith",
+        "coalición": "Cambio por Chile",
+        "partido político": "Partido Social Cristiano",
+        "Votos obtenidos": 18816,
+        "% obtenido": "5,62%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 20,
+        "parlamentario/a": "Francesca Muñoz González",
+        "coalición": "Cambio por Chile",
+        "partido político": "Partido Social Cristiano",
+        "Votos obtenidos": 54759,
+        "% obtenido": "9,21%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 20,
+        "parlamentario/a": "Roberto Arroyo Muñoz",
+        "coalición": "Cambio por Chile",
+        "partido político": "Partido Social Cristiano",
+        "Votos obtenidos": 7963,
+        "% obtenido": "1,34%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 20,
+        "parlamentario/a": "Paz Charpentier Rajcevich",
+        "coalición": "Cambio por Chile",
+        "partido político": "Partido Republicano",
+        "Votos obtenidos": 45604,
+        "% obtenido": "7,67%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 20,
+        "parlamentario/a": "Marlene Pérez Cartes",
+        "coalición": "Chile Grande y Unido",
+        "partido político": "Unión Demócrata Independiente",
+        "Votos obtenidos": 27001,
+        "% obtenido": "4,54%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 20,
+        "parlamentario/a": "Sergio Bobadilla Muñoz",
+        "coalición": "Chile Grande y Unido",
+        "partido político": "Unión Demócrata Independiente",
+        "Votos obtenidos": 19468,
+        "% obtenido": "3,27%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 20,
+        "parlamentario/a": "Álvaro Ortiz Vera",
+        "coalición": "Unidad por Chile",
+        "partido político": "Democracia Cristiana ",
+        "Votos obtenidos": 42415,
+        "% obtenido": "7,13%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 20,
+        "parlamentario/a": "Antonio Rivas Villalobos",
+        "coalición": "Unidad por Chile",
+        "partido político": "Partido Socialista",
+        "Votos obtenidos": 27791,
+        "% obtenido": "4,67%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 20,
+        "parlamentario/a": "Patricio Briones Moller",
+        "coalición": "Partido de la Gente",
+        "partido político": "Partido de la Gente ",
+        "Votos obtenidos": 18387,
+        "% obtenido": "3,09%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 21,
+        "parlamentario/a": "Flor Weisse Novoa",
+        "coalición": "Chile Grande y Unido",
+        "partido político": "Unión Demócrata Independiente",
+        "Votos obtenidos": 37017,
+        "% obtenido": "9,36%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 21,
+        "parlamentario/a": "Joanna Pérez Olea",
+        "coalición": "Chile Grande y Unido",
+        "partido político": "Demócratas",
+        "Votos obtenidos": 33310,
+        "% obtenido": "8,42%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 21,
+        "parlamentario/a": "Cristóbal Urruticoechea Ríos",
+        "coalición": "Cambio por Chile",
+        "partido político": "Partido Nacional Libertario",
+        "Votos obtenidos": 28259,
+        "% obtenido": "7,14%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 21,
+        "parlamentario/a": "Patricio Pinilla Valencia",
+        "coalición": "Unidad por Chile",
+        "partido político": "Democracia Cristiana ",
+        "Votos obtenidos": 20206,
+        "% obtenido": "5,11%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 21,
+        "parlamentario/a": "Lilian Betancurt Delgado",
+        "coalición": "Partido de la Gente",
+        "partido político": "Partido de la Gente ",
+        "Votos obtenidos": 14640,
+        "% obtenido": "3,70%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 22,
+        "parlamentario/a": "Eduardo Cretton Rebolledo",
+        "coalición": "Chile Grande y Unido",
+        "partido político": "Unión Demócrata Independiente",
+        "Votos obtenidos": 29959,
+        "% obtenido": "15,38%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 22,
+        "parlamentario/a": "Juan Carlos Beltrán Silva",
+        "coalición": "Chile Grande y Unido",
+        "partido político": "Renovación Nacional",
+        "Votos obtenidos": 25862,
+        "% obtenido": "13,27%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 22,
+        "parlamentario/a": "Gloria Naveillán Arriagada",
+        "coalición": "Cambio por Chile",
+        "partido político": "Partido Nacional Libertario",
+        "Votos obtenidos": 16445,
+        "% obtenido": "8,44%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 22,
+        "parlamentario/a": "Andrea Parra Sauterel",
+        "coalición": "Unidad por Chile",
+        "partido político": "Partido por la Democracia ",
+        "Votos obtenidos": 14473,
+        "% obtenido": "7,43%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 23,
+        "parlamentario/a": "José Montalva Fehuerhake",
+        "coalición": "Unidad por Chile",
+        "partido político": "Partido por la Democracia ",
+        "Votos obtenidos": 34270,
+        "% obtenido": "7,96%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 23,
+        "parlamentario/a": "Coca Ñanco Vásquez",
+        "coalición": "Unidad por Chile",
+        "partido político": "Frente Amplio ",
+        "Votos obtenidos": 28610,
+        "% obtenido": "6,64%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 23,
+        "parlamentario/a": "Stephan Schubert Rubio",
+        "coalición": "Cambio por Chile",
+        "partido político": "Partido Republicano",
+        "Votos obtenidos": 41089,
+        "% obtenido": "9,54%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 23,
+        "parlamentario/a": "Cristian Neira Martínez",
+        "coalición": "Cambio por Chile",
+        "partido político": "Partido Republicano",
+        "Votos obtenidos": 14065,
+        "% obtenido": "3,27%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 23,
+        "parlamentario/a": "Tomás Kast Sommerhoff",
+        "coalición": "Chile Grande y Unido",
+        "partido político": "Evopoli ",
+        "Votos obtenidos": 35207,
+        "% obtenido": "8,17%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 23,
+        "parlamentario/a": "René Manuel García García",
+        "coalición": "Chile Grande y Unido",
+        "partido político": "Renovación Nacional",
+        "Votos obtenidos": 18216,
+        "% obtenido": "4,23%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 23,
+        "parlamentario/a": "Flor Contreras Vivallo",
+        "coalición": "Partido de la Gente",
+        "partido político": "Partido de la Gente ",
+        "Votos obtenidos": 10812,
+        "% obtenido": "2,51%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 24,
+        "parlamentario/a": "Marcos Ilabaca Cerda",
+        "coalición": "Unidad por Chile",
+        "partido político": "Partido Socialista",
+        "Votos obtenidos": 33972,
+        "% obtenido": "13,04%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 24,
+        "parlamentario/a": "Matías Fernández Hatwig",
+        "coalición": "Unidad por Chile",
+        "partido político": "Frente Amplio ",
+        "Votos obtenidos": 26415,
+        "% obtenido": "10,14%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 24,
+        "parlamentario/a": "Omar Sabat Guzmán",
+        "coalición": "Chile Grande y Unido",
+        "partido político": "Unión Demócrata Independiente",
+        "Votos obtenidos": 26742,
+        "% obtenido": "10,27%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 24,
+        "parlamentario/a": "Daniel Valenzuela Salazar",
+        "coalición": "Chile Grande y Unido",
+        "partido político": "Renovación Nacional",
+        "Votos obtenidos": 15056,
+        "% obtenido": "5,78%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 24,
+        "parlamentario/a": "Leandro Kunstmann Collado",
+        "coalición": "Cambio por Chile",
+        "partido político": "Partido Republicano",
+        "Votos obtenidos": 23578,
+        "% obtenido": "9,05%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 25,
+        "parlamentario/a": "Héctor Barría Angulo",
+        "coalición": "Unidad por Chile",
+        "partido político": "Democracia Cristiana ",
+        "Votos obtenidos": 32370,
+        "% obtenido": "13,72%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 25,
+        "parlamentario/a": "Emilia Nuyado Ancapichún",
+        "coalición": "Unidad por Chile",
+        "partido político": "Partido Socialista",
+        "Votos obtenidos": 30918,
+        "% obtenido": "13,11%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 25,
+        "parlamentario/a": "Daniel Lilayu Vivanco",
+        "coalición": "Chile Grande y Unido",
+        "partido político": "Unión Demócrata Independiente",
+        "Votos obtenidos": 24934,
+        "% obtenido": "10,57%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 25,
+        "parlamentario/a": "Paulina Muñoz Minte",
+        "coalición": "Cambio por Chile",
+        "partido político": "Partido Nacional Libertario",
+        "Votos obtenidos": 20361,
+        "% obtenido": "8,63%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 26,
+        "parlamentario/a": "Alejandro Bernales Maldonado",
+        "coalición": "Unidad por Chile",
+        "partido político": "Partido Liberal",
+        "Votos obtenidos": 35540,
+        "% obtenido": "11,95%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 26,
+        "parlamentario/a": "Héctor Ulloa Aguilera",
+        "coalición": "Unidad por Chile",
+        "partido político": "Partido por la Democracia ",
+        "Votos obtenidos": 20407,
+        "% obtenido": "6,86%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 26,
+        "parlamentario/a": "Mauro González Villarroel",
+        "coalición": "Chile Grande y Unido",
+        "partido político": "Renovación Nacional",
+        "Votos obtenidos": 35330,
+        "% obtenido": "11,88%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 26,
+        "parlamentario/a": "Claudia Reyes Larenas",
+        "coalición": "Cambio por Chile",
+        "partido político": "Partido Republicano",
+        "Votos obtenidos": 30928,
+        "% obtenido": "10,40%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 26,
+        "parlamentario/a": "Alex Nahuelquín Nahuelquín",
+        "coalición": "Partido de la Gente",
+        "partido político": "Partido de la Gente ",
+        "Votos obtenidos": 30374,
+        "% obtenido": "10,21%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 27,
+        "parlamentario/a": "Andrea Macías Palma",
+        "coalición": "Unidad por Chile",
+        "partido político": "Partido Socialista",
+        "Votos obtenidos": 9655,
+        "% obtenido": "15,47%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 27,
+        "parlamentario/a": "René Alinco Bustos",
+        "coalición": "Verdes, Regionalistas y Humanistas",
+        "partido político": "Federación Regionalista Verde Social",
+        "Votos obtenidos": 8920,
+        "% obtenido": "14,30%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 27,
+        "parlamentario/a": "Alejandra Valdebenito Torres",
+        "coalición": "Chile Grande y Unido",
+        "partido político": "Unión Demócrata Independiente",
+        "Votos obtenidos": 6482,
+        "% obtenido": "10,39%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 28,
+        "parlamentario/a": "Carlos Bianchi Chelech",
+        "coalición": "Independiente",
+        "partido político": "Independiente",
+        "Votos obtenidos": 25009,
+        "% obtenido": "24,89%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 28,
+        "parlamentario/a": "Alejandro Riquelme Ducci",
+        "coalición": "Cambio por Chile",
+        "partido político": "Partido Republicano",
+        "Votos obtenidos": 12717,
+        "% obtenido": "12,66%",
+        "año elección": 2025
+      },
+      {
+        "Distrito": 28,
+        "parlamentario/a": "Javiera Morales Alvarado",
+        "coalición": "Unidad por Chile",
+        "partido político": "Frente Amplio ",
+        "Votos obtenidos": 9361,
+        "% obtenido": "9,32%",
+        "año elección": 2025
+      }
+    ]
+  }
+};
+    vegaEmbed("#vis", spec, {mode: "vega-lite"}).then(console.log).catch(console.warn);
+  </script>
+</body>
+</html>
